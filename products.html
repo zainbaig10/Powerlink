@@ -132,7 +132,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav  ">
+              <ul class="navbar-nav  " style="gap: 10px;">
                 <li class="nav-item ">
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -275,7 +275,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: clamp(15px, 3vw, 25px);
+      gap: 20px;
       width: 100%;
     }
 
@@ -332,6 +332,7 @@
       color: #7f8c8d;
       margin-bottom: 20px;
       line-height: 1.5;
+      height: 60px;
     }
 
     .read-more-btn {
@@ -346,12 +347,12 @@
       transition: background-color 0.3s ease;
       cursor: pointer;
       border: none;
-      
+
     }
+
     .read-more-btn-link {
-  display: block;
-  margin-top: 15px; /* Add some spacing above the button */
-}
+      display: block;
+    }
 
     .read-more-btn:hover {
       background-color: black;
@@ -504,67 +505,75 @@
     }
   </style>
 
-    <section class="project_section layout_padding">
-      <div class="container">
-        <div class="header">
-          <h2 style=" font-size: 38px;
+  <section class="project_section layout_padding">
+    <div class="container">
+      <div class="header">
+        <h2 style=" font-size: 38px;
             font-weight: 700;
             color: #2c3e50;">Our Products</h2>
-          <p style="color:#555; font-size: 17px;">At Powerlink Trading Establishment, we supply a comprehensive range of
-            high-quality
-            industrial products tailored to meet the demands of the oil & gas, construction, and
-            infrastructure sectors. From mechanical fittings to electrical components and personal
-            safety equipment, we are your trusted source for durable and compliant materials.
-          </p>
-        </div>
+        <p style="color:#555; font-size: 17px;">At Powerlink Trading Establishment, we supply a comprehensive range of
+          high-quality
+          industrial products tailored to meet the demands of the oil & gas, construction, and
+          infrastructure sectors. From mechanical fittings to electrical components and personal
+          safety equipment, we are your trusted source for durable and compliant materials.
+        </p>
+      </div>
 
-        <!-- Tab Navigation -->
-        <div class="tab-navigation">
-          <button class="tab-button active" data-tab="all">All Products</button>
-          <button class="tab-button" data-tab="mechanical">Mechanical Products</button>
-          <button class="tab-button" data-tab="electrical">Electrical Products</button>
-          <button class="tab-button" data-tab="safety"> Safety Equipment
-          </button>
-        </div>
+      <!-- Tab Navigation -->
+      <!-- <div class="tab-navigation">
+        <button class="tab-button active" data-tab="all">All Products</button>
+        <button class="tab-button" data-tab="mechanical">Mechanical Products</button>
+        <button class="tab-button" data-tab="electrical">Electrical Products</button>
+        <button class="tab-button" data-tab="safety"> Safety Equipment
+        </button>
+      </div> -->
 
-        <!-- All Products Tab (Default View) -->
-        <div class="category-container show-all-tab active" id="all">
-          <!-- Mechanical Products Card -->
-          <div class="category-card">
-            <div class="card-image">
-              <img src="images/mech product.jpg" alt="Mechanical Products">
-            </div>
-            <div class="card-content">
-              <h2 class="card-title">Mechanical Products</h2>
-              <p class="card-description" style="color:#555">Robust fittings, pipes, valves, and fasteners designed for
-                industrial systems and
-                mechanical installations.</p>
-              <a href="mechanical.html" class="read-more-btn-link">
-                <button class="read-more-btn">Show Products</button>
-              </a>
-              <!-- <ul class="product-list">
+      <!-- All Products Tab (Default View) -->
+      <div class="category-container show-all-tab active" id="all">
+        <!-- Mechanical Products Card -->
+        <div class="category-card">
+          <div class="card-image">
+            <img src="images/mech product.jpg" alt="Mechanical Products">
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Mechanical Products</h2>
+            <p class="card-description" style="color:#555">Robust fittings, pipes, valves, and fasteners designed for
+              industrial systems and
+              mechanical installations.</p>
+            <a href="mechanical.html" class="read-more-btn-link">
+              <button class="read-more-btn">Show Products</button>
+            </a>
+            <!-- <ul class="product-list">
                         <li>Pipe Fittings & Flanges</li>
                         <li>Valves & Pipe Supports</li>
                         <li>Nuts, Bolts, Washers</li>
                         <li>Threaded Rods & C-Channels</li>
                     </ul> -->
-            </div>
           </div>
+        </div>
 
-          <!-- Electrical Products Card -->
-          <div class="category-card">
-            <div class="card-image">
-              <img src="images/electrical product.jpg" alt="Electrical Products">
-            </div>
-            <div class="card-content">
-              <h2 class="card-title">Electrical Products</h2>
-              <p class="card-description" style="color:#555">Reliable power and control components of engineered to
-                support electrical distribution and
-                automation.
-              </p>
-              <a href="electrical.html" class="read-more-btn-link">
-                <button class="read-more-btn">Show Products</button>
-                <!-- </a>                    <ul class="product-list">
+        <!-- Electrical Products Card -->
+        <div class="category-card" style="margin-left: 20px; ">
+          <style>
+            @media (max-width: 576px) {
+              .category-card {
+                margin-left: 0px !important;
+              }
+            }
+          </style>
+
+          <div class="card-image">
+            <img src="images/electrical product.jpg" alt="Electrical Products">
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Electrical Products</h2>
+            <p class="card-description" style="color:#555">Reliable power and control components of engineered to
+              support electrical distribution and
+              automation.
+            </p>
+            <a href="electrical.html" class="read-more-btn-link">
+              <button class="read-more-btn">Show Products</button>
+              <!-- </a>                    <ul class="product-list">
                         <li>Power, Control & Fiber Optic Cables</li>
                         <li>Earthing Materials & Cable Accessories</li>
                         <li>Conduits & Fittings</li>
@@ -572,23 +581,23 @@
                         </li>
                         <li>Electrical Boxes & Connectors</li>
                     </ul> -->
-            </div>
           </div>
+        </div>
 
-          <!-- Instrumentation Products Card -->
-          <div class="category-card">
-            <div class="card-image">
-              <img src="images/safety.jpg" alt="Instrumentation">
-            </div>
-            <div class="card-content">
-              <h2 class="card-title">Safety Equipment</h2>
-              <p class="card-description" style="color:#555">Certified safety gear and emergency response tools for
-                workplace protection and
-                compliance.
-              </p>
-              <a href="safety.html" class="read-more-btn-link">
-                <button class="read-more-btn">Show Products</button></a>
-                <!-- </a>                    <ul class="product-list">
+        <!-- Instrumentation Products Card -->
+        <div class="category-card">
+          <div class="card-image">
+            <img src="images/safety.jpg" alt="Instrumentation">
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Safety Equipment</h2>
+            <p class="card-description" style="color:#555">Certified safety gear and emergency response tools for
+              workplace protection and
+              compliance.
+            </p>
+            <a href="safety.html" class="read-more-btn-link">
+              <button class="read-more-btn">Show Products</button></a>
+            <!-- </a>                    <ul class="product-list">
                         <li>PPE: Helmets, Gloves, Jackets, Safety Shoes</li>
                         <li>Fire Extinguishers, Blankets & Smoke Detectors</li>
                         <li>Gas Detectors & Emergency Showers</li>
@@ -596,180 +605,106 @@
                         <li>Road Safety & Fall Protection Equipment
                         </li>
                     </ul> -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Mechanical Products Tab -->
-        <div class="category-container" id="mechanical">
-          <div class="category-card">
-            <div class="card-image">
-              <img src="images/mech product.jpg" alt="Mechanical Products">
-            </div>
-            <div class="card-content">
-              <h2 class="card-title">Mechanical Products</h2>
-              <p class="card-description" style="color:#555">Robust fittings, pipes, valves, and fasteners for
-                industrial systems</p>
-              <button class="read-more-btn">Show Products</button>
-              <!-- <ul class="product-list">
-                <li>Pipe Fittings & Flanges</li>
-                <li>Valves & Pipe Supports</li>
-                <li>Nuts, Bolts, Washers</li>
-                <li>Threaded Rods & C-Channels</li>
-                <li>Clamps & Mounting Hardware</li>
-                <li>Gaskets & Sealing Materials</li>
-                <li>Hydraulic Components</li>
-                <li>Pneumatic Systems</li>
-              </ul> -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Electrical Products Tab -->
-        <div class="category-container" id="electrical">
-          <div class="category-card">
-            <div class="card-image">
-              <img src="images/electrical product.jpg" alt="Electrical Products">
-            </div>
-            <div class="card-content">
-              <h2 class="card-title">Electrical Products</h2>
-              <p class="card-description" style="color:#555">Reliable power and control components for electrical
-                distribution</p>
-              <button class="read-more-btn">Show Products</button>
-              <!-- <ul class="product-list">
-                <li>Power, Control & Fiber Optic Cables</li>
-                <li>Earthing Materials & Cable Accessories</li>
-                <li>Conduits & Fittings</li>
-                <li>Panels & Circuit Breakers</li>
-                <li>Electrical Boxes & Connectors</li>
-                <li>Transformers & Power Supplies</li>
-                <li>Lighting Fixtures & Controls</li>
-                <li>Industrial Plugs & Sockets</li>
-                <li>Cable Trays & Ladders</li>
-              </ul> -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Instrumentation Products Tab -->
-        <div class="category-container" id="safety">
-          <div class="category-card">
-            <div class="card-image">
-              <img src="images/safety.jpg" alt="safety">
-            </div>
-            <div class="card-content">
-              <h2 class="card-title">Safety Equipment</h2>
-              <p class="card-description" style="color:#555">Precision measurement and control equipment for industrial
-                processes</p>
-              <button class="read-more-btn">Show Products</button>
-              <!-- <ul class="product-list">
-                <li>Pressure Gauges & Transmitters</li>
-                <li>Temperature Sensors & Controls</li>
-                <li>Flow Meters & Indicators</li>
-                <li>Level Measurement Devices</li>
-                <li>Calibration Equipment</li>
-                <li>Process Analyzers</li>
-                <li>Control Valves & Actuators</li>
-                <li>PLC & SCADA Systems</li>
-                <li>Data Acquisition Systems</li>
-                <li>Signal Conditioners & Converters</li>
-              </ul> -->
-            </div>
           </div>
         </div>
       </div>
-    </section>
-    <section>
-      <div class="section-header">
-        <h2 class="section-title " style=" font-size: 38px;
+
+      <!-- Mechanical Products Tab -->
+    
+    </div>
+  </section>
+  <section>
+    <div class="section-header">
+      <h2 class="section-title " style=" font-size: 38px;
     font-weight: 700;
     color: #2c3e50;">Industrial Labeling Solutions</h2>
-        <p class="section-subtitle" style="color:#555; font-size: 17px;">High-quality tapes, labels, and printers for
-          industrial safety, compliance, and
-          asset management.</p>
+      <p class="section-subtitle" style="color:#555; font-size: 17px;">High-quality tapes, labels, and printers for
+        industrial safety, compliance, and
+        asset management.</p>
+    </div>
+
+    <div class="intro-paragraph">
+      <p style="color:#555; font-size: 17px;">We offer high-quality labeling solutions from Zebra and Brady, including
+        tapes,
+        printers, and customizable labels designed for industrial safety, asset
+        management, and regulatory compliance. Built for durability and performance.</p>
+    </div>
+
+    <div class="image-grid">
+      <div class="grid-item">
+        <div class="image-container">
+          <img src="images/printer3.jpg" alt="Brady Label Printers">
+        </div>
+        <div class="item-content">
+          <h3 class="item-title">Brady Label Printers</h3>
+          <p class="item-description" style="color:#555">Reliable, high-speed printing for industrial environments</p>
+        </div>
       </div>
 
-      <div class="intro-paragraph">
-        <p style="color:#555; font-size: 17px;">We offer high-quality labeling solutions from Zebra and Brady, including
-          tapes,
-          printers, and customizable labels designed for industrial safety, asset
-          management, and regulatory compliance. Built for durability and performance.</p>
+      <div class="grid-item">
+        <div class="image-container">
+          <img src="images/Tape_Rolls.JPG" alt="Durable Tapes & Labels">
+        </div>
+        <div class="item-content">
+          <h3 class="item-title">Durable Tapes & Labels</h3>
+          <p class="item-description" style="color:#555">Built for harsh conditions, chemical resistance, and long
+            life</p>
+        </div>
       </div>
 
-      <div class="image-grid">
-        <div class="grid-item">
-          <div class="image-container">
-            <img src="images/printer3.jpg" alt="Brady Label Printers">
-          </div>
-          <div class="item-content">
-            <h3 class="item-title">Brady Label Printers</h3>
-            <p class="item-description" style="color:#555">Reliable, high-speed printing for industrial environments</p>
-          </div>
+      <div class="grid-item">
+        <div class="image-container">
+          <img src="images/Size_customization.JPG" alt="Custom Sizes">
         </div>
-
-        <div class="grid-item">
-          <div class="image-container">
-            <img src="images/Tape_Rolls.JPG" alt="Durable Tapes & Labels">
-          </div>
-          <div class="item-content">
-            <h3 class="item-title">Durable Tapes & Labels</h3>
-            <p class="item-description" style="color:#555">Built for harsh conditions, chemical resistance, and long
-              life</p>
-          </div>
+        <div class="item-content">
+          <h3 class="item-title">Custom Sizes</h3>
+          <p class="item-description" style="color:#555">Tailored to fit your equipment and compliance standards</p>
         </div>
+      </div>
+    </div>
 
-        <div class="grid-item">
-          <div class="image-container">
-            <img src="images/Size_customization.JPG" alt="Custom Sizes">
-          </div>
-          <div class="item-content">
-            <h3 class="item-title">Custom Sizes</h3>
-            <p class="item-description" style="color:#555">Tailored to fit your equipment and compliance standards</p>
-          </div>
+
+
+
+
+
+
+
+    <div class="image-grid">
+      <div class="grid-item">
+        <div class="image-container">
+          <img src="images/label- image1.jpg" alt="Brady Label Printers">
         </div>
+        <div class="item-content">
+          <h3 class="item-title"> Specialty Paper Labels with Unique Adhesives</h3>
+          <p class="item-description" style="color:#555">Ideal for curved, rough, or removable label applications.
+          </p>
         </div>
+      </div>
 
-
-
-
-
-
-     
-
-      <div class="image-grid">
-        <div class="grid-item">
-          <div class="image-container">
-            <img src="images/label- image1.jpg" alt="Brady Label Printers">
-          </div>
-          <div class="item-content">
-            <h3 class="item-title"> Specialty Paper Labels with Unique Adhesives</h3>
-            <p class="item-description" style="color:#555">Ideal for curved, rough, or removable label applications.
-</p>
-          </div>
+      <div class="grid-item">
+        <div class="image-container">
+          <img src="images/label-iamge2.jpg" alt="Durable Tapes & Labels">
         </div>
-
-        <div class="grid-item">
-          <div class="image-container">
-            <img src="images/label-iamge2.jpg" alt="Durable Tapes & Labels">
-          </div>
-          <div class="item-content">
-            <h3 class="item-title">Zebra Industrial Printers</h3>
-            <p class="item-description" style="color:#555">Durable, high-performance printers for on-demand barcode labeling.</p>
-          </div>
+        <div class="item-content">
+          <h3 class="item-title">Zebra Industrial Printers</h3>
+          <p class="item-description" style="color:#555">Durable, high-performance printers for on-demand barcode
+            labeling.</p>
         </div>
+      </div>
 
-        <div class="grid-item">
-          <div class="image-container">
-            <img src="images/label-iamge3.jpg" alt="Custom Sizes">
-          </div>
-          <div class="item-content">
-            <h3 class="item-title"> IQ Color Barcode Labels</h3>
-            <p class="item-description" style="color:#555">Print color on demand using any Zebra thermal printer.</p>
-          </div>
+      <div class="grid-item">
+        <div class="image-container">
+          <img src="images/label-iamge3.jpg" alt="Custom Sizes">
         </div>
+        <div class="item-content">
+          <h3 class="item-title"> IQ Color Barcode Labels</h3>
+          <p class="item-description" style="color:#555">Print color on demand using any Zebra thermal printer.</p>
         </div>
+      </div>
+    </div>
 
-        <!-- <div class="grid-item">
+    <!-- <div class="grid-item">
       <div class="image-container">
         <img src="images/per.jpg" alt="Precision Finishes">
         <div class="image-overlay">View Details</div>
@@ -780,536 +715,536 @@
       </div>
     </div> -->
 
-      <div class="cta-section">
-        <a href="contact.html" class="cta-button">Request a Quote</a>
-      </div>
-     
-    </section>
-      <style>
-        /* Base styles */
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
+    <div class="cta-section">
+      <a href="contact.html" class="cta-button">Request a Quote</a>
+    </div>
 
-        body {
-          background-color: #f8f9fa;
-          color: #333;
-          line-height: 1.6;
-        }
+  </section>
+  <style>
+    /* Base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        /* Fix the layout container */
-        .labeling-section {
-          max-width: 900px;
-          /* Further reduced for better card sizing */
-          margin: 0 auto;
-          padding: 40px 20px;
-          box-sizing: border-box;
-          /* Ensure padding doesn't add to width */
-        }
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
 
-        .section-header {
-          text-align: center;
-          margin-bottom: 30px;
-          /* Reduced from 40px */
-        }
+    /* Fix the layout container */
+    .labeling-section {
+      max-width: 900px;
+      /* Further reduced for better card sizing */
+      margin: 0 auto;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      /* Ensure padding doesn't add to width */
+    }
 
-        .section-title {
-          font-size: 32px;
-          /* Reduced from 36px */
-          color: #2c3e50;
-          margin-bottom: 8px;
-          /* Reduced from 10px */
-          font-weight: 700;
-        }
+    .section-header {
+      text-align: center;
+      margin-bottom: 30px;
+      /* Reduced from 40px */
+    }
 
-        .section-subtitle {
-          font-size: 16px;
-          /* Reduced from 18px */
-          color: #666;
-          max-width: 800px;
-          margin: 0 auto;
-        }
+    .section-title {
+      font-size: 32px;
+      /* Reduced from 36px */
+      color: #2c3e50;
+      margin-bottom: 8px;
+      /* Reduced from 10px */
+      font-weight: 700;
+    }
 
-        .intro-paragraph {
-          text-align: center;
-          margin-bottom: 30px;
-          /* Reduced from 50px */
-          font-size: 15px;
-          /* Reduced from 16px */
-          max-width: 900px;
-          margin-left: auto;
-          margin-right: auto;
-          line-height: 1.7;
-          color: #444;
-        }
+    .section-subtitle {
+      font-size: 16px;
+      /* Reduced from 18px */
+      color: #666;
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
-        /* Image Grid - properly constrained width */
-        .image-grid {
-          display: grid;
-          grid-template-columns: repeat(3, minmax(0, 1fr));
-          /* Fixed 3 columns with equal width */
-          gap: 25px;
-          margin-bottom: 40px;
-          width: 100%;
-          max-width: 1150px;
-          margin-left: auto;
-          margin-right: auto;
-        }
+    .intro-paragraph {
+      text-align: center;
+      margin-bottom: 30px;
+      /* Reduced from 50px */
+      font-size: 15px;
+      /* Reduced from 16px */
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+      color: #444;
+    }
 
-        .grid-item {
-          background-color: #fff;
-          border-radius: 8px;
-          overflow: hidden;
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-          cursor: pointer;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          max-width: 100%;
-          /* Ensure it doesn't exceed its container */
-        }
+    /* Image Grid - properly constrained width */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      /* Fixed 3 columns with equal width */
+      gap: 25px;
+      margin-bottom: 40px;
+      width: 100%;
+      max-width: 1150px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-        .grid-item:hover {
-          transform: translateY(-6px);
-          /* Reduced from -10px */
-          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-        }
+    .grid-item {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      /* Ensure it doesn't exceed its container */
+    }
 
-        /* Reduced height image container */
-        .image-container {
-          width: 100%;
-          height: 330px;
-          /* Reduced from 300px */
-          position: relative;
-          overflow: hidden;
-        }
+    .grid-item:hover {
+      transform: translateY(-6px);
+      /* Reduced from -10px */
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
 
-        .image-container img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: transform 0.5s ease;
-        }
+    /* Reduced height image container */
+    .image-container {
+      width: 100%;
+      height: 330px;
+      /* Reduced from 300px */
+      position: relative;
+      overflow: hidden;
+    }
 
-        .grid-item:hover .image-container img {
-          transform: scale(1.05);
-        }
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
 
-        .image-overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(13, 76, 128, 0.1);
-          opacity: 0;
-          transition: opacity 0.3s ease;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: #fff;
-          font-size: 16px;
-          /* Reduced from 18px */
-          font-weight: 600;
-        }
+    .grid-item:hover .image-container img {
+      transform: scale(1.05);
+    }
 
-        .grid-item:hover .image-overlay {
-          opacity: 1;
-        }
+    .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(13, 76, 128, 0.1);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 16px;
+      /* Reduced from 18px */
+      font-weight: 600;
+    }
 
-        .item-content {
-          padding: 16px;
-          /* Reduced from 20px */
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-        }
+    .grid-item:hover .image-overlay {
+      opacity: 1;
+    }
 
-        .item-title {
-          font-size: 16px;
-          /* Reduced from 18px */
-          font-weight: 700;
-          margin-bottom: 4px;
-          /* Reduced from 5px */
-          color: #d92827;
-        }
+    .item-content {
+      padding: 16px;
+      /* Reduced from 20px */
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
 
-        .item-description {
-          font-size: 14px;
-          /* Reduced from 15px */
-          color: #666;
-          flex: 1;
-        }
+    .item-title {
+      font-size: 16px;
+      /* Reduced from 18px */
+      font-weight: 700;
+      margin-bottom: 4px;
+      /* Reduced from 5px */
+      color: #d92827;
+    }
 
-        .cta-section {
-          text-align: center;
-          margin-top: 25px;
-          /* Reduced from 30px */
-        }
+    .item-description {
+      font-size: 14px;
+      /* Reduced from 15px */
+      color: #666;
+      flex: 1;
+    }
 
-        .cta-button {
-          display: inline-block;
-          background-color: #d92827;
-          color: #fff;
-          padding: 8px 18px;
-          /* Reduced from 10px 20px */
-          font-size: 16px;
-          /* Reduced from 18px */
-          font-weight: 600;
-          text-decoration: none;
-          border-radius: 4px;
-          transition: background-color 0.3s ease;
-          border: none;
-          margin-bottom: 30px;
-          cursor: pointer;
-        }
+    .cta-section {
+      text-align: center;
+      margin-top: 25px;
+      /* Reduced from 30px */
+    }
 
-        .cta-button:hover {
-          background-color: black;
-          color: white;
-        }
+    .cta-button {
+      display: inline-block;
+      background-color: #d92827;
+      color: #fff;
+      padding: 8px 18px;
+      /* Reduced from 10px 20px */
+      font-size: 16px;
+      /* Reduced from 18px */
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      border: none;
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
 
-        /* Enhanced Responsive Design */
-        /* Large screens (default above) */
+    .cta-button:hover {
+      background-color: black;
+      color: white;
+    }
 
-        /* Medium screens */
-        @media (max-width: 1100px) {
-          .image-grid {
-            grid-template-columns: repeat(3, 1fr);
-            /* Force 3 columns */
-            gap: 20px;
-          }
+    /* Enhanced Responsive Design */
+    /* Large screens (default above) */
 
-          .image-container {
-            height: 260px;
-          }
+    /* Medium screens */
+    @media (max-width: 1100px) {
+      .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* Force 3 columns */
+        gap: 20px;
+      }
 
-          .labeling-section {
-            padding: 35px 15px;
-            max-width: 900px;
-          }
-        }
+      .image-container {
+        height: 260px;
+      }
 
-        /* Small tablets */
-        @media (max-width: 800px) {
-          .section-title {
-            font-size: 28px;
-          }
+      .labeling-section {
+        padding: 35px 15px;
+        max-width: 900px;
+      }
+    }
 
-          .section-subtitle {
-            font-size: 15px;
-          }
+    /* Small tablets */
+    @media (max-width: 800px) {
+      .section-title {
+        font-size: 28px;
+      }
 
-          .image-grid {
-            grid-template-columns: repeat(2, 1fr);
-            /* 2 columns */
-            max-width: 600px;
-          }
+      .section-subtitle {
+        font-size: 15px;
+      }
 
-          .image-container {
-            height: 250px;
-          }
+      .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns */
+        max-width: 600px;
+      }
 
-          .intro-paragraph {
-            font-size: 14px;
-          }
+      .image-container {
+        height: 250px;
+      }
 
-          .labeling-section {
-            max-width: 650px;
-          }
-        }
+      .intro-paragraph {
+        font-size: 14px;
+      }
 
-        /* Mobile landscape */
-        @media (max-width: 700px) {
-          .image-grid {
-            grid-template-columns: 1fr;
-            /* Single column for mobile */
-            gap: 18px;
-            max-width: 320px;
-            /* Narrower width for single column */
-          }
+      .labeling-section {
+        max-width: 650px;
+      }
+    }
 
-          .image-container {
-            height: 220px;
-          }
+    /* Mobile landscape */
+    @media (max-width: 700px) {
+      .image-grid {
+        grid-template-columns: 1fr;
+        /* Single column for mobile */
+        gap: 18px;
+        max-width: 320px;
+        /* Narrower width for single column */
+      }
 
-          .labeling-section {
-            padding: 30px 12px;
-            max-width: 350px;
-          }
+      .image-container {
+        height: 220px;
+      }
 
-          .grid-item {
-            max-width: 320px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-          }
-        }
+      .labeling-section {
+        padding: 30px 12px;
+        max-width: 350px;
+      }
 
-        /* Mobile portrait */
-        @media (max-width: 480px) {
-          .section-title {
-            font-size: 24px;
-          }
+      .grid-item {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+    }
 
-          .section-subtitle {
-            font-size: 14px;
-          }
+    /* Mobile portrait */
+    @media (max-width: 480px) {
+      .section-title {
+        font-size: 24px;
+      }
 
-          .image-container {
-            height: 300px;
-            /* Further reduced height */
-          }
+      .section-subtitle {
+        font-size: 14px;
+      }
 
-          .item-title {
-            font-size: 15px;
-          }
+      .image-container {
+        height: 300px;
+        /* Further reduced height */
+      }
 
-          .item-description {
-            font-size: 13px;
-          }
+      .item-title {
+        font-size: 15px;
+      }
 
-          .cta-button {
-            font-size: 15px;
-            padding: 7px 15px;
-          }
+      .item-description {
+        font-size: 13px;
+      }
 
-          .labeling-section {
-            padding: 25px 10px;
-          }
-        }
+      .cta-button {
+        font-size: 15px;
+        padding: 7px 15px;
+      }
 
-        /* Very small devices */
-        @media (max-width: 320px) {
-          .image-grid {
-            max-width: 260px;
-          }
+      .labeling-section {
+        padding: 25px 10px;
+      }
+    }
 
-          .grid-item {
-            max-width: 260px;
-          }
+    /* Very small devices */
+    @media (max-width: 320px) {
+      .image-grid {
+        max-width: 260px;
+      }
 
-          .image-container {
-            height: 240px;
-            /* Smallest height */
-          }
+      .grid-item {
+        max-width: 260px;
+      }
 
-          .section-title {
-            font-size: 22px;
-          }
+      .image-container {
+        height: 240px;
+        /* Smallest height */
+      }
 
-          .item-content {
-            padding: 12px;
-          }
+      .section-title {
+        font-size: 22px;
+      }
 
-          .labeling-section {
-            max-width: 280px;
-          }
-        }
-      </style>
+      .item-content {
+        padding: 12px;
+      }
 
-      <script>
-        // Tab switching functionality
-        document.addEventListener('DOMContentLoaded', function () {
-          const tabButtons = document.querySelectorAll('.tab-button');
-          const categoryContainers = document.querySelectorAll('.category-container');
+      .labeling-section {
+        max-width: 280px;
+      }
+    }
+  </style>
 
-          // Tab switching
-          tabButtons.forEach(button => {
-            button.addEventListener('click', function () {
-              // Remove active class from all buttons
-              tabButtons.forEach(btn => btn.classList.remove('active'));
+  <script>
+    // Tab switching functionality
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabButtons = document.querySelectorAll('.tab-button');
+      const categoryContainers = document.querySelectorAll('.category-container');
 
-              // Add active class to clicked button
-              this.classList.add('active');
+      // Tab switching
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          // Remove active class from all buttons
+          tabButtons.forEach(btn => btn.classList.remove('active'));
 
-              // Get the tab target
-              const tabTarget = this.getAttribute('data-tab');
+          // Add active class to clicked button
+          this.classList.add('active');
 
-              // Hide all category containers
-              categoryContainers.forEach(container => container.classList.remove('active'));
+          // Get the tab target
+          const tabTarget = this.getAttribute('data-tab');
 
-              // Show the target container
-              document.getElementById(tabTarget).classList.add('active');
-            });
-          });
+          // Hide all category containers
+          categoryContainers.forEach(container => container.classList.remove('active'));
 
-          // Show Products functionality
-          const readMoreButtons = document.querySelectorAll('.read-more-btn');
-
-          readMoreButtons.forEach(button => {
-            button.addEventListener('click', function () {
-              // Toggle expanded class on the card
-              const card = this.closest('.category-card');
-              card.classList.toggle('card-expanded');
-
-              // Change button text based on state
-              if (card.classList.contains('card-expanded')) {
-                this.textContent = 'Show Less';
-              } else {
-                this.textContent = 'Show Products';
-              }
-            });
-          });
+          // Show the target container
+          document.getElementById(tabTarget).classList.add('active');
         });
-      </script>
+      });
 
-      <!-- end project section -->
+      // Show Products functionality
+      const readMoreButtons = document.querySelectorAll('.read-more-btn');
 
-      <!-- info section -->
-      <section class="info_section ">
+      readMoreButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          // Toggle expanded class on the card
+          const card = this.closest('.category-card');
+          card.classList.toggle('card-expanded');
 
-        <div class="container">
-          <div class="info_top ">
-            <div class="row info_main_row">
+          // Change button text based on state
+          if (card.classList.contains('card-expanded')) {
+            this.textContent = 'Show Less';
+          } else {
+            this.textContent = 'Show Products';
+          }
+        });
+      });
+    });
+  </script>
 
-              <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
-                <div class="">
-                  <div class="info_logo">
-                    <a href="">
-                      <img src="images/Powerlink_logo.png" alt="" style="width: 135px; margin-left: 20px;">
-                    </a>
-                  </div>
-                </div>
+  <!-- end project section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+
+    <div class="container">
+      <div class="info_top ">
+        <div class="row info_main_row">
+
+          <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+            <div class="">
+              <div class="info_logo">
+                <a href="">
+                  <img src="images/Powerlink_logo.png" alt="" style="width: 135px; margin-left: 20px;">
+                </a>
               </div>
-              <div class="col-sm-6 col-md-3 col-lg-3">
-                <div class="info_links">
-                  <h4>
-                    QUICK LINKS
-                  </h4>
-                  <div class="info_links_menu">
-                    <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    <a class="" href="about.html"> About </a>
-
-                    <a class="" href="service.html">Services</a>
-                    <a class="" href="products.html">Products</a>
-                    <!-- <a class="" href="testimonial.html">Testimonial</a>  -->
-                    <a class="" href="contact.html">Contact </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 ml-auto" style="margin-right: 60px;">
-                <div class="social_box">
-                  <a href="https://www.facebook.com/facebook" target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                  </a>
-                  <a href="https://twitter.com/Twitter" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
-                  </a>
-
-                  <a href="https://www.linkedin.com/company/linkedin" target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
-                  <a href="https://www.instagram.com/instagram" target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
-                </div>
-
-              </div>
-              <style>
-                .social_box {
-                  display: flex;
-                  gap: 10px;
-                  justify-content: center;
-                  align-items: center;
-                }
-
-                .social_box a {
-                  width: 40px;
-                  height: 40px;
-                  background-color: #f0f0f0;
-
-                  border-radius: 8px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  text-decoration: none;
-                  transition: all 0.3s ease;
-                }
-
-                .social_box a i {
-                  color: #d92827;
-                  font-size: 20px;
-                }
-
-                .social_box a:hover {
-                  background-color: #d92827;
-                }
-
-                .social_box a:hover i {
-                  color: black;
-                  transform: scale(1.1);
-                }
-              </style>
-
-
             </div>
           </div>
-          <div class="contact_nav">
-            <a href="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call : +966 3 8320222
-              </span>
-            </a>
-            <a href="" >
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
-                Email :
-                mukhtar@powerlink.sa.com<br>
-                info@powerlink.sa.com
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                Address: Kingdom of Saudi Arabia<br> P.O BOX 15099<br> DAMMAM
-                31444
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="info_links">
+              <h4>
+                QUICK LINKS
+              </h4>
+              <div class="info_links_menu">
+                <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="" href="about.html"> About </a>
 
-              </span>
-            </a>
+                <a class="" href="service.html">Services</a>
+                <a class="" href="products.html">Products</a>
+                <!-- <a class="" href="testimonial.html">Testimonial</a>  -->
+                <a class="" href="contact.html">Contact </a>
+              </div>
+            </div>
           </div>
+          <div class="col-md-3 ml-auto" style="margin-right: 60px;">
+            <div class="social_box">
+              <a href="https://www.facebook.com/facebook" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://twitter.com/Twitter" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+              </a>
 
+              <a href="https://www.linkedin.com/company/linkedin" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.instagram.com/instagram" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+
+          </div>
+          <style>
+            .social_box {
+              display: flex;
+              gap: 10px;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .social_box a {
+              width: 40px;
+              height: 40px;
+              background-color: #f0f0f0;
+
+              border-radius: 8px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-decoration: none;
+              transition: all 0.3s ease;
+            }
+
+            .social_box a i {
+              color: #d92827;
+              font-size: 20px;
+            }
+
+            .social_box a:hover {
+              background-color: #d92827;
+            }
+
+            .social_box a:hover i {
+              color: black;
+              transform: scale(1.1);
+            }
+          </style>
 
 
         </div>
-      </section>
-      <!-- end info_section -->
+      </div>
+      <div class="contact_nav">
+        <a href="">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <span>
+            Call : +966 3 8320222
+          </span>
+        </a>
+        <a href="">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <span>
+            Email :
+            mukhtar@powerlink.sa.com<br>
+            info@powerlink.sa.com
+          </span>
+        </a>
+        <a href="">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <span>
+            Address: Kingdom of Saudi Arabia<br> P.O BOX 15099<br> DAMMAM
+            31444
 
-      <!-- footer section -->
-      <footer class="footer_section" style="margin-left: 0px; padding: 0px;">
-        <div class="container" style="margin: 0px; padding: 0px;">
-          <p>
-            &copy; All Rights Reserved By
-            <a href="https://ex-ion.com/"> Ex-ion 2025</a>
-          </p>
-        </div>
-      </footer>
-      <!-- footer section -->
+          </span>
+        </a>
+      </div>
 
-      <!-- jQery -->
-      <script src="js/jquery-3.4.1.min.js"></script>
-      <!-- popper js -->
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-      <!-- bootstrap js -->
-      <script src="js/bootstrap.js"></script>
-      <!-- owl slider -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-      </script>
-      <!--  OwlCarousel 2 - Filter -->
-      <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
-      <!-- custom js -->
-      <script src="js/custom.js"></script>
-      <!-- Google Map -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-      </script>
-      <!-- End Google Map -->
 
-  </body>
+
+    </div>
+  </section>
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <footer class="footer_section" style="margin-left: 0px; padding: 0px;">
+    <div class="container" style="margin: 0px; padding: 0px;">
+      <p>
+        &copy; All Rights Reserved By
+        <a href="https://ex-ion.com/"> Ex-ion 2025</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!--  OwlCarousel 2 - Filter -->
+  <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
 
 </html>

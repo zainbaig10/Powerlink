@@ -257,6 +257,7 @@ a:focus {
   border-radius: 5px;
   -webkit-transition: all .3s;
   transition: all .3s;
+  
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
@@ -1086,6 +1087,7 @@ a:focus {
 
 .contact_section .form_container input.message-box {
   height: 120px;
+  
 }
 
 .contact_section .form_container button {
