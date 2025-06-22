@@ -159,9 +159,108 @@
                 <li class="nav-item">
                   <a class="nav-link" href="service.html">Services</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="products.html">Products</a>
-                </li>
+               <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Products
+  </a>
+  <div class="dropdown-menu" aria-labelledby="productsDropdown">
+    <a class="dropdown-item" href="products.html">All Products</a>
+    <a class="dropdown-item" href="mechanical.html">Mechanical</a>
+    <a class="dropdown-item" href="electrical.html">Electrical</a>
+        <a class="dropdown-item" href="safety.html">Safety</a>
+<a class="dropdown-item" href="products.html#industrial">Labels</a>
+
+
+    <!-- <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="featured-products.html">Featured Products</a>
+  </div> -->
+</li>
+<style>
+.nav-item.dropdown {
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* Style the dropdown toggle link */
+.nav-link.dropdown-toggle {
+  color: #333;
+  padding: 10px 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-link.dropdown-toggle:hover {
+  color: black;
+  background-color: #f8f9fa;
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0;
+  margin-top: 5px;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Style dropdown items */
+.dropdown-item {
+  padding: 8px 15px;
+  color: #333;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Style the divider */
+.dropdown-divider {
+  margin: 5px 0;
+  border-top: 1px solid #eee;
+}
+
+/* Add animation to dropdown */
+.dropdown-menu.show {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add a small arrow indicator */
+.nav-link.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.nav-link.dropdown-toggle.show::after {
+  transform: rotate(180deg);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+</style>
+
+
 
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact </a>
@@ -191,8 +290,9 @@
               <div class="row">
                 <div class="col-md-10 mx-auto">
                   <div class="detail-box">
-                    <h1>
-                      Powerlink Trading Est </h1>
+                   <h1 style="font-size: 3vw; min-font-size: 2.2rem; max-font-size: 4rem;">
+    Powerlink Trading Est
+</h1>
                     <h4 style="color: white; margin-top: 5px;"> Reliable Partner in Industrial Supply & Contracting
                     </h4>
                     <div class="btn-box">
@@ -836,45 +936,84 @@
   <section class="contact_section layout_padding-bottom">
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-lg-5 col-md-6 col-12 mb-4 px-4">
-          <div class="heading_container">
-            <h2 style="color: #2c3e50; position: relative; display: inline-block; text-transform: capitalize;">
-              Contact Us
-              <span style="
-                position: absolute;
-                left: 0;
-                bottom: -5px;
-                width: 150px;
-                height: 3px;
-                background-color: #d92827;
-              "></span>
-            </h2>
-            <p style="margin-top: 5px;">Have a project in mind? Let’s talk.</p>
-          </div>
+       <div class="col-lg-5 col-md-6 col-12 mb-4 px-4">
+  <div class="heading_container">
+    <h2 style="color: #2c3e50; position: relative; display: inline-block; text-transform: capitalize;">
+      Contact Us
+      <span style="
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 150px;
+        height: 3px;
+        background-color: #d92827;
+      "></span>
+    </h2>
+    <p style="margin-top: 5px;">Have a project in mind? Let’s talk.</p>
+  </div>
 
-          <div class="form_container mt-4">
-            <form action="">
-              <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Your Name" />
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Phone Number" />
-              </div>
-              <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Email" />
-              </div>
-              <div class="mb-3" style=" -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);">
-                <textarea class="form-control" rows="4" placeholder="Message"></textarea>
-              </div>
-              <div class="btn_box">
-                <button type="submit" class="btn btn-danger">
-                  Send a Message
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
+  <div class="form_container mt-4">
+    <form id="contactForm">
+      <div class="mb-3">
+        <input type="text" id="name" class="form-control" placeholder="Your Name" required />
+      </div>
+      <div class="mb-3">
+        <input type="text" id="phone" class="form-control" placeholder="Phone Number" required />
+      </div>
+      <div class="mb-3">
+        <input type="email" id="email" class="form-control" placeholder="Email" required />
+      </div>
+      <div class="mb-3" style="-webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15); box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);">
+        <textarea id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+      </div>
+      <div class="btn_box">
+        <button type="submit" class="btn btn-danger">
+          Send a Message
+        </button>
+      </div>
+    </form>
+    <p id="responseMsg" style="margin-top: 10px;"></p>
+  </div>
+</div>
+
+<!-- JS to integrate with API -->
+<script>
+  document.getElementById("contactForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const responseMsg = document.getElementById("responseMsg");
+
+    try {
+      const response = await fetch("https://powerlink-mailsender.onrender.com/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ name, phone, email, message })
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        responseMsg.textContent = "✅ Message sent successfully!";
+        responseMsg.style.color = "green";
+        document.getElementById("contactForm").reset();
+      } else {
+        responseMsg.textContent = "❌ Failed: " + (result?.message || "Unexpected error");
+        responseMsg.style.color = "red";
+      }
+    } catch (error) {
+      responseMsg.textContent = "❌ Error: " + error.message;
+      responseMsg.style.color = "red";
+    }
+  });
+</script>
+
 
         <div class="col-lg-6 col-md-10 col-12 px-4 " style="margin-top: 50px;">
           <div class="map_container">

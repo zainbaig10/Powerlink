@@ -161,9 +161,106 @@
                   <a class="nav-link" href="service.html">Services</a>
                 </li>
               
-                <li class="nav-item">
-                  <a class="nav-link" href="products.html">Products</a>
-                </li>
+                <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Products
+  </a>
+  <div class="dropdown-menu" aria-labelledby="productsDropdown">
+    <a class="dropdown-item" href="products.html">All Products</a>
+    <a class="dropdown-item" href="mechanical.html">Mechanical</a>
+    <a class="dropdown-item" href="electrical.html">Electrical</a>
+        <a class="dropdown-item" href="safety.html">Safety</a>
+<a class="dropdown-item" href="products.html#industrial">Labels</a>
+
+
+    <!-- <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="featured-products.html">Featured Products</a>
+  </div> -->
+</li>
+<style>
+.nav-item.dropdown {
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* Style the dropdown toggle link */
+.nav-link.dropdown-toggle {
+  color: #333;
+  padding: 10px 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-link.dropdown-toggle:hover {
+  color: black;
+  background-color: #f8f9fa;
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0;
+  margin-top: 5px;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Style dropdown items */
+.dropdown-item {
+  padding: 8px 15px;
+  color: #333;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Style the divider */
+.dropdown-divider {
+  margin: 5px 0;
+  border-top: 1px solid #eee;
+}
+
+/* Add animation to dropdown */
+.dropdown-menu.show {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add a small arrow indicator */
+.nav-link.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.nav-link.dropdown-toggle.show::after {
+  transform: rotate(180deg);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+</style>
 
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact </a>
@@ -1046,7 +1143,7 @@ asset management needs.
             <i class="fas fa-balance-scale"></i>
           </div>
           <h3 class="value-title" style="color: #555;">Integrity</h3>
-          <p class="value-description" style="color: #555; font-size: 17px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo in voluptatum odio!</p>
+          <p class="value-description" style="color: #555; font-size: 17px;">We uphold honesty, ethics, and transparency in everything we do, building trust through accountability.</p>
         </div>
 
         <div class="value-card">
@@ -1054,7 +1151,7 @@ asset management needs.
             <i class="fas fa-id-badge"></i>
           </div>
           <h3 class="value-title" style="color: #555;">Professionalism</h3>
-          <p class="value-description" style="color: #555; font-size: 17px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, corrupti.</p>
+          <p class="value-description" style="color: #555; font-size: 17px;">We maintain high standards of behavior, reliability, and expertise to deliver quality service with consistency.</p>
         </div>
 
         <div class="value-card">
@@ -1062,7 +1159,7 @@ asset management needs.
             <i class="fas fa-lightbulb"></i>
           </div>
           <h3 class="value-title" style="color: #555;">Innovation</h3>
-          <p class="value-description" style="color: #555; font-size: 17px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et v explicabo.</p>
+          <p class="value-description" style="color: #555; font-size: 17px;">We embrace creativity and technology to develop forward-thinking solutions that drive progress and efficiency.</p>
         </div>
 
         <div class="value-card">
@@ -1070,7 +1167,7 @@ asset management needs.
             <i class="fas fa-smile"></i>
           </div>
           <h3 class="value-title" style="color: #555;">Customer Satisfaction</h3>
-          <p class="value-description" style="color: #555; font-size: 17px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, dolore.</p>
+          <p class="value-description" style="color: #555; font-size: 17px;">We prioritize our clients’ needs by delivering value, responsiveness, and excellent service that exceeds expectations.</p>
         </div>
 
         <div class="value-card">
@@ -1078,7 +1175,7 @@ asset management needs.
             <i class="fas fa-shield-alt"></i>
           </div>
           <h3 class="value-title" style="color: #555;">Safety First</h3>
-          <p class="value-description" style="color: #555; font-size: 17px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, dolore.</p>
+          <p class="value-description" style="color: #555; font-size: 17px;">We are committed to ensuring a safe and secure environment for our employees, partners, and customers at every step.</p>
         </div>
       </div>
     </div>
