@@ -711,7 +711,7 @@
     </div>
   </section>
   <section>
-    <div class="section-header" id="industrial">
+    <div class="section-header">
       <h2 class="section-title " style=" font-size: 38px;
     font-weight: 700;
     color: #2c3e50;">Industrial Labeling Solutions</h2>
@@ -721,34 +721,41 @@
     </div>
 
     <div class="intro-paragraph">
-      <p style="color:#555; font-size: 17px;">We offer high-quality labeling solutions from Zebra and Brady, including
-        tapes,
-        printers, and customizable labels designed for industrial safety, asset
-        management, and regulatory compliance. Built for durability and performance.</p>
+      <p style="color:#555; font-size: 17px;">We offer high-quality labeling solutions from Zebra and Brady, including tapes, printers, and customizable labels designed for industrial safety, asset management, and regulatory compliance. Built for durability and performance.</p>
     </div>
 
+    <!-- Brady Label Printers Section -->
+    <section class="product-category-section">
+      <h2 class="category-title">Brady  Printers</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/printer3.jpg" alt="Brady Printer Model A">
+          <!-- <p class="product-name">Brady Printer </p> -->
+        </div>
+        <div class="product-card">
+          <img src="images/printer-2.jpg" alt="Brady Printer Model B">
+          <!-- <p class="product-name">Brady Printer </p> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Durable Tapes & Labels Section -->
+    <section class="product-category-section">
+      <h2 class="category-title">Brady Labels</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/Tape_Rolls.JPG" alt="Industrial Tapes">
+          <!-- <p class="product-name">Industrial Tapes</p> -->
+        </div>
+        <div class="product-card">
+          <img src="images/label-2.jpg" alt="Durable Labels">
+          <!-- <p class="product-name">Durable Labels</p> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Original Grid Items (unchanged) -->
     <div class="image-grid">
-      <div class="grid-item">
-        <div class="image-container">
-          <img src="images/printer3.jpg" alt="Brady Label Printers">
-        </div>
-        <div class="item-content">
-          <h3 class="item-title">Brady Label Printers</h3>
-          <p class="item-description" style="color:#555">Reliable, high-speed printing for industrial environments</p>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <div class="image-container">
-          <img src="images/Tape_Rolls.JPG" alt="Durable Tapes & Labels">
-        </div>
-        <div class="item-content">
-          <h3 class="item-title">Durable Tapes & Labels</h3>
-          <p class="item-description" style="color:#555">Built for harsh conditions, chemical resistance, and long
-            life</p>
-        </div>
-      </div>
-
       <div class="grid-item">
         <div class="image-container">
           <img src="images/Size_customization.JPG" alt="Custom Sizes">
@@ -758,39 +765,30 @@
           <p class="item-description" style="color:#555">Tailored to fit your equipment and compliance standards</p>
         </div>
       </div>
-    </div>
 
-
-
-
-
-
-
-
-    <div class="image-grid">
       <div class="grid-item">
         <div class="image-container">
-          <img src="images/label- image1.jpg" alt="Brady Label Printers">
+          <img src="images/label- image1.jpg" alt="Specialty Paper Labels">
         </div>
         <div class="item-content">
-          <h3 class="item-title"> Specialty Paper Labels with Unique Adhesives</h3>
-          <p class="item-description" style="color:#555">Ideal for curved, rough, or removable label applications.
-          </p>
+          <h3 class="item-title">Specialty Paper Labels with Unique Adhesives</h3>
+          <p class="item-description" style="color:#555">Ideal for curved, rough, or removable label applications.</p>
         </div>
       </div>
 
       <div class="grid-item">
         <div class="image-container">
-          <img src="images/label-iamge2.jpg" alt="Durable Tapes & Labels">
+          <img src="images/label-iamge2.jpg" alt="Zebra Industrial Printers">
         </div>
         <div class="item-content">
           <h3 class="item-title">Zebra Industrial Printers</h3>
-          <p class="item-description" style="color:#555">Durable, high-performance printers for on-demand barcode
-            labeling.</p>
+          <p class="item-description" style="color:#555">Durable, high-performance printers for on-demand barcode labeling.</p>
         </div>
       </div>
+    </div>
+        <div class="image-grid">
 
-      <div class="grid-item">
+ <div class="grid-item">
         <div class="image-container">
           <img src="images/label-iamge3.jpg" alt="Custom Sizes">
         </div>
@@ -800,24 +798,14 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="grid-item">
-      <div class="image-container">
-        <img src="images/per.jpg" alt="Precision Finishes">
-        <div class="image-overlay">View Details</div>
-      </div>
-      <div class="item-content">
-        <h3 class="item-title">Precision Finishes</h3>
-        <p class="item-description">Choose from perforations, slits, holes, and unique shapes</p>
-      </div>
-    </div> -->
+        </div>
 
     <div class="cta-section">
       <a href="contact.html" class="cta-button">Request a Quote</a>
     </div>
+</section>
 
-  </section>
-  <style>
+<style>
     /* Base styles */
     * {
       margin: 0;
@@ -829,61 +817,45 @@
       background-color: #f8f9fa;
       color: #333;
       line-height: 1.6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    /* Fix the layout container */
     .labeling-section {
-      max-width: 900px;
-      /* Further reduced for better card sizing */
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 40px 20px;
-      box-sizing: border-box;
-      /* Ensure padding doesn't add to width */
+      padding: 50px 20px;
     }
 
     .section-header {
       text-align: center;
-      margin-bottom: 30px;
-      /* Reduced from 40px */
+      margin-bottom: 40px;
     }
 
     .section-title {
-      font-size: 32px;
-      /* Reduced from 36px */
-      color: #2c3e50;
-      margin-bottom: 8px;
-      /* Reduced from 10px */
+      font-size: 38px;
       font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 15px;
     }
 
-    .section-subtitle {
-      font-size: 16px;
-      /* Reduced from 18px */
-      color: #666;
+    .section-subtitle, .intro-paragraph p {
+      font-size: 17px;
+      color: #555;
       max-width: 800px;
       margin: 0 auto;
     }
 
     .intro-paragraph {
       text-align: center;
-      margin-bottom: 30px;
-      /* Reduced from 50px */
-      font-size: 15px;
-      /* Reduced from 16px */
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.7;
-      color: #444;
+      margin-bottom: 50px;
     }
 
-    /* Image Grid - properly constrained width */
+    /* Original Image Grid Styles (unchanged) */
     .image-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      /* Fixed 3 columns with equal width */
-      gap: 25px;
-      margin-bottom: 40px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-bottom: 50px;
       width: 100%;
       max-width: 1150px;
       margin-left: auto;
@@ -900,21 +872,16 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-      max-width: 100%;
-      /* Ensure it doesn't exceed its container */
     }
 
     .grid-item:hover {
       transform: translateY(-6px);
-      /* Reduced from -10px */
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     }
 
-    /* Reduced height image container */
     .image-container {
       width: 100%;
       height: 330px;
-      /* Reduced from 300px */
       position: relative;
       overflow: hidden;
     }
@@ -930,31 +897,8 @@
       transform: scale(1.05);
     }
 
-    .image-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(13, 76, 128, 0.1);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      font-size: 16px;
-      /* Reduced from 18px */
-      font-weight: 600;
-    }
-
-    .grid-item:hover .image-overlay {
-      opacity: 1;
-    }
-
     .item-content {
       padding: 16px;
-      /* Reduced from 20px */
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -962,186 +906,167 @@
 
     .item-title {
       font-size: 16px;
-      /* Reduced from 18px */
       font-weight: 700;
       margin-bottom: 4px;
-      /* Reduced from 5px */
       color: #d92827;
     }
 
     .item-description {
       font-size: 14px;
-      /* Reduced from 15px */
       color: #666;
       flex: 1;
     }
 
+    /* New Product Category Sections */
+    .product-category-section {
+      margin-bottom: 50px;
+      max-width: 1150px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .category-title {
+      font-size: 1.6rem;
+      color: #2c3e50;
+      font-weight: 600;
+      margin: 40px 0 20px;
+      padding: 12px 20px;
+      background-color: #f1f5f9;
+      border-radius: 8px;
+      border-left: 3px solid #d92827;
+      box-shadow: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .category-title:hover {
+      background-color: #e2e8f0;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: flex-start;
+    }
+
+    .product-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      flex: 1 1 calc(50% - 25px);
+      max-width: calc(50% - 25px);
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .product-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1f2937;
+    }
+
+    /* CTA Section */
     .cta-section {
       text-align: center;
-      margin-top: 25px;
-      /* Reduced from 30px */
+      margin-top: 40px;
     }
 
     .cta-button {
       display: inline-block;
       background-color: #d92827;
-      color: #fff;
-      padding: 8px 18px;
-      /* Reduced from 10px 20px */
-      font-size: 16px;
-      /* Reduced from 18px */
+      color: white;
+      padding: 12px 30px;
+      font-size: 18px;
       font-weight: 600;
       text-decoration: none;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-      border: none;
-      margin-bottom: 30px;
-      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease;
     }
 
     .cta-button:hover {
-      background-color: black;
-      color: white;
+      background-color: #b51e1e;
     }
 
-    /* Enhanced Responsive Design */
-    /* Large screens (default above) */
-
-    /* Medium screens */
+    /* Responsive Design */
     @media (max-width: 1100px) {
       .image-grid {
         grid-template-columns: repeat(3, 1fr);
-        /* Force 3 columns */
-        gap: 20px;
       }
-
+      
       .image-container {
         height: 260px;
       }
+    }
 
-      .labeling-section {
-        padding: 35px 15px;
-        max-width: 900px;
+    @media (max-width: 900px) {
+      .product-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+      
+      .product-card img {
+        height: 240px;
       }
     }
 
-    /* Small tablets */
     @media (max-width: 800px) {
-      .section-title {
-        font-size: 28px;
-      }
-
-      .section-subtitle {
-        font-size: 15px;
-      }
-
       .image-grid {
         grid-template-columns: repeat(2, 1fr);
-        /* 2 columns */
-        max-width: 600px;
       }
+      
+      .section-title {
+        font-size: 32px;
+      }
+    }
 
+    @media (max-width: 600px) {
+      .product-card img {
+        height: 200px;
+      }
+      
       .image-container {
         height: 250px;
       }
-
-      .intro-paragraph {
-        font-size: 14px;
-      }
-
-      .labeling-section {
-        max-width: 650px;
-      }
     }
 
-    /* Mobile landscape */
-    @media (max-width: 700px) {
+    @media (max-width: 480px) {
       .image-grid {
         grid-template-columns: 1fr;
-        /* Single column for mobile */
-        gap: 18px;
-        max-width: 320px;
-        /* Narrower width for single column */
       }
-
-      .image-container {
-        height: 220px;
-      }
-
+      
       .labeling-section {
-        padding: 30px 12px;
-        max-width: 350px;
+        padding: 30px 15px;
       }
-
-      .grid-item {
-        max-width: 320px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-      }
-    }
-
-    /* Mobile portrait */
-    @media (max-width: 480px) {
+      
       .section-title {
-        font-size: 24px;
+        font-size: 28px;
       }
-
-      .section-subtitle {
-        font-size: 14px;
+      
+      .category-title {
+        font-size: 1.4rem;
+        padding: 10px 15px;
       }
-
-      .image-container {
-        height: 300px;
-        /* Further reduced height */
-      }
-
-      .item-title {
-        font-size: 15px;
-      }
-
-      .item-description {
-        font-size: 13px;
-      }
-
-      .cta-button {
-        font-size: 15px;
-        padding: 7px 15px;
-      }
-
-      .labeling-section {
-        padding: 25px 10px;
+      
+      .product-name {
+        font-size: 1rem;
       }
     }
-
-    /* Very small devices */
-    @media (max-width: 320px) {
-      .image-grid {
-        max-width: 260px;
-      }
-
-      .grid-item {
-        max-width: 260px;
-      }
-
-      .image-container {
-        height: 240px;
-        /* Smallest height */
-      }
-
-      .section-title {
-        font-size: 22px;
-      }
-
-      .item-content {
-        padding: 12px;
-      }
-
-      .labeling-section {
-        max-width: 280px;
-      }
-    }
-  </style>
+</style>
 
   <script>
     // Tab switching functionality
