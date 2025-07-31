@@ -49,37 +49,20 @@
     <header class="header_section">
       <div class="header_top">
         <div class="container-fluid header_top_container">
-          <!-- <div class="lang_box dropdown">
-            <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true">
-              <img src="images/flag-uk.png" alt="flag" class=" " title="United Kingdom"> <i class="fa fa-angle-down "
-                aria-hidden="true"></i>
-            </a>
-            <div class="dropdown-menu ">
-              <a href="#" class="dropdown-item">
-                <img src="images/flag-france.png" class="" alt="flag">
-              </a>
-            </div>
-            <span>
-              English
-            </span>
-          </div> -->
+
           <div class="contact_nav">
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                +966 3 8320222
-              </span>
+              <span dir="ltr">+96638320222</span>
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
                 mukhtar@powerlink.sa.com </span>
             </a>
-            <a href="">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                KSA, P.O BOX 15099 DAMMAM
-                31444 </span>
+            <a href="" class="address-link">
+              <i class="fa fa-map-marker"></i>
+              <span class="address-text">KSA, P.O BOX...</span>
             </a>
           </div>
           <div class="social_box1">
@@ -132,8 +115,10 @@
               transform: scale(1.1);
             }
           </style>
+
         </div>
       </div>
+
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -148,6 +133,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
               <ul class="navbar-nav  " style="gap: 10px;">
                 <li class="nav-item active">
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -159,20 +145,247 @@
                 <li class="nav-item">
                   <a class="nav-link" href="service.html">Services</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="products.html">Products</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Products
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                    <a class="dropdown-item" href="products.html">All Products</a>
+                    <a class="dropdown-item" href="mechanical.html">Mechanical</a>
+                    <a class="dropdown-item" href="electrical.html">Electrical</a>
+                    <a class="dropdown-item" href="safety.html">Safety</a>
+                    <a class="dropdown-item" href="products.html#industrial">Labels</a>
+
+
+
                 </li>
+                <style>
+                  .nav-item.dropdown {
+                    position: relative;
+                    text-transform: uppercase;
+                  }
+
+                  /* Style the dropdown toggle link */
+                  .nav-link.dropdown-toggle {
+                    color: #333;
+                    padding: 10px 15px;
+                    font-weight: 500;
+                    transition: all 0.3s ease;
+                    border-radius: 4px;
+                  }
+
+                  .nav-link.dropdown-toggle:hover {
+                    color: black;
+                    background-color: #f8f9fa;
+                  }
+
+                  /* Style the dropdown menu */
+                  .dropdown-menu {
+                    border: none;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                    border-radius: 4px;
+                    padding: 0;
+                    margin-top: 5px;
+                    min-width: 200px;
+                    transition: all 0.3s ease;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                  }
+
+                  /* Style dropdown items */
+                  .dropdown-item {
+                    padding: 8px 15px;
+                    color: #333;
+                    transition: all 0.2s ease;
+                    font-size: 14px;
+                  }
+
+                  .dropdown-item:hover {
+                    background-color: black;
+                    color: white;
+                  }
+
+                  /* Style the divider */
+                  .dropdown-divider {
+                    margin: 5px 0;
+                    border-top: 1px solid #eee;
+                  }
+
+                  /* Add animation to dropdown */
+                  .dropdown-menu.show {
+                    animation: fadeIn 0.3s ease;
+                  }
+
+                  @keyframes fadeIn {
+                    from {
+                      opacity: 0;
+                      transform: translateY(10px);
+                    }
+
+                    to {
+                      opacity: 1;
+                      transform: translateY(0);
+                    }
+                  }
+
+                  /* Add a small arrow indicator */
+                  .nav-link.dropdown-toggle::after {
+                    display: inline-block;
+                    margin-left: 5px;
+                    vertical-align: middle;
+                    transition: transform 0.3s ease;
+                  }
+
+                  .nav-link.dropdown-toggle.show::after {
+                    transform: rotate(180deg);
+                  }
+
+                  .nav-item.dropdown:hover .dropdown-menu {
+                    display: block;
+                    animation: fadeIn 0.3s ease;
+                  }
+                </style>
+
+
 
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact </a>
                 </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="#"> Login</a>
-                </li> -->
+                <!-- Language Toggle Button -->
+                <li class="nav-item dropdown language-switcher">
+                  <a class="nav-link dropdown-toggle btn-lang" href="#" id="languageDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="currentLanguageText">English</span>
+                  </a>
+                  <div class="dropdown-menu language-dropdown" aria-labelledby="languageDropdown">
+                    <a class="dropdown-item language-option" href="#" data-lang="en">
+                      <i class="fa fa-globe" aria-hidden="true"></i> English
+                    </a>
+                    <a class="dropdown-item language-option" href="#" data-lang="ar">
+                      <i class="fa fa-globe" aria-hidden="true"></i> العربية
+                    </a>
+                  </div>
+                </li>
+
+                <style>
+                  .btn-lang {
+                    background: transparent;
+                    border: 1px solid #d92827;
+                    color: #d92827 !important;
+                    border-radius: 4px;
+                    padding: 5px 15px !important;
+                    margin-left: 10px;
+                    transition: all 0.3s ease;
+                    text-decoration: none !important;
+                  }
+
+                  .btn-lang:hover {
+                    background-color: #d92827;
+                    color: white !important;
+                    text-decoration: none !important;
+                  }
+
+                  /* Language dropdown specific styles */
+                  .language-dropdown {
+                    min-width: 120px;
+                    border: 1px solid #d92827;
+                    border-radius: 4px;
+                    padding: 5px 0;
+                    margin-top: 2px;
+                  }
+
+                  .language-dropdown .dropdown-item {
+                    padding: 8px 15px;
+                    color: #333;
+                    transition: all 0.2s ease;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                  }
+
+                  .language-dropdown .dropdown-item:hover {
+                    background-color: #d92827;
+                    color: white;
+                  }
+
+                  .language-dropdown .dropdown-item.active {
+                    background-color: #d92827;
+                    color: white;
+                  }
+
+                  .language-dropdown .dropdown-item i {
+                    font-size: 12px;
+                    width: 15px;
+                  }
+
+                  /* RTL adjustments for language dropdown */
+                  body[dir="rtl"] .language-switcher {
+                    margin-left: 0 !important;
+                    margin-right: 10px;
+                  }
+
+                  body[dir="rtl"] .btn-lang {
+                    margin-left: 0;
+                    margin-right: 10px;
+                  }
+
+                  /* RTL styles */
+                  body[dir="rtl"] {
+                    text-align: right;
+                    direction: rtl;
+                  }
+
+                  body[dir="rtl"] .navbar-nav {
+                    padding-right: 0;
+                  }
+
+                  body[dir="rtl"] .info_top .row {
+                    flex-direction: row-reverse;
+                  }
+
+                  body[dir="rtl"] .about_section .row {
+                    flex-direction: row-reverse;
+                  }
+
+                  body[dir="rtl"] .heading_container h2 span {
+                    left: auto;
+                    right: 0;
+                  }
+
+                  /* Why Choose Us Section RTL Fixes */
+                  body[dir="rtl"] .why_us_section .box {
+                    text-align: right;
+                    padding: 15px;
+                  }
+
+                  body[dir="rtl"] .why_us_section .img-box {
+                    float: right;
+                    margin-left: 15px;
+                    margin-right: 0;
+                  }
+
+                  body[dir="rtl"] .why_us_section .detail-box {
+                    padding-right: 0;
+                    padding-left: 15px;
+                    overflow: hidden;
+                  }
+
+                  body[dir="rtl"] .why_us_section h5 {
+                    clear: both;
+                    margin-top: 10px;
+                  }
+
+                  body[dir="rtl"] .why_us_section p {
+                    margin-right: 0;
+                    margin-left: auto;
+                    padding-right: 5px;
+                  }
+                </style>
+
+
                 <form class="form-inline">
-                  <!-- <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button> -->
+
                 </form>
               </ul>
 
@@ -191,8 +404,9 @@
               <div class="row">
                 <div class="col-md-10 mx-auto">
                   <div class="detail-box">
-                    <h1>
-                      Powerlink Trading Est </h1>
+                    <h1 style="font-size: 3vw; min-font-size: 2.2rem; max-font-size: 4rem;">
+                      Powerlink Trading Est
+                    </h1>
                     <h4 style="color: white; margin-top: 5px;"> Reliable Partner in Industrial Supply & Contracting
                     </h4>
                     <div class="btn-box">
@@ -208,98 +422,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-10 mx-auto">
-                  <div class="detail-box">
-                    <h1>
-                      ARCHITECT <br>
-                      BUILDER CONSTRUCTION <br>
-                      SERVICES
-                    </h1>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Contact Us
-                      </a>
-                      <a href="" class="btn2">
-                        About Us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-10 mx-auto">
-                  <div class="detail-box">
-                    <h1>
-                      ARCHITECT <br>
-                      BUILDER CONSTRUCTION <br>
-                      SERVICES
-                    </h1>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Contact Us
-                      </a>
-                      <a href="" class="btn2">
-                        About Us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-10 mx-auto">
-                  <div class="detail-box">
-                    <h1>
-                      ARCHITECT <br>
-                      BUILDER CONSTRUCTION <br>
-                      SERVICES
-                    </h1>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Contact Us
-                      </a>
-                      <a href="" class="btn2">
-                        About Us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-10 mx-auto">
-                  <div class="detail-box">
-                    <h1>
-                      ARCHITECT <br>
-                      BUILDER CONSTRUCTION <br>
-                      SERVICES
-                    </h1>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Contact Us
-                      </a>
-                      <a href="" class="btn2">
-                        About Us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
+
         </div>
 
       </div>
@@ -354,7 +477,7 @@
             <img src="images/HomePage_Aboutus.jpg" alt="">
           </div>
         </div>
- 
+
 
       </div>
     </div>
@@ -464,27 +587,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col-md-6 col-lg-3">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/camping.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Tent Installations
 
-                </h5>
-                <p style="color: #555;">
-                  Durable tent installations for industrial, commercial, and event needs. Safe,
-                  custom setups with timely execution.
-
-                </p>
-                <a href="service.html" style="color: #2c3e50;">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
@@ -498,258 +601,7 @@
 
   <!-- project section -->
 
-  <!-- <section class="project_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Projects
-        </h2>
-      </div>
-      <div class="carousel-wrap ">
-        <div class="filter_box">
-          <h6>
-            Category filter
-          </h6>
-          <nav class="owl-filter-bar">
-            <a href="#" class="item active" data-owl-filter="*">All</a>
-            <a href="#" class="item" data-owl-filter=".painting">Painting</a>
-            <a href="#" class="item" data-owl-filter=".reconstruction">Reconstruction </a>
-            <a href="#" class="item" data-owl-filter=".repair">Repairs </a>
-            <a href="#" class="item" data-owl-filter=".residential">Residential </a>
-            <a href="#" class="item" data-owl-filter=".styling">Styling </a>
-          </nav>
-        </div>
 
-        <div class="owl-carousel project_carousel">
-          <div class="item painting">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/project1.jpg" alt="" />
-                <a href="" class="pin_link">
-                  <i class="fa fa-link" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Interior work
-                </h5>
-                <p>
-                  alteration in some form, by injected humour, or randomised words which don't look even slightly
-                  believable. If you are going to use
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item reconstruction">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/project2.jpg" alt="" />
-                <a href="" class="pin_link">
-                  <i class="fa fa-link" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Interior work
-                </h5>
-                <p>
-                  alteration in some form, by injected humour, or randomised words which don't look even slightly
-                  believable. If you are going to use
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item repair">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/project1.jpg" alt="" />
-                <a href="" class="pin_link">
-                  <i class="fa fa-link" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Interior work
-                </h5>
-                <p>
-                  alteration in some form, by injected humour, or randomised words which don't look even slightly
-                  believable. If you are going to use
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item residential">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/project1.jpg" alt="" />
-                <a href="" class="pin_link">
-                  <i class="fa fa-link" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Interior work
-                </h5>
-                <p>
-                  alteration in some form, by injected humour, or randomised words which don't look even slightly
-                  believable. If you are going to use
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item styling">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/project1.jpg" alt="" />
-                <a href="" class="pin_link">
-                  <i class="fa fa-link" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Interior work
-                </h5>
-                <p>
-                  alteration in some form, by injected humour, or randomised words which don't look even slightly
-                  believable. If you are going to use
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- end project section -->
-
-  <!-- client section -->
-  <!-- <section class="client_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Testimonial
-        </h2>
-      </div>
-    </div>
-    <div id="customCarousel2" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <div class="client_info">
-                      <div class="client_name">
-                        <h5>
-                          Morojink
-                        </h5>
-                        <h6>
-                          Customer
-                        </h6>
-                      </div>
-                      <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum
-                      dolore eu fugia
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <div class="client_info">
-                      <div class="client_name">
-                        <h5>
-                          Morojink
-                        </h5>
-                        <h6>
-                          Customer
-                        </h6>
-                      </div>
-                      <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum
-                      dolore eu fugia
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <div class="client_info">
-                      <div class="client_name">
-                        <h5>
-                          Morojink
-                        </h5>
-                        <h6>
-                          Customer
-                        </h6>
-                      </div>
-                      <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum
-                      dolore eu fugia
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <ol class="carousel-indicators">
-        <li data-target="#customCarousel2" data-slide-to="0" class="active"></li>
-        <li data-target="#customCarousel2" data-slide-to="1"></li>
-        <li data-target="#customCarousel2" data-slide-to="2"></li>
-      </ol>
-    </div>
-  </section> -->
-  <!-- end client section -->
-
-  <!-- why us section -->
 
   <section class="why_us_section layout_padding">
     <div class="container">
@@ -841,31 +693,31 @@
             <h2 style="color: #2c3e50; position: relative; display: inline-block; text-transform: capitalize;">
               Contact Us
               <span style="
-                position: absolute;
-                left: 0;
-                bottom: -5px;
-                width: 150px;
-                height: 3px;
-                background-color: #d92827;
-              "></span>
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 150px;
+        height: 3px;
+        background-color: #d92827;
+      "></span>
             </h2>
             <p style="margin-top: 5px;">Have a project in mind? Let’s talk.</p>
           </div>
 
           <div class="form_container mt-4">
-            <form action="">
+            <form id="contactForm">
               <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Your Name" />
+                <input type="text" id="name" class="form-control" placeholder="Your Name" required />
               </div>
               <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Phone Number" />
+                <input type="text" id="phone" class="form-control" placeholder="Phone Number" required />
               </div>
               <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Email" />
+                <input type="email" id="email" class="form-control" placeholder="Email" required />
               </div>
-              <div class="mb-3" style=" -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);">
-                <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+              <div class="mb-3"
+                style="-webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15); box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);">
+                <textarea id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
               </div>
               <div class="btn_box">
                 <button type="submit" class="btn btn-danger">
@@ -873,8 +725,48 @@
                 </button>
               </div>
             </form>
+            <p id="responseMsg" style="margin-top: 10px;"></p>
           </div>
         </div>
+
+        <!-- JS to integrate with API -->
+        <script>
+          document.getElementById("contactForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            const responseMsg = document.getElementById("responseMsg");
+
+            try {
+              const response = await fetch("https://powerlink-mailsender.onrender.com/sendEmail", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ name, phone, email, message })
+              });
+
+              const result = await response.json();
+
+              if (response.ok) {
+                responseMsg.textContent = "✅ Message sent successfully!";
+                responseMsg.style.color = "green";
+                document.getElementById("contactForm").reset();
+              } else {
+                responseMsg.textContent = "❌ Failed: " + (result?.message || "Unexpected error");
+                responseMsg.style.color = "red";
+              }
+            } catch (error) {
+              responseMsg.textContent = "❌ Error: " + error.message;
+              responseMsg.style.color = "red";
+            }
+          });
+        </script>
+
 
         <div class="col-lg-6 col-md-10 col-12 px-4 " style="margin-top: 50px;">
           <div class="map_container">
@@ -985,24 +877,19 @@
       <div class="contact_nav">
         <a href="">
           <i class="fa fa-phone" aria-hidden="true"></i>
-          <span>
-            Call : +966 3 8320222
-          </span>
+          <span dir="ltr">+96638320222</span>
         </a>
         <a href="">
           <i class="fa fa-envelope" aria-hidden="true"></i>
           <span>
-            Email :
-            mukhtar@powerlink.sa.com
+            mukhtar@powerlink.sa.com<br>
             info@powerlink.sa.com
           </span>
         </a>
         <a href="">
           <i class="fa fa-map-marker" aria-hidden="true"></i>
-          <span>
-            Address: Kingdom of Saudi Arabia<br> P.O BOX 15099<br> DAMMAM
-            31444
-
+          <span id="addressText">
+            KSA, P.O BOX 15099 DAMMAM 31444
           </span>
         </a>
       </div>
@@ -1031,6 +918,310 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
+  <script>
+    // Full translation data (same as before)
+    const translations = {
+      "home": {
+        "headings": {
+          "en": ["Powerlink Trading Est", "About Us", "Services", "Why Choose Us", "Contact Us"],
+          "ar": ["مؤسسة باورلينك للتجارة", "من نحن", "الخدمات", "لماذا نحن", "اتصل بنا"]
+        },
+        "subheadings": {
+          "en": [
+            "Reliable Partner in Industrial Supply & Contracting",
+            "Contracting & Construction",
+            "Electrical & Instrumentation",
+            "Fire & Safety Solutions",
+            "Logistics & Rentals",
+            "15+ Years of Industry Experience",
+            "End-to-End Project Solutions",
+            "Committed to Quality & Safety",
+            "Proven Track Record of Reliability"
+          ],
+          "ar": [
+            "شريك موثوق في التوريد الصناعي والمقاولات",
+            "المقاولات والبناء",
+            "الكهرباء والآلات الدقيقة",
+            "حلول السلامة ومكافحة الحرائق",
+            "الخدمات اللوجستية والتأجير",
+            "أكثر من 15 عامًا من الخبرة الصناعية",
+            "حلول شاملة للمشاريع",
+            "الالتزام بالجودة والسلامة",
+            "سجل حافل بالموثوقية"
+          ]
+        },
+        "paragraphs": {
+          "en": [
+            "Established in 2008, Powerlink Trading Est. is a trusted provider of industrial solutions in Saudi Arabia. We specialize in construction, electrical, instrumentation, and logistics services, serving key sectors like oil & gas, infrastructure, and government projects. In addition, we supply high-quality Brady and Zebra labels and printers for industrial safety, compliance, and asset management. With a commitment to quality, innovation, and client satisfaction, Powerlink has earned its reputation as a reliable partner in the Kingdom's industrial growth.",
+            "Comprehensive civil, mechanical, and infrastructure solutions for industrial and commercial projects.",
+            "Expert installation and integration of electrical systems and precision instrumentation.",
+            "Advanced fire protection systems including turnstiles, gates, barriers, and access control.",
+            "Reliable equipment rental and logistics support tailored for industrial operations.",
+            "Established in 2008, trusted by major clients across Saudi Arabia's industrial sector",
+            "From construction and electrical works to safety and logistics – all under one roof.",
+            "We adhere to the highest industry standards, ensuring reliable and secure operations.",
+            "Consistently delivering on time with professional execution and long-term client partnerships.",
+            "Have a project in mind? Let's talk."
+          ],
+          "ar": [
+            "تأسست في عام 2008، مؤسسة باورلينك للتجارة هي مزود موثوق للحلول الصناعية في المملكة العربية السعودية. نحن نتخصص في البناء والكهرباء والآلات الدقيقة والخدمات اللوجستية، ونخدم القطاعات الرئيسية مثل النفط والغاز والبنية التحتية والمشاريع الحكومية. بالإضافة إلى ذلك، نوفر ملصقات وطابعات Brady و Zebra عالية الجودة للسلامة الصناعية والامتثال وإدارة الأصول. مع الالتزام بالجودة والابتكار ورضا العملاء، حصلت باورلينك على سمعتها كشريك موثوق في النمو الصناعي للمملكة.",
+            "حلول مدنية وميكانيكية وهيكلية شاملة للمشاريع الصناعية والتجارية.",
+            "تركيب ودمج احترافي للأنظمة الكهربائية وأجهزة القياس الدقيقة.",
+            "أنظمة حماية متقدمة تشمل البوابات الدوارة والحواجز والتحكم في الوصول.",
+            "دعم موثوق لاستئجار المعدات والخدمات اللوجستية المصممة للعمليات الصناعية.",
+            "تأسست في عام 2008، موثوقة من قبل كبار العملاء في القطاع الصناعي السعودي.",
+            "من البناء والأعمال الكهربائية إلى السلامة والخدمات اللوجستية – كل ذلك تحت سقف واحد.",
+            "نلتزم بأعلى معايير الصناعة لضمان عمليات موثوقة وآمنة.",
+            "ننفذ المشاريع باحترافية ونلتزم بالتسليم في الوقت المناسب وبناء شراكات طويلة الأمد مع العملاء.",
+            "هل لديك مشروع في الاعتبار؟ دعنا نتحدث."
+          ]
+        },
+        "buttons": {
+          "en": ["Contact us", "Read More", "Send a message"],
+          "ar": ["اتصل بنا", "اقرأ المزيد", "أرسل رسالة"]
+        },
+        "textFields": {
+          "en": ["Your Name", "Phone Number", "Email", "Message"],
+          "ar": ["اسمك", "رقم الهاتف", "البريد الإلكتروني", "الرسالة"]
+        },
+        "navbar": {
+          "en": ["Home", "About us", "Services", "Products", "All Products", "Mechanical", "Electrical", "Safety", "Labels", "Contact"],
+          "ar": ["الرئيسية", "من نحن", "الخدمات", "المنتجات", "جميع المنتجات", "ميكانيكية", "كهربائية", "سلامة", "ملصقات", "اتصل بنا"]
+        },
+        "contact": {
+          "phone": "+966 3 8320222",
+          "email": "mukhtar@powerlink.sa.com",
+          "address": {
+            "en": "KSA, P.O BOX 15099 DAMMAM 31444",
+            "ar": "المملكة العربية السعودية، ص.ب 15099، الدمام 31444"
+          }
+        },
+        "footer": {
+          "quickLinks": {
+            "en": ["Home", "About", "Services", "Products", "Contact"],
+            "ar": ["الرئيسية", "من نحن", "الخدمات", "المنتجات", "اتصل بنا"]
+          },
+          "copyright": {
+            "en": "© All Rights Reserved By Ex-ion 2025",
+            "ar": "© جميع الحقوق محفوظة لشركة Ex-ion 2025"
+          }
+        }
+
+      },
+      header: {
+        address: {
+          en: "KSA, P.O BOX...",
+          ar: "المملكة العربية السعودية، ص.ب..."
+        }
+      }
+    };
+
+    // Current language (default to English)
+    let currentLang = localStorage.getItem('language') || 'en';
+
+    // Function to change language
+    function changeLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem('language', currentLang);
+      applyTranslations();
+      updateLanguageDropdown();
+      updateTextDirection();
+    }
+
+    // Function to apply translations
+    function applyTranslations() {
+      // Navbar translations (excluding dropdown toggles)
+      const navLinks = document.querySelectorAll('.navbar-nav a:not(.dropdown-toggle):not(.language-option)');
+      navLinks.forEach((link, index) => {
+        if (index < translations.home.navbar[currentLang].length) {
+          link.textContent = translations.home.navbar[currentLang][index];
+        }
+      });
+
+      // Products dropdown toggle
+      const productsDropdown = document.querySelector('#productsDropdown');
+      if (productsDropdown) {
+        productsDropdown.textContent = translations.home.navbar[currentLang][3]; // "Products"
+      }
+
+      // Products dropdown items
+      const dropdownItems = document.querySelectorAll('.dropdown-item:not(.language-option)');
+      dropdownItems.forEach((item, index) => {
+        const translationMap = {
+          0: 4, // "All Products"
+          1: 5, // "Mechanical"
+          2: 6, // "Electrical"
+          3: 7, // "Safety"
+          4: 8  // "Labels"
+        };
+
+        if (translationMap[index] !== undefined) {
+          item.textContent = translations.home.navbar[currentLang][translationMap[index]];
+        }
+      });
+
+      // Hero section
+      const heroHeading = document.querySelector('.detail-box h1');
+      if (heroHeading) {
+        heroHeading.textContent = translations.home.headings[currentLang][0];
+      }
+
+      const heroSubheading = document.querySelector('.detail-box h4');
+      if (heroSubheading) {
+        heroSubheading.textContent = translations.home.subheadings[currentLang][0];
+      }
+
+      const heroContactBtn = document.querySelector('.detail-box .btn1');
+      if (heroContactBtn) {
+        heroContactBtn.textContent = translations.home.buttons[currentLang][0];
+      }
+
+      // About section
+      const aboutHeading = document.querySelector('.about_section h2');
+      if (aboutHeading) {
+        aboutHeading.textContent = translations.home.headings[currentLang][1];
+      }
+
+      const aboutText = document.querySelector('.about_section p');
+      if (aboutText) {
+        aboutText.textContent = translations.home.paragraphs[currentLang][0];
+      }
+
+      const aboutLink = document.querySelector('.about_section a');
+      if (aboutLink) {
+        aboutLink.textContent = translations.home.buttons[currentLang][1];
+      }
+
+      // Services section
+      const serviceHeading = document.querySelector('.service_section h2');
+      if (serviceHeading) {
+        serviceHeading.textContent = translations.home.headings[currentLang][2];
+      }
+
+      document.querySelectorAll('.service_section .detail-box h5').forEach((item, index) => {
+        item.textContent = translations.home.subheadings[currentLang][index + 1];
+      });
+
+      document.querySelectorAll('.service_section .detail-box p').forEach((desc, index) => {
+        desc.textContent = translations.home.paragraphs[currentLang][index + 1];
+      });
+
+      document.querySelectorAll('.service_section a').forEach((link) => {
+        link.textContent = translations.home.buttons[currentLang][1];
+      });
+
+      // Why Choose Us section
+      const whyUsHeading = document.querySelector('.why_us_section h2');
+      if (whyUsHeading) {
+        whyUsHeading.textContent = translations.home.headings[currentLang][3];
+      }
+
+      document.querySelectorAll('.why_us_section .detail-box h5').forEach((item, index) => {
+        item.textContent = translations.home.subheadings[currentLang][index + 5];
+      });
+
+      document.querySelectorAll('.why_us_section .detail-box p').forEach((desc, index) => {
+        desc.textContent = translations.home.paragraphs[currentLang][index + 5];
+      });
+
+      // Contact section
+      const contactHeading = document.querySelector('.contact_section h2');
+      if (contactHeading) {
+        contactHeading.textContent = translations.home.headings[currentLang][4];
+      }
+
+      const contactSubheading = document.querySelector('.contact_section p');
+      if (contactSubheading) {
+        contactSubheading.textContent = translations.home.paragraphs[currentLang][9];
+      }
+
+      // Form elements
+      document.querySelectorAll('.form_container input, .form_container textarea').forEach((input, index) => {
+        input.placeholder = translations.home.textFields[currentLang][index];
+      });
+
+      const formButton = document.querySelector('.contact_section button');
+      if (formButton) {
+        formButton.textContent = translations.home.buttons[currentLang][2];
+      }
+
+      // Footer Quick Links heading
+      const quickLinksHeading = document.querySelector('.info_links h4');
+      if (quickLinksHeading) {
+        quickLinksHeading.textContent = currentLang === 'en' ? 'QUICK LINKS' : 'روابط سريعة';
+      }
+
+      // Footer links
+      document.querySelectorAll('.info_links_menu a').forEach((link, index) => {
+        if (index < translations.home.footer.quickLinks[currentLang].length) {
+          link.textContent = translations.home.footer.quickLinks[currentLang][index];
+        }
+      });
+
+      const copyright = document.querySelector('footer p');
+      if (copyright) {
+        copyright.innerHTML = translations.home.footer.copyright[currentLang];
+      }
+
+      // Address in contact nav
+      const addressElement = document.querySelector('.contact_nav a:nth-child(3) span');
+      if (addressElement) {
+        addressElement.textContent = translations.home.contact.address[currentLang];
+      }
+
+      // Address in footer
+      const footerAddress = document.getElementById('addressText');
+      if (footerAddress) {
+        footerAddress.textContent = translations.home.contact.address[currentLang];
+      }
+    }
+
+    // Function to update language dropdown display
+    function updateLanguageDropdown() {
+      const currentLanguageText = document.getElementById('currentLanguageText');
+      const languageOptions = document.querySelectorAll('.language-option');
+
+      if (currentLanguageText) {
+        currentLanguageText.textContent = currentLang === 'en' ? 'English' : 'العربية';
+      }
+
+      // Update active state
+      languageOptions.forEach(option => {
+        const lang = option.getAttribute('data-lang');
+        if (lang === currentLang) {
+          option.classList.add('active');
+        } else {
+          option.classList.remove('active');
+        }
+      });
+    }
+
+    // Function to update text direction
+    function updateTextDirection() {
+      if (currentLang === 'ar') {
+        document.body.setAttribute('dir', 'rtl');
+      } else {
+        document.body.setAttribute('dir', 'ltr');
+      }
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', function () {
+      // Set up language dropdown click handlers
+      document.querySelectorAll('.language-option').forEach(option => {
+        option.addEventListener('click', function (e) {
+          e.preventDefault();
+          const selectedLang = this.getAttribute('data-lang');
+          changeLanguage(selectedLang);
+        });
+      });
+
+      // Apply translations based on saved preference
+      applyTranslations();
+      updateLanguageDropdown();
+      updateTextDirection();
+    });
+  </script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
   <!-- owl slider -->
@@ -1044,7 +1235,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
-
+  <script src="js/lang.js"></script>
 </body>
 
 </html>

@@ -66,9 +66,7 @@
           <div class="contact_nav">
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                +966 3 8320222
-              </span>
+            <span dir="ltr">+96638320222</span>
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -159,13 +157,176 @@
                 <li class="nav-item">
                   <a class="nav-link" href="service.html">Services</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="products.html">Products</a>
-                </li>
+               <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Products
+  </a>
+  <div class="dropdown-menu" aria-labelledby="productsDropdown">
+    <a class="dropdown-item" href="products.html">All Products</a>
+    <a class="dropdown-item" href="mechanical.html">Mechanical</a>
+    <a class="dropdown-item" href="electrical.html">Electrical</a>
+        <a class="dropdown-item" href="safety.html">Safety</a>
+<a class="dropdown-item" href="products.html#industrial">Labels</a>
+
+
+    <!-- <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="featured-products.html">Featured Products</a>
+  </div> -->
+</li>
+<style>
+.nav-item.dropdown {
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* Style the dropdown toggle link */
+.nav-link.dropdown-toggle {
+  color: #333;
+  padding: 10px 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-link.dropdown-toggle:hover {
+  color: black;
+  background-color: #f8f9fa;
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0;
+  margin-top: 5px;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Style dropdown items */
+.dropdown-item {
+  padding: 8px 15px;
+  color: #333;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Style the divider */
+.dropdown-divider {
+  margin: 5px 0;
+  border-top: 1px solid #eee;
+}
+
+/* Add animation to dropdown */
+.dropdown-menu.show {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add a small arrow indicator */
+.nav-link.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.nav-link.dropdown-toggle.show::after {
+  transform: rotate(180deg);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+</style>
 
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact </a>
                 </li>
+                 <li class="nav-item dropdown language-switcher">
+  <a class="nav-link dropdown-toggle btn-lang" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span id="currentLanguageText">English</span>
+  </a>
+  <div class="dropdown-menu language-dropdown" aria-labelledby="languageDropdown">
+    <a class="dropdown-item language-option" href="#" data-lang="en">
+      <i class="fa fa-globe" aria-hidden="true"></i> English
+    </a>
+    <a class="dropdown-item language-option" href="#" data-lang="ar">
+      <i class="fa fa-globe" aria-hidden="true"></i> العربية
+    </a>
+  </div>
+</li>
+
+<style>
+  .btn-lang {
+    background: transparent;
+    border: 1px solid #d92827;
+    color: #d92827 !important;
+    border-radius: 4px;
+    padding: 5px 15px !important;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+  }
+  
+  .btn-lang:hover {
+    background-color: #d92827;
+    color: white !important;
+    text-decoration: none !important;
+  }
+
+  /* Language dropdown specific styles */
+  .language-dropdown {
+    min-width: 120px;
+    border: 1px solid #d92827;
+    border-radius: 4px;
+    padding: 5px 0;
+    margin-top: 2px;
+  }
+
+  .language-dropdown .dropdown-item {
+    padding: 8px 15px;
+    color: #333;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .language-dropdown .dropdown-item:hover {
+    background-color: #d92827;
+    color: white;
+  }
+
+  .language-dropdown .dropdown-item.active {
+    background-color: #d92827;
+    color: white;
+  }
+
+  .language-dropdown .dropdown-item i {
+    font-size: 12px;
+    width: 15px;
+  }
+  </style>
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="#"> Login</a>
                 </li> -->
@@ -379,7 +540,35 @@
   </a>
 </div>
     <h1>Safety Products</h1>
+<style>/* Replace your current h1 styles with: */
+h1 {
+  font-size: clamp(24px, 5vw, 38px);
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 50px 0 30px;
+  position: relative;
+  text-align: start; /* Changed from 'left' to 'start' */
+}
 
+h1::after {
+  content: '';
+  display: block;
+  width: 180px;
+  height: 4px;
+  background-color: #d92827;
+  margin-top: 12px;
+  border-radius: 4px;
+}
+
+/* RTL specific adjustments */
+[dir="rtl"] h1 {
+  text-align: right;
+}
+
+[dir="rtl"] h1::after {
+  margin-right: 0;
+  margin-left: auto; /* Pushes underline to the right */
+}</style>
     <!-- PPE -->
     <section>
       <h2>Personal Protective Equipment (PPE)</h2>
@@ -530,9 +719,7 @@
           <div class="contact_nav">
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call : +966 3 8320222
-              </span>
+              <span dir="ltr">+96638320222</span>
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -589,7 +776,248 @@
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
       </script>
       <!-- End Google Map -->
+<script>
+$(document).ready(function() {
+  // Language data with safety products translations
+  const languageData = {
+    "safetyProducts": {
+      "heading": {
+        "en": "Safety Products",
+        "ar": "منتجات السلامة"
+      },
+      "subheadings": {
+        "en": [
+          "Personal Protective Equipment (PPE)",
+          "Fire & Gas Safety",
+          "Face & Respiratory Protection",
+          "Emergency & First Aid",
+          "Workplace Safety"
+        ],
+        "ar": [
+          "معدات الحماية الشخصية (PPE)",
+          "السلامة من الحرائق والغازات",
+          "حماية الوجه والجهاز التنفسي",
+          "الطوارئ والإسعافات الأولية",
+          "السلامة في مكان العمل"
+        ]
+      },
+      "descriptions": {
+        "en": [
+          "Safety Helmets",
+          "Safety Gloves",
+          "Reflective Jackets",
+          "Safety Shoes",
+          "FRC Coverall",
+          "Disposable Coverall",
+          "Raincoats",
+          "Fire Extinguishers",
+          "Fire Blankets",
+          "Smoke Detectors",
+          "Gas Detectors",
+          "Face Protection",
+          "Respiratory Protection",
+          "Safety Goggles",
+          "First Aid Kits",
+          "Emergency Eyewash & Shower",
+          "Safety Signage",
+          "Lockout/Tagout Devices",
+          "Road Safety Equipment",
+          "Fall Protection Equipment",
+          "Tarpaulin"
+        ],
+        "ar": [
+          "خوذ السلامة",
+          "قفازات السلامة",
+          "سترات عاكسة",
+          "أحذية السلامة",
+          "أفرول مقاوم للحريق (FRC)",
+          "أفرول للاستخدام مرة واحدة",
+          "معاطف المطر",
+          "طفايات الحريق",
+          "بطانيات الحريق",
+          "كاشفات الدخان",
+          "كاشفات الغاز",
+          "حماية الوجه",
+          "حماية الجهاز التنفسي",
+          "نظارات السلامة",
+          "أطقم الإسعافات الأولية",
+          "مغسلة الطوارئ والدش",
+          "لافتات السلامة",
+          "أجهزة قفل/وضع علامات (Lockout/Tagout)",
+          "معدات السلامة على الطرق",
+          "معدات الحماية من السقوط",
+          "شراع قماشي (Tarp)"
+        ]
+      }
+    },
+    "navbar": {
+      "en": [
+        "Home",
+        "About Us",
+        "Services",
+        "Products",
+        // "Mechanical",
+        // "Electrical",
+        // "Safety",
+        // "Labels",
+        // "Contact"
+      ],
+      "ar": [
+        "الرئيسية",
+        "من نحن",
+        "الخدمات",
+        "المنتجات",
+        // "ميكانيكية",
+        // "كهربائية",
+        // "السلامة",
+        // "الملصقات",
+        // "اتصل بنا"
+      ]
+    },
+    "buttons": {
+      "mechanicalProducts": {
+        "en": "Mechanical Products",
+        "ar": "المنتجات الميكانيكية"
+      },
+      "electricalProducts": {
+        "en": "Electrical Products",
+        "ar": "المنتجات الكهربائية"
+      },
+      "safetyEquipment": {
+        "en": "Safety Equipment",
+        "ar": "معدات السلامة"
+      }
+    },
+    "contact": {
+      "phone": "+966 3 8320222",
+      "email": "mukhtar@powerlink.sa.com",
+      "address": {
+        "en": "KSA, P.O BOX 15099 DAMMAM 31444",
+        "ar": "المملكة العربية السعودية، ص.ب 15099، الدمام 31444"
+      }
+    },
+    "footer": {
+      "quickLinks": {
+        "en": "QUICK LINKS",
+        "ar": "روابط سريعة"
+      },
+      "menuItems": {
+        "en": ["Home", "About", "Services", "Products", "Contact"],
+        "ar": ["الرئيسية", "من نحن", "الخدمات", "المنتجات", "اتصل بنا"]
+      },
+      "copyright": {
+        "en": "&copy; All Rights Reserved By <a href='https://ex-ion.com/'>Ex-ion 2025</a>",
+        "ar": "&copy; جميع الحقوق محفوظة لـ <a href='https://ex-ion.com/'>Ex-ion 2025</a>"
+      }
+    },
+    "languageSwitcher": {
+      "en": "English",
+      "ar": "العربية"
+    }
+  };
 
+  // Set default language from localStorage or default to English
+  let currentLanguage = localStorage.getItem('language') || 'en';
+  
+  // Initialize the page with the current language
+  updateLanguage(currentLanguage);
+
+  // Language switcher click handler
+  $('.language-option').click(function(e) {
+    e.preventDefault();
+    const newLang = $(this).data('lang');
+    if (newLang !== currentLanguage) {
+      currentLanguage = newLang;
+      localStorage.setItem('language', currentLanguage);
+      updateLanguage(currentLanguage);
+      
+      // Update active tab button text
+      updateTabButtons(currentLanguage);
+    }
+  });
+
+  // Function to update tab buttons
+  function updateTabButtons(lang) {
+    $('.tab-button[data-tab="mechanical"]').text(languageData.buttons.mechanicalProducts[lang]);
+    $('.tab-button[data-tab="electrical"]').text(languageData.buttons.electricalProducts[lang]);
+    $('.tab-button[data-tab="safety"]').text(languageData.buttons.safetyEquipment[lang]);
+  }
+
+  // Function to update all language-specific elements
+  function updateLanguage(lang) {
+    // Update language switcher text
+    $('#currentLanguageText').text(languageData.languageSwitcher[lang]);
+    
+    // Update navbar items
+    $('.navbar-nav .nav-item:not(.language-switcher) .nav-link').each(function(index) {
+      if (index < languageData.navbar[lang].length) {
+        $(this).text(languageData.navbar[lang][index]);
+      }
+    });
+    
+    // Update dropdown menu items in Products
+    $('.dropdown-menu a.dropdown-item').each(function(index) {
+      if (index < languageData.navbar[lang].length - 4) { // Adjust for the offset
+        $(this).text(languageData.navbar[lang][index + 4]);
+      }
+    });
+
+    // Update safety products page if we're on it
+    if ($('body').hasClass('sub_page') && window.location.pathname.includes('safety.html')) {
+      updateProductPage('safetyProducts', lang);
+    }
+    
+    // Update tab buttons
+    updateTabButtons(lang);
+
+    // Update footer content
+    $('.info_links h4').text(languageData.footer.quickLinks[lang]);
+    $('.info_links_menu a').each(function(index) {
+      if (index < languageData.footer.menuItems[lang].length) {
+        $(this).text(languageData.footer.menuItems[lang][index]);
+      }
+    });
+    
+    // Update contact info
+    $('.contact_nav a:nth-child(1) span').text(languageData.contact.phone);
+    $('.contact_nav a:nth-child(2) span').text(languageData.contact.email);
+    $('.contact_nav a:nth-child(3) span').html(languageData.contact.address[lang]);
+    
+    // Update copyright
+    $('.footer_section p').html(languageData.footer.copyright[lang]);
+    
+    // Update RTL/LTR direction
+    if (lang === 'ar') {
+      $('html').attr('dir', 'rtl');
+      $('body').addClass('rtl');
+    } else {
+      $('html').attr('dir', 'ltr');
+      $('body').removeClass('rtl');
+    }
+  }
+
+  // Function to update product page content
+  function updateProductPage(pageType, lang) {
+    // Update main heading
+    $('h1').text(languageData[pageType].heading[lang]);
+    
+    // Update section headings
+    $('h2').each(function(index) {
+      if (index < languageData[pageType].subheadings[lang].length) {
+        $(this).text(languageData[pageType].subheadings[lang][index]);
+      }
+    });
+    
+    // Update product names
+    $('.product-card p').each(function(index) {
+      if (index < languageData[pageType].descriptions[lang].length) {
+        $(this).text(languageData[pageType].descriptions[lang][index]);
+      }
+    });
+  }
+});
+</script>
+<script src="js/lang.js"></script>
     </body>
 
 </html>

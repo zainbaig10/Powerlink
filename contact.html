@@ -35,7 +35,8 @@
   <link href="css/responsive.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+<script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
 </head>
 
 <body class="sub_page">
@@ -43,15 +44,14 @@
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
+      
       <div class="header_top">
         <div class="container-fluid header_top_container">
           
           <div class="contact_nav">
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-               +966 3 8320222
-              </span>
+             <span dir="ltr">+96638320222</span>
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -141,14 +141,176 @@
                   <a class="nav-link" href="service.html">Services</a>
                 </li>
                
-                <li class="nav-item">
-                  <a class="nav-link" href="products.html">Products</a>
-                </li>
+                <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Products
+  </a>
+  <div class="dropdown-menu" aria-labelledby="productsDropdown">
+    <a class="dropdown-item" href="products.html">All Products</a>
+    <a class="dropdown-item" href="mechanical.html">Mechanical</a>
+    <a class="dropdown-item" href="electrical.html">Electrical</a>
+        <a class="dropdown-item" href="safety.html">Safety</a>
+<a class="dropdown-item" href="products.html#industrial">Labels</a>
+
+
+    <!-- <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="featured-products.html">Featured Products</a>
+  </div> -->
+</li>
+<style>
+.nav-item.dropdown {
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* Style the dropdown toggle link */
+.nav-link.dropdown-toggle {
+  color: #333;
+  padding: 10px 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-link.dropdown-toggle:hover {
+  color: black;
+  background-color: #f8f9fa;
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0;
+  margin-top: 5px;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Style dropdown items */
+.dropdown-item {
+  padding: 8px 15px;
+  color: #333;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Style the divider */
+.dropdown-divider {
+  margin: 5px 0;
+  border-top: 1px solid #eee;
+}
+
+/* Add animation to dropdown */
+.dropdown-menu.show {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add a small arrow indicator */
+.nav-link.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.nav-link.dropdown-toggle.show::after {
+  transform: rotate(180deg);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+</style>
               
                 <li class="nav-item active">
                   <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
-              
+               <li class="nav-item dropdown language-switcher">
+  <a class="nav-link dropdown-toggle btn-lang" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span id="currentLanguageText">English</span>
+  </a>
+  <div class="dropdown-menu language-dropdown" aria-labelledby="languageDropdown">
+    <a class="dropdown-item language-option" href="#" data-lang="en">
+      <i class="fa fa-globe" aria-hidden="true"></i> English
+    </a>
+    <a class="dropdown-item language-option" href="#" data-lang="ar">
+      <i class="fa fa-globe" aria-hidden="true"></i> العربية
+    </a>
+  </div>
+</li>
+
+<style>
+  .btn-lang {
+    background: transparent;
+    border: 1px solid #d92827;
+    color: #d92827 !important;
+    border-radius: 4px;
+    padding: 5px 15px !important;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+  }
+  
+  .btn-lang:hover {
+    background-color: #d92827;
+    color: white !important;
+    text-decoration: none !important;
+  }
+
+  /* Language dropdown specific styles */
+  .language-dropdown {
+    min-width: 120px;
+    border: 1px solid #d92827;
+    border-radius: 4px;
+    padding: 5px 0;
+    margin-top: 2px;
+  }
+
+  .language-dropdown .dropdown-item {
+    padding: 8px 15px;
+    color: #333;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .language-dropdown .dropdown-item:hover {
+    background-color: #d92827;
+    color: white;
+  }
+
+  .language-dropdown .dropdown-item.active {
+    background-color: #d92827;
+    color: white;
+  }
+
+  .language-dropdown .dropdown-item i {
+    font-size: 12px;
+    width: 15px;
+  }
+  </style>
               </ul>
              
             </div>
@@ -342,29 +504,66 @@
       
       <div class="row">
         <!-- Left Column - Form -->
-        <div class="col-lg-5">
-          <div class="form_container">
-            <form action="">
-              <div >
-                <input type="text" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="btn_box">
-                <button>
-                  Send a Message
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
+      <div class="col-lg-5">
+  <div class="form_container">
+    <form id="contactForm">
+      <div>
+        <input type="text" id="name" placeholder="Your Name" required />
+      </div>
+      <div>
+        <input type="text" id="phone" placeholder="Phone Number" required />
+      </div>
+      <div>
+        <input type="email" id="email" placeholder="Email" required />
+      </div>
+      <div>
+        <input type="text" id="message" class="message-box" placeholder="Message" required />
+      </div>
+      <div class="btn_box">
+        <button type="submit">Send a Message</button>
+      </div>
+    </form>
+    <p id="responseMsg" style="margin-top: 10px;"></p>
+  </div>
+</div>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const responseMsg = document.getElementById("responseMsg");
+
+    try {
+      const response = await fetch("https://powerlink-mailsender.onrender.com/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ name, phone, email, message })
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        responseMsg.textContent = "✅ Message sent successfully!";
+        responseMsg.style.color = "green";
+        document.getElementById("contactForm").reset();
+      } else {
+        responseMsg.textContent = "❌ Failed to send message: " + (result?.message || "Server error");
+        responseMsg.style.color = "red";
+      }
+    } catch (error) {
+      responseMsg.textContent = "❌ Error: " + error.message;
+      responseMsg.style.color = "red";
+    }
+  });
+</script>
+
         
         <!-- Right Column - Info Section with 2x2 Grid -->
         <div class="col-lg-7">
@@ -378,7 +577,7 @@
               <div class="col-md-6 mb-3">
                 <div class="contact_item">
                   <h4><i class="fa fa-phone"></i> Phone</h4>
-                  <p>+966 3 8320222</p>
+                  <span dir="ltr">+96638320222</span>
                 </div>
               </div>
               
@@ -553,9 +752,7 @@
       <div class="contact_nav">
         <a href="">
           <i class="fa fa-phone" aria-hidden="true"></i>
-          <span>
-            Call : +966 3 8320222
-          </span>
+       <span dir="ltr">+96638320222</span>
         </a>
         <a href="">
           <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -610,7 +807,327 @@
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
+ 
   <!-- End Google Map -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Language data
+    const translations = {
+        "contactUs": {
+            "headings": {
+                "en": "Contact Us",
+                "ar": "اتصل بنا"
+            },
+            "subheadings": {
+                "en": "Have a project in mind or need assistance sourcing industrial materials? Get in touch with us — we're here to help.",
+                "ar": "هل لديك مشروع في الاعتبار أو تحتاج إلى المساعدة في الحصول على المواد الصناعية؟ تواصل معنا — نحن هنا للمساعدة."
+            },
+            "contactInfoLabels": {
+                "phone": {
+                    "en": "Phone",
+                    "ar": "الهاتف"
+                },
+                "email": {
+                    "en": "Email",
+                    "ar": "البريد الإلكتروني"
+                },
+                "businessHours": {
+                    "en": "Business Hours",
+                    "ar": "ساعات العمل"
+                },
+                "officeAddress": {
+                    "en": "Office Address",
+                    "ar": "عنوان المكتب"
+                }
+            },
+            "contactInfoValues": {
+                "phone": "<span dir='ltr'>+966 3 8320222</span>",
+                "businessHours": {
+                    "en": "Sunday – Thursday: 8:00 AM – 5:00 PM<br>Friday – Saturday: Closed",
+                    "ar": "الأحد – الخميس: 8:00 صباحًا – 5:00 مساءً<br>الجمعة – السبت: مغلق"
+                },
+                "address": {
+                    "en": "Powerlink Trading Establishment<br>Kingdom of Saudi Arabia<br>P.O BOX 15099, DAMMAM 31444",
+                    "ar": "مؤسسة باورلينك للتجارة<br>المملكة العربية السعودية<br>ص.ب 15099، الدمام 31444"
+                }
+            },
+            "textFields": {
+                "yourName": {
+                    "en": "Your Name",
+                    "ar": "اسمك"
+                },
+                "phoneNumber": {
+                    "en": "Phone Number",
+                    "ar": "رقم الهاتف"
+                },
+                "email": {
+                    "en": "Email",
+                    "ar": "البريد الإلكتروني"
+                },
+                "message": {
+                    "en": "Message",
+                    "ar": "الرسالة"
+                }
+            },
+            "buttons": {
+                "sendMessage": {
+                    "en": "Send a Message",
+                    "ar": "أرسل رسالة"
+                }
+            }
+        },
+        "navbar": {
+            "main": {
+                "en": ["Home", "About Us", "Services", "Products", "Contact Us"],
+                "ar": ["الرئيسية", "من نحن", "الخدمات", "المنتجات", "اتصل بنا"]
+            },
+            "dropdown": {
+                "en": ["All Products", "Mechanical", "Electrical", "Safety", "Labels"],
+                "ar": ["جميع المنتجات", "الميكانيكية", "الكهربائية", "السلامة", "الملصقات"]
+            }
+        },
+        "contact": {
+            "address": {
+                "en": "KSA, P.O BOX 15099 DAMMAM 31444",
+                "ar": "المملكة العربية السعودية، ص.ب 15099، الدمام 31444"
+            },
+            "footerAddress": {
+                "en": "Address: Kingdom of Saudi Arabia<br> P.O BOX 15099<br> DAMMAM 31444",
+                "ar": "العنوان: المملكة العربية السعودية<br> ص.ب 15099<br> الدمام 31444"
+            },
+            "footerLabels": {
+                "call": {
+                    "en": "Call :",
+                    "ar": "اتصل :"
+                },
+                "email": {
+                    "en": "Email :",
+                    "ar": "البريد الإلكتروني :"
+                },
+                "address": {
+                    "en": "Address:",
+                    "ar": "العنوان:"
+                }
+            }
+        },
+        "footer": {
+            "quickLinks": {
+                "title": {
+                    "en": "QUICK LINKS",
+                    "ar": "روابط سريعة"
+                },
+                "links": {
+                    "en": ["Home", "About", "Services", "Products", "Contact"],
+                    "ar": ["الرئيسية", "من نحن", "الخدمات", "المنتجات", "اتصل بنا"]
+                }
+            },
+            "copyright": {
+                "en": "&copy; All Rights Reserved By <a href=\"https://ex-ion.com/\"> Ex-ion 2025</a>",
+                "ar": "&copy; جميع الحقوق محفوظة لشركة <a href=\"https://ex-ion.com/\"> Ex-ion 2025</a>"
+            }
+        }
+    };
+
+    // Set default language
+    let currentLanguage = 'en';
+    
+    // Function to update the language
+    function updateLanguage(lang) {
+        currentLanguage = lang;
+        document.getElementById('currentLanguageText').textContent = lang === 'en' ? 'English' : 'العربية';
+        
+        // Update main navbar items (including dropdown toggle)
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link:not(.language-option):not(.btn-lang)');
+        let mainNavIndex = 0;
+        navLinks.forEach((link) => {
+            // Skip dropdown items, only update main nav items
+            if (!link.classList.contains('dropdown-toggle') && !link.closest('.dropdown-menu')) {
+                if (translations.navbar.main[lang][mainNavIndex]) {
+                    link.textContent = translations.navbar.main[lang][mainNavIndex];
+                    mainNavIndex++;
+                }
+            } else if (link.classList.contains('dropdown-toggle')) {
+                // Handle Products dropdown toggle specifically
+                if (translations.navbar.main[lang][mainNavIndex]) {
+                    link.textContent = translations.navbar.main[lang][mainNavIndex];
+                    mainNavIndex++;
+                }
+            }
+        });
+        
+        // Update dropdown items  
+        const dropdownItems = document.querySelectorAll('.dropdown-item');
+        translations.navbar.dropdown[lang].forEach((text, index) => {
+            if (dropdownItems[index]) {
+                dropdownItems[index].textContent = text;
+            }
+        });
+        
+        // Update Contact Us main heading
+        const contactHeading = document.querySelector('.heading_container h2');
+        if (contactHeading) {
+            contactHeading.textContent = translations.contactUs.headings[lang];
+        }
+        
+        // Update contact intro paragraph
+        const contactIntro = document.querySelector('.info_intro');
+        if (contactIntro) {
+            contactIntro.textContent = translations.contactUs.subheadings[lang];
+        }
+        
+        // Update form placeholders
+        const nameInput = document.getElementById('name');
+        if (nameInput) {
+            nameInput.placeholder = translations.contactUs.textFields.yourName[lang];
+        }
+        
+        const phoneInput = document.getElementById('phone');
+        if (phoneInput) {
+            phoneInput.placeholder = translations.contactUs.textFields.phoneNumber[lang];
+        }
+        
+        const emailInput = document.getElementById('email');
+        if (emailInput) {
+            emailInput.placeholder = translations.contactUs.textFields.email[lang];
+        }
+        
+        const messageInput = document.getElementById('message');
+        if (messageInput) {
+            messageInput.placeholder = translations.contactUs.textFields.message[lang];
+        }
+        
+        // Update form button
+        const submitButton = document.querySelector('.btn_box button');
+        if (submitButton) {
+            submitButton.textContent = translations.contactUs.buttons.sendMessage[lang];
+        }
+        
+        // Update contact info labels and values
+        const contactItems = document.querySelectorAll('.contact_item');
+        
+        // Phone
+        if (contactItems[0]) {
+            const phoneLabel = contactItems[0].querySelector('h4');
+            if (phoneLabel) {
+                phoneLabel.innerHTML = `<i class="fa fa-phone"></i> ${translations.contactUs.contactInfoLabels.phone[lang]}`;
+            }
+        }
+        
+        // Email
+        if (contactItems[1]) {
+            const emailLabel = contactItems[1].querySelector('h4');
+            if (emailLabel) {
+                emailLabel.innerHTML = `<i class="fa fa-envelope"></i> ${translations.contactUs.contactInfoLabels.email[lang]}`;
+            }
+        }
+        
+        // Business Hours
+        if (contactItems[2]) {
+            const hoursLabel = contactItems[2].querySelector('h4');
+            const hoursValue = contactItems[2].querySelector('p');
+            if (hoursLabel) {
+                hoursLabel.innerHTML = `<i class="fa fa-clock-o"></i> ${translations.contactUs.contactInfoLabels.businessHours[lang]}`;
+            }
+            if (hoursValue) {
+                hoursValue.innerHTML = translations.contactUs.contactInfoValues.businessHours[lang];
+            }
+        }
+        
+        // Office Address
+        if (contactItems[3]) {
+            const addressLabel = contactItems[3].querySelector('h4');
+            const addressValue = contactItems[3].querySelector('p');
+            if (addressLabel) {
+                addressLabel.innerHTML = `<i class="fa fa-map-marker"></i> ${translations.contactUs.contactInfoLabels.officeAddress[lang]}`;
+            }
+            if (addressValue) {
+                addressValue.innerHTML = translations.contactUs.contactInfoValues.address[lang];
+            }
+        }
+        
+        // Update header address
+        const headerAddress = document.querySelector('.header_top .contact_nav a:last-child span');
+        if (headerAddress) {
+            headerAddress.textContent = translations.contact.address[lang];
+        }
+        
+        // Update footer quick links title
+        const quickLinksTitle = document.querySelector('.info_links h4');
+        if (quickLinksTitle) {
+            quickLinksTitle.textContent = translations.footer.quickLinks.title[lang];
+        }
+        
+        // Update footer links
+        const footerLinks = document.querySelectorAll('.info_links_menu a');
+        translations.footer.quickLinks.links[lang].forEach((text, index) => {
+            if (footerLinks[index]) {
+                footerLinks[index].textContent = text;
+            }
+        });
+        
+        // Update footer contact labels
+        const footerContactItems = document.querySelectorAll('.info_section .contact_nav a');
+        
+        // Call label
+    if (footerContactItems[0]) {
+    const callSpan = footerContactItems[0].querySelector('span');
+    if (callSpan) {
+        callSpan.innerHTML = `${translations.contact.footerLabels.call[lang]} <span dir="ltr">+966 3 8320222</span>`;
+    }
+}
+        
+        // Email label
+        if (footerContactItems[1]) {
+            const emailSpan = footerContactItems[1].querySelector('span');
+            if (emailSpan) {
+                emailSpan.innerHTML = `${translations.contact.footerLabels.email[lang]} mukhtar@powerlink.sa.com info@powerlink.sa.com`;
+            }
+        }
+        
+        // Address label and value
+        if (footerContactItems[2]) {
+            const addressSpan = footerContactItems[2].querySelector('span');
+            if (addressSpan) {
+                addressSpan.innerHTML = translations.contact.footerAddress[lang];
+            }
+        }
+        
+        // Update copyright
+        const copyright = document.querySelector('.footer_section p');
+        if (copyright) {
+            copyright.innerHTML = translations.footer.copyright[lang];
+        }
+        
+        // Update RTL if Arabic
+        if (lang === 'ar') {
+            document.body.setAttribute('dir', 'rtl');
+            document.body.style.textAlign = 'right';
+        } else {
+            document.body.removeAttribute('dir');
+            document.body.style.textAlign = 'left';
+        }
+        
+        // Save language preference
+        localStorage.setItem('preferredLanguage', lang);
+    }
+    
+    // Check for saved language preference
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    if (savedLanguage) {
+        updateLanguage(savedLanguage);
+    }
+    
+    // Language switcher event listeners
+    const languageOptions = document.querySelectorAll('.language-option');
+    languageOptions.forEach(option => {
+        option.addEventListener('click', function(e) {
+            e.preventDefault();
+            const lang = this.getAttribute('data-lang');
+            updateLanguage(lang);
+        });
+    });
+});
+</script>
 
 </body>
 

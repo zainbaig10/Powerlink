@@ -66,9 +66,7 @@
           <div class="contact_nav">
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                +966 3 8320222
-              </span>
+              <span dir="ltr">+96638320222</span>
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -159,13 +157,210 @@
                 <li class="nav-item">
                   <a class="nav-link" href="service.html">Services</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="products.html">Products</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Products
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                    <a class="dropdown-item" href="products.html">All Products</a>
+                    <a class="dropdown-item" href="mechanical.html">Mechanical</a>
+                    <a class="dropdown-item" href="electrical.html">Electrical</a>
+                    <a class="dropdown-item" href="safety.html">Safety</a>
+                    <a class="dropdown-item" href="products.html#industrial">Labels</a>
+
+
+                    <!-- <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="featured-products.html">Featured Products</a>
+  </div> -->
                 </li>
+                <style>
+                  .nav-item.dropdown {
+                    position: relative;
+                    text-transform: uppercase;
+                  }
+
+                  /* Style the dropdown toggle link */
+                  .nav-link.dropdown-toggle {
+                    color: #333;
+                    padding: 10px 15px;
+                    font-weight: 500;
+                    transition: all 0.3s ease;
+                    border-radius: 4px;
+                  }
+
+                  .nav-link.dropdown-toggle:hover {
+                    color: black;
+                    background-color: #f8f9fa;
+                  }
+
+                  /* Style the dropdown menu */
+                  .dropdown-menu {
+                    border: none;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                    border-radius: 4px;
+                    padding: 0;
+                    margin-top: 5px;
+                    min-width: 200px;
+                    transition: all 0.3s ease;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                  }
+
+                  /* Style dropdown items */
+                  .dropdown-item {
+                    padding: 8px 15px;
+                    color: #333;
+                    transition: all 0.2s ease;
+                    font-size: 14px;
+                  }
+
+                  .dropdown-item:hover {
+                    background-color: black;
+                    color: white;
+                  }
+
+                  /* Style the divider */
+                  .dropdown-divider {
+                    margin: 5px 0;
+                    border-top: 1px solid #eee;
+                  }
+
+                  /* Add animation to dropdown */
+                  .dropdown-menu.show {
+                    animation: fadeIn 0.3s ease;
+                  }
+
+                  @keyframes fadeIn {
+                    from {
+                      opacity: 0;
+                      transform: translateY(10px);
+                    }
+
+                    to {
+                      opacity: 1;
+                      transform: translateY(0);
+                    }
+                  }
+
+                  /* Add a small arrow indicator */
+                  .nav-link.dropdown-toggle::after {
+                    display: inline-block;
+                    margin-left: 5px;
+                    vertical-align: middle;
+                    transition: transform 0.3s ease;
+                  }
+
+                  .nav-link.dropdown-toggle.show::after {
+                    transform: rotate(180deg);
+                  }
+
+                  .nav-item.dropdown:hover .dropdown-menu {
+                    display: block;
+                    animation: fadeIn 0.3s ease;
+                  }
+                </style>
 
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact </a>
                 </li>
+                <li class="nav-item dropdown language-switcher">
+                  <a class="nav-link dropdown-toggle btn-lang" href="#" id="languageDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="currentLanguageText">English</span>
+                  </a>
+                  <div class="dropdown-menu language-dropdown" aria-labelledby="languageDropdown">
+                    <a class="dropdown-item language-option" href="#" data-lang="en">
+                      <i class="fa fa-globe" aria-hidden="true"></i> English
+                    </a>
+                    <a class="dropdown-item language-option" href="#" data-lang="ar">
+                      <i class="fa fa-globe" aria-hidden="true"></i> العربية
+                    </a>
+                  </div>
+                </li>
+
+                <style>
+                  .btn-lang {
+                    background: transparent;
+                    border: 1px solid #d92827;
+                    color: #d92827 !important;
+                    border-radius: 4px;
+                    padding: 5px 15px !important;
+                    margin-left: 10px;
+                    transition: all 0.3s ease;
+                    text-decoration: none !important;
+                  }
+
+                  .btn-lang:hover {
+                    background-color: #d92827;
+                    color: white !important;
+                    text-decoration: none !important;
+                  }
+
+                  /* Language dropdown specific styles */
+                  .language-dropdown {
+                    min-width: 120px;
+                    border: 1px solid #d92827;
+                    border-radius: 4px;
+                    padding: 5px 0;
+                    margin-top: 2px;
+                  }
+
+                  .language-dropdown .dropdown-item {
+                    padding: 8px 15px;
+                    color: #333;
+                    transition: all 0.2s ease;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                  }
+
+                  .language-dropdown .dropdown-item:hover {
+                    background-color: #d92827;
+                    color: white;
+                  }
+
+                  .language-dropdown .dropdown-item.active {
+                    background-color: #d92827;
+                    color: white;
+                  }
+
+                  .language-dropdown .dropdown-item i {
+                    font-size: 12px;
+                    width: 15px;
+                  }
+
+                  /* RTL Support */
+                  .rtl {
+                    direction: rtl;
+                    text-align: right;
+                  }
+
+                  .rtl .info_links_menu,
+                  .rtl .product-grid {
+                    direction: rtl;
+                  }
+
+                  .rtl h1::after {
+                    margin-right: 0;
+                    margin-left: 12px;
+                  }
+
+                  .rtl .dropdown-menu {
+                    text-align: right;
+                  }
+
+                  .rtl .contact_nav a {
+                    direction: rtl;
+                    text-align: right;
+                  }
+
+                  .rtl .social_box,
+                  .rtl .social_box1 {
+                    direction: ltr;
+                    /* Keep social icons LTR */
+                  }
+                </style>
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="#"> Login</a>
                 </li> -->
@@ -185,435 +380,891 @@
 
 
     <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8fafc;
-    color: #222;
-  }
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8fafc;
+        color: #222;
+      }
 
-  .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
 
-  h1 {
-    font-size: clamp(24px, 5vw, 38px);
-    font-weight: 700;
-    text-align: left;
-    color: #2c3e50;
-    margin: 50px 0 30px;
-    position: relative;
-  }
+      h1 {
+        font-size: clamp(24px, 5vw, 38px);
+        font-weight: 700;
+        text-align: left;
+        color: #2c3e50;
+        margin: 50px 0 30px;
+        position: relative;
+      }
 
-  h1::after {
-    content: '';
-    display: block;
-    width: 180px;
-    height: 4px;
-    background-color: #d92827;
-    margin-top: 12px;
-    border-radius: 4px;
-  }
+      h1::after {
+        content: '';
+        display: block;
+        width: 180px;
+        height: 4px;
+        background-color: #d92827;
+        margin-top: 12px;
+        border-radius: 4px;
+      }
 
-  h2 {
-    font-size: 1.6rem;
-    color: #2c3e50;
-    font-weight: 600;
-    margin: 40px 0 20px;
-    padding: 12px 20px;
-    background-color: #f1f5f9;
-    border-radius: 8px;
-    border-left: 3px solid #d92827;
-    transition: background-color 0.3s ease;
-  }
+      h2 {
+        font-size: 1.6rem;
+        color: #2c3e50;
+        font-weight: 600;
+        margin: 40px 0 20px;
+        padding: 12px 20px;
+        background-color: #f1f5f9;
+        border-radius: 8px;
+        border-left: 3px solid #d92827;
+        transition: background-color 0.3s ease;
+      }
 
-  h2:hover {
-    background-color: #e2e8f0;
-  }
+      h2:hover {
+        background-color: #e2e8f0;
+      }
 
-  .product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: flex-start;
-  }
+      .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: flex-start;
+      }
 
-  .product-card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    overflow: hidden;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 20px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      .product-card {
+        background-color: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 20px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 
-    flex: 1 1 calc(33.33% - 20px);
-    max-width: calc(33.33% - 20px);
-  }
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+      }
 
-  .product-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
+      .product-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
 
-  .product-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 12px;
-  }
+      .product-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 12px;
+      }
 
-  .product-card p {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #1f2937;
-  }
+      .product-card p {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #1f2937;
+      }
 
-  /* product-grid:has(.product-card:only-child) {
+      /* product-grid:has(.product-card:only-child) {
     justify-content: center;
   } */
 
-  @media (max-width: 992px) {
-    .product-card {
-      flex: 1 1 calc(48% - 20px);
-      max-width: calc(48% - 20px);
-    }
-  }
+      @media (max-width: 992px) {
+        .product-card {
+          flex: 1 1 calc(48% - 20px);
+          max-width: calc(48% - 20px);
+        }
+      }
 
-  @media (max-width: 600px) {
-    body {
-      padding: 15px 10px;
-    }
+      @media (max-width: 600px) {
+        body {
+          padding: 15px 10px;
+        }
 
-    .container {
-      max-width: 100%;
-      padding: 0 10px;
-    }
+        .container {
+          max-width: 100%;
+          padding: 0 10px;
+        }
 
-    h1 {
-      font-size: clamp(20px, 8vw, 30px);
-      margin: 30px 0 20px;
-    }
+        h1 {
+          font-size: clamp(20px, 8vw, 30px);
+          margin: 30px 0 20px;
+        }
 
-    h1::after {
-      width: 120px;
-    }
+        h1::after {
+          width: 120px;
+        }
 
-    h2 {
-      font-size: 1.2rem;
-      padding: 10px 15px;
-    }
+        h2 {
+          font-size: 1.2rem;
+          padding: 10px 15px;
+        }
 
-    .product-grid {
-      gap: 15px;
-    }
+        .product-grid {
+          gap: 15px;
+        }
 
-    .product-card {
-      flex: 1 1 100%;
-      max-width: 100%;
-      padding: 12px;
-    }
+        .product-card {
+          flex: 1 1 100%;
+          max-width: 100%;
+          padding: 12px;
+        }
 
-    .product-card img {
-      height: 180px;
-    }
-  }
-   .tab-navigation {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 30px;
-      flex-wrap: wrap;
-      gap: 10px;
-      padding: 40px 10px;
-    }
+        .product-card img {
+          height: 180px;
+        }
+      }
 
-    .tab-button {
-      padding: 12px 20px;
-      background-color: #ecf0f1;
-      color: #2c3e50;
-      border: none;
-      border-radius: 5px;
-      font-size: clamp(0.8rem, 2vw, 1rem);
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      flex: 1 1 auto;
-      min-width: 120px;
-      max-width: 200px;
-      text-align: center;
-    }
+      .tab-navigation {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 40px 10px;
+      }
 
-    .tab-button:hover {
-      background-color: #d92827;
-      color: white;
-    }
+      .tab-button {
+        padding: 12px 20px;
+        background-color: #ecf0f1;
+        color: #2c3e50;
+        border: none;
+        border-radius: 5px;
+        font-size: clamp(0.8rem, 2vw, 1rem);
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        flex: 1 1 auto;
+        min-width: 120px;
+        max-width: 200px;
+        text-align: center;
+      }
 
-    .tab-button.active {
-      background-color: #2c3e50;
-      color: white;
-    }
-</style>
+      .tab-button:hover {
+        background-color: #d92827;
+        color: white;
+      }
 
-<body>
-  <div class="container">
-     <div class="tab-navigation">
-  <!-- <a href="#all">
+      .tab-button.active {
+        background-color: #2c3e50;
+        color: white;
+      }
+    </style>
+
+    <body>
+      <div class="container">
+        <div class="tab-navigation">
+          <!-- <a href="#all">
     <button class="tab-button " data-tab="all">All Products</button>
   </a> -->
-  <a href="mechanical.html">
-    <button class="tab-button " data-tab="mechanical" style="white-space:nowrap;">Mechanical Products </button>
-  </a>
-  <a href="electrical.html">
-    <button class="tab-button active" data-tab="electrical">Electrical Products</button>
-  </a>
-  <a href="safety.html">
-    <button class="tab-button" data-tab="safety">Safety Equipment</button>
-  </a>
-</div>
-    <h1>Electrical Products</h1>
+          <a href="mechanical.html">
+            <button class="tab-button " data-tab="mechanical" style="white-space:nowrap;">Mechanical Products </button>
+          </a>
+          <a href="electrical.html">
+            <button class="tab-button active" data-tab="electrical">Electrical Products</button>
+          </a>
+          <a href="safety.html">
+            <button class="tab-button" data-tab="safety">Safety Equipment</button>
+          </a>
+        </div>
+        <h1>Electrical Products</h1>
+        <style>
+          /* Replace your current h1 styles with: */
+          h1 {
+            font-size: clamp(24px, 5vw, 38px);
+            font-weight: 700;
+            color: #2c3e50;
+            margin: 50px 0 30px;
+            position: relative;
+            text-align: start;
+            /* Changed from 'left' to 'start' */
+          }
 
-    <!-- Cables -->
-    <section>
-      <h2>Cables</h2>
-      <div class="product-grid">
-        <div class="product-card"><img src="images/power-cables.jpg" alt="Power Cables"><p>Power Cables</p></div>
-        <div class="product-card"><img src="images/control-cables.jpg" alt="Control Cables"><p>Control Cables</p></div>
-        <div class="product-card"><img src="images/instrumentation-cables.jpg" alt="Instrumentation Cables"><p>Instrumentation Cables</p></div>
-        <div class="product-card"><img src="images/Fire-alarm-cables.jpeg" alt="Fire Alarm Cables"><p>Fire Alarm Cables</p></div>
-        <!-- <div class="product-card"><img src="images/rubb" alt="Rubber Cables"><p>Rubber Cables</p></div> -->
-        <div class="product-card"><img src="images/fibre-optic-cables.jpg" alt="Fiber Optic Cables"><p>Fiber Optic Cables</p></div>
-      </div>
-    </section>
+          h1::after {
+            content: '';
+            display: block;
+            width: 180px;
+            height: 4px;
+            background-color: #d92827;
+            margin-top: 12px;
+            border-radius: 4px;
+          }
 
-    <!-- Cable Accessories -->
-    <section>
-      <h2>Cable Accessories & Management</h2>
-      <div class="product-grid">
-        <div class="product-card"><img src="images/Earthing-material.png" alt="Earthing Materials"><p>Earthing Materials</p></div>
-        <div class="product-card"><img src="images/cable-accesoriespreview.png" alt="Cable Accessories"><p>Cable Accessories</p></div>
-        <div class="product-card"><img src="images/cable-managementpreview.png" alt="Cable Management"><p>Cable Management Products</p></div>
-      </div>
-    </section>
+          /* RTL specific adjustments */
+          [dir="rtl"] h1 {
+            text-align: right;
+          }
 
-    <!-- Conduits -->
-    <section>
-      <h2>Conduits & Fittings</h2>
-      <div class="product-grid">
-        <div class="product-card"><img src="images/conduit-pipes.jpg" alt="Conduit Pipes"><p>Conduit Pipes</p></div>
-        <div class="product-card"><img src="images/conduit-fittings.jpg" alt="Conduit Fittings"><p>Conduit Fittings</p></div>
-      </div>
-    </section>
+          [dir="rtl"] h1::after {
+            margin-right: 0;
+            margin-left: auto;
+            /* Pushes underline to the right */
+          }
+        </style>
 
-    <!-- Panels -->
-    <section>
-      <h2>Panels & Switchgear</h2>
-      <div class="product-grid">
-        <div class="product-card"><img src="images/panel board 1 .jpeg" alt="Panel Boards"><p>Panel Boards (MDB, SDB Panels)</p></div>
-        <div class="product-card"><img src="images/circuit-breakers.jpg" alt="Circuit Breakers"><p>Circuit Breakers</p></div>
-        <div class="product-card"><img src="images/switchgear-products.jpg" alt="Switchgear"><p>Switchgear Products</p></div>
-      </div>
-    </section>
+        <!-- Cables -->
+        <section>
+          <h2>Cables</h2>
+          <div class="product-grid">
+            <div class="product-card"><img src="images/power-cables.jpg" alt="Power Cables">
+              <p>Power Cables</p>
+            </div>
+            <div class="product-card"><img src="images/control-cables.jpg" alt="Control Cables">
+              <p>Control Cables</p>
+            </div>
+            <div class="product-card"><img src="images/instrumentation-cables.jpg" alt="Instrumentation Cables">
+              <p>Instrumentation Cables</p>
+            </div>
+            <div class="product-card"><img src="images/Fire-alarm-cables.jpeg" alt="Fire Alarm Cables">
+              <p>Fire Alarm Cables</p>
+            </div>
+            <!-- <div class="product-card"><img src="images/rubb" alt="Rubber Cables"><p>Rubber Cables</p></div> -->
+            <div class="product-card"><img src="images/fibre-optic-cables.jpg" alt="Fiber Optic Cables">
+              <p>Fiber Optic Cables</p>
+            </div>
+          </div>
+        </section>
 
-    <!-- Enclosures -->
-    <section>
-      <h2>Enclosures & Boxes</h2>
-      <div class="product-grid">
-        <div class="product-card"><img src="images/explosion-proof-enclosures.jpeg" alt="Explosion-Proof Enclosures"><p>Explosion-Proof Enclosures</p></div>
-        <div class="product-card"><img src="images/electrical-boxes.jpg" alt="Electrical Boxes"><p>Electrical Boxes</p></div>
-        <div class="product-card"><img src="images/junction-boxes.webp" alt="Junction Boxes"><p>Junction Boxes</p></div>
-        <div class="product-card"><img src="images/lugs.jpg" alt="Lugs"><p>Lugs</p></div>
-      </div>
-    </section>
+        <!-- Cable Accessories -->
+        <section>
+          <h2>Cable Accessories & Management</h2>
+          <div class="product-grid">
+            <div class="product-card"><img src="images/Earthing-material.png" alt="Earthing Materials">
+              <p>Earthing Materials</p>
+            </div>
+            <div class="product-card"><img src="images/cable-accesoriespreview.png" alt="Cable Accessories">
+              <p>Cable Accessories</p>
+            </div>
+            <div class="product-card"><img src="images/cable-managementpreview.png" alt="Cable Management">
+              <p>Cable Management Products</p>
+            </div>
+          </div>
+        </section>
 
-    <!-- Lighting -->
-    <section>
-      <h2>Lighting & Fixtures</h2>
-      <div class="product-grid">
-        <div class="product-card"><img src="images/lighting-solutions.jpg" alt="Lighting"><p>Lighting Solutions</p></div>
-      </div>
-    </section>
+        <!-- Conduits -->
+        <section>
+          <h2>Conduits & Fittings</h2>
+          <div class="product-grid">
+            <div class="product-card"><img src="images/conduit-pipes.jpg" alt="Conduit Pipes">
+              <p>Conduit Pipes</p>
+            </div>
+            <div class="product-card"><img src="images/conduit-fittings.jpg" alt="Conduit Fittings">
+              <p>Conduit Fittings</p>
+            </div>
+          </div>
+        </section>
 
-    <!-- Earthing -->
-    <section>
-      <h2>Earthing & Lightning Protection</h2>
-      <div class="product-grid">
-        <div class="product-card"><img src="images/Earthing-material.png" alt="Earthing Materials"><p>Earthing Materials</p></div>
-        <div class="product-card"><img src="images/lightning-protection.jpg" alt="Lightning Protection"><p>Lightning Protection</p></div>
-      </div>
-    </section>
+        <!-- Panels -->
+        <section>
+          <h2>Panels & Switchgear</h2>
+          <div class="product-grid">
+            <div class="product-card"><img src="images/panel board 1 .jpeg" alt="Panel Boards">
+              <p>Panel Boards (MDB, SDB Panels)</p>
+            </div>
+            <div class="product-card"><img src="images/circuit-breakers.jpg" alt="Circuit Breakers">
+              <p>Circuit Breakers</p>
+            </div>
+            <div class="product-card"><img src="images/switchgear-products.jpg" alt="Switchgear">
+              <p>Switchgear Products</p>
+            </div>
+          </div>
+        </section>
 
-    <!-- Bulk Materials -->
-    <section>
-      <h2>Bulk Electrical Materials</h2>
-      <div class="product-grid">
-        <div class="product-card"><img src="images/Bulk-electrical-products.jpg" alt="Electrical Bulk Materials"><p>Electrical Bulk Materials</p></div>
+        <!-- Enclosures -->
+        <section>
+          <h2>Enclosures & Boxes</h2>
+          <div class="product-grid">
+            <div class="product-card"><img src="images/explosion-proof-enclosures.jpeg"
+                alt="Explosion-Proof Enclosures">
+              <p>Explosion-Proof Enclosures</p>
+            </div>
+            <div class="product-card"><img src="images/electrical-boxes.jpg" alt="Electrical Boxes">
+              <p>Electrical Boxes</p>
+            </div>
+            <div class="product-card"><img src="images/junction-boxes.webp" alt="Junction Boxes">
+              <p>Junction Boxes</p>
+            </div>
+            <div class="product-card"><img src="images/lugs.jpg" alt="Lugs">
+              <p>Lugs</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Lighting -->
+        <section>
+          <h2>Lighting & Fixtures</h2>
+          <div class="product-grid">
+            <div class="product-card"><img src="images/lighting-solutions.jpg" alt="Lighting">
+              <p>Lighting Solutions</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Earthing -->
+        <section>
+          <h2>Earthing & Lightning Protection</h2>
+          <div class="product-grid">
+            <div class="product-card"><img src="images/Earthing-material.png" alt="Earthing Materials">
+              <p>Earthing Materials</p>
+            </div>
+            <div class="product-card"><img src="images/lightning-protection.jpg" alt="Lightning Protection">
+              <p>Lightning Protection</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bulk Materials -->
+        <section>
+          <h2>Bulk Electrical Materials</h2>
+          <div class="product-grid">
+            <div class="product-card"><img src="images/Bulk-electrical-products.jpg" alt="Electrical Bulk Materials">
+              <p>Electrical Bulk Materials</p>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
-  </div>
-</body>
+    </body>
 
 
     </head>
-     <section class="info_section ">
+    <section class="info_section ">
 
-        <div class="container">
-          <div class="info_top ">
-            <div class="row info_main_row">
+      <div class="container">
+        <div class="info_top ">
+          <div class="row info_main_row">
 
-              <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
-                <div class="">
-                  <div class="info_logo">
-                    <a href="">
-                      <img src="images/Powerlink_logo.png" alt="" style="width: 135px; margin-left: 20px;">
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 col-lg-3">
-                <div class="info_links">
-                  <h4>
-                    QUICK LINKS
-                  </h4>
-                  <div class="info_links_menu">
-                    <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    <a class="" href="about.html"> About </a>
-
-                    <a class="" href="service.html">Services</a>
-                    <a class="" href="products.html">Products</a>
-                    <!-- <a class="" href="testimonial.html">Testimonial</a>  -->
-                    <a class="" href="contact.html">Contact </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 ml-auto" style="margin-right: 60px;">
-                <div class="social_box">
-                  <a href="https://www.facebook.com/facebook" target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                  </a>
-                  <a href="https://twitter.com/Twitter" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
-                  </a>
-
-                  <a href="https://www.linkedin.com/company/linkedin" target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
-                  <a href="https://www.instagram.com/instagram" target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
+            <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+              <div class="">
+                <div class="info_logo">
+                  <a href="">
+                    <img src="images/Powerlink_logo.png" alt="" style="width: 135px; margin-left: 20px;">
                   </a>
                 </div>
-
               </div>
-              <style>
-                .social_box {
-                  display: flex;
-                  gap: 10px;
-                  justify-content: center;
-                  align-items: center;
-                }
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+              <div class="info_links">
+                <h4>
+                  QUICK LINKS
+                </h4>
+                <div class="info_links_menu">
+                  <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="" href="about.html"> About </a>
 
-                .social_box a {
-                  width: 40px;
-                  height: 40px;
-                  background-color: #f0f0f0;
+                  <a class="" href="service.html">Services</a>
+                  <a class="" href="products.html">Products</a>
+                  <!-- <a class="" href="testimonial.html">Testimonial</a>  -->
+                  <a class="" href="contact.html">Contact </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 ml-auto" style="margin-right: 60px;">
+              <div class="social_box">
+                <a href="https://www.facebook.com/facebook" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/Twitter" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                </a>
 
-                  border-radius: 8px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  text-decoration: none;
-                  transition: all 0.3s ease;
-                }
-
-                .social_box a i {
-                  color: #d92827;
-                  font-size: 20px;
-                }
-
-                .social_box a:hover {
-                  background-color: #d92827;
-                }
-
-                .social_box a:hover i {
-                  color: black;
-                  transform: scale(1.1);
-                }
-              </style>
-
+                <a href="https://www.linkedin.com/company/linkedin" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/instagram" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
 
             </div>
+            <style>
+              .social_box {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+              }
+
+              .social_box a {
+                width: 40px;
+                height: 40px;
+                background-color: #f0f0f0;
+
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                transition: all 0.3s ease;
+              }
+
+              .social_box a i {
+                color: #d92827;
+                font-size: 20px;
+              }
+
+              .social_box a:hover {
+                background-color: #d92827;
+              }
+
+              .social_box a:hover i {
+                color: black;
+                transform: scale(1.1);
+              }
+            </style>
+
+
           </div>
-          <div class="contact_nav">
-            <a href="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call : +966 3 8320222
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
-                Email :
-                mukhtar@powerlink.sa.com
-                info@powerlink.sa.com
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                Address: Kingdom of Saudi Arabia<br> P.O BOX 15099<br> DAMMAM
-                31444
-
-              </span>
-            </a>
-          </div>
-
-
-
         </div>
-      </section>
-      <!-- end info_section -->
+        <div class="contact_nav">
+          <a href="">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span dir="ltr">+96638320222</span>
+          </a>
+          <a href="">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>
+              Email :
+              mukhtar@powerlink.sa.com
+              info@powerlink.sa.com
+            </span>
+          </a>
+          <a href="">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span>
+              Address: Kingdom of Saudi Arabia<br> P.O BOX 15099<br> DAMMAM
+              31444
 
-
-      <!-- footer section -->
-      <footer class="footer_section">
-        <div class="container">
-          <p>
-            &copy; All Rights Reserved By
-            <a href="https://ex-ion.com/"> Ex-ion 2025</a>
-          </p>
+            </span>
+          </a>
         </div>
-      </footer>
-      <!-- footer section -->
 
-      <!-- jQery -->
-      <script src="js/jquery-3.4.1.min.js"></script>
-      <!-- popper js -->
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-      <!-- bootstrap js -->
-      <script src="js/bootstrap.js"></script>
-      <!-- owl slider -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-      </script>
-      <!--  OwlCarousel 2 - Filter -->
-      <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
-      <!-- custom js -->
-      <script src="js/custom.js"></script>
-      <!-- Google Map -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-      </script>
-      <!-- End Google Map -->
 
-    </body>
+
+      </div>
+    </section>
+    <!-- end info_section -->
+
+
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+          &copy; All Rights Reserved By
+          <a href="https://ex-ion.com/"> Ex-ion 2025</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer section -->
+
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+      </script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <!--  OwlCarousel 2 - Filter -->
+    <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    </script>
+    <!-- End Google Map -->
+    <script>$(document).ready(function () {
+        // Complete language data with all product categories
+        const languageData = {
+          "mechanicalProducts": {
+            "heading": {
+              "en": "Mechanical Products",
+              "ar": "المنتجات الميكانيكية"
+            },
+            "subheadings": {
+              "en": [
+                "Pipes & Fittings",
+                "Valves",
+                "Pumps & Accessories",
+                "Mechanical Tools",
+                "Fasteners & Hardware",
+                "Gaskets & Seals",
+                "Hose & Fittings",
+                "HVAC Equipment"
+              ],
+              "ar": [
+                "الأنابيب والتجهيزات",
+                "الصمامات",
+                "المضخات والملحقات",
+                "الأدوات الميكانيكية",
+                "المثبتات والعناصر المعدنية",
+                "الجوانات والحشوات",
+                "الخراطيم والتجهيزات",
+                "معدات التدفئة والتهوية"
+              ]
+            },
+            "descriptions": {
+              "en": [
+                "Steel Pipes",
+                "PVC Pipes",
+                "Copper Pipes",
+                "Pipe Fittings",
+                "Gate Valves",
+                "Ball Valves",
+                "Butterfly Valves",
+                "Centrifugal Pumps",
+                "Submersible Pumps",
+                "Hand Tools",
+                "Power Tools",
+                "Bolts & Nuts",
+                "Screws & Anchors",
+                "Rubber Gaskets",
+                "PTFE Gaskets",
+                "Hydraulic Hose",
+                "Air Conditioning Units"
+              ],
+              "ar": [
+                "أنابيب الصلب",
+                "أنابيب PVC",
+                "أنابيب النحاس",
+                "تجهيزات الأنابيب",
+                "صمامات البوابة",
+                "صمامات الكرة",
+                "صمامات الفراشة",
+                "مضخات طرد مركزي",
+                "مضخات غاطسة",
+                "أدوات يدوية",
+                "أدوات كهربائية",
+                "البراغي والصواميل",
+                "المسامير والمراسي",
+                "جوانات مطاطية",
+                "جوانات PTFE",
+                "خراطيم هيدروليكية",
+                "وحدات تكييف الهواء"
+              ]
+            }
+          },
+          "electricalProducts": {
+            "heading": {
+              "en": "Electrical Products",
+              "ar": "المنتجات الكهربائية"
+            },
+            "subheadings": {
+              "en": [
+                "Cables",
+                "Cable Accessories & Management",
+                "Conduits & Fittings",
+                "Panels & Switchgear",
+                "Enclosures & Boxes",
+                "Lighting & Fixtures",
+                "Earthing & Lightning Protection",
+                "Bulk Electrical Materials"
+              ],
+              "ar": [
+                "الكابلات",
+                "ملحقات وإدارة الكابلات",
+                "الأنابيب والتجهيزات",
+                "لوحات التوزيع ومفاتيح التشغيل",
+                "الحاويات والصناديق",
+                "الإضاءة والتركيبات",
+                "أنظمة التأريض والحماية من الصواعق",
+                "المواد الكهربائية بالجملة"
+              ]
+            },
+            "descriptions": {
+              "en": [
+                "Power Cables",
+                "Control Cables",
+                "Instrumentation Cables",
+                "Fire Alarm Cables",
+                "Fiber Optic Cables",
+                "Earthing Materials",
+                "Cable Accessories",
+                "Cable Management Products",
+                "Conduit Pipes",
+                "Conduit Fittings",
+                "Panel Boards (MDB, SDB Panels)",
+                "Circuit Breakers",
+                "Switchgear Products",
+                "Explosion-Proof Enclosures",
+                "Electrical Boxes",
+                "Junction Boxes",
+                "Lugs",
+                "Lighting Solutions",
+                "Earthing Materials",
+                "Lightning Protection",
+                "Electrical Bulk Materials"
+              ],
+              "ar": [
+                "كابلات الطاقة",
+                "كابلات التحكم",
+                "كابلات الأجهزة الدقيقة",
+                "كابلات إنذار الحريق",
+                "كابلات الألياف البصرية",
+                "مواد التأريض",
+                "ملحقات الكابلات",
+                "منتجات إدارة الكابلات",
+                "أنابيب التوصيل",
+                "تجهيزات التوصيل",
+                "لوحات التوزيع (MDB، SDB)",
+                "قواطع الدوائر",
+                "منتجات مفاتيح التشغيل",
+                "حاويات مقاومة للانفجار",
+                "صناديق كهربائية",
+                "صناديق التوصيل",
+                "الأطراف النحاسية",
+                "حلول الإضاءة",
+                "مواد التأريض",
+                "الحماية من الصواعق",
+                "المواد الكهربائية بالجملة"
+              ]
+            }
+          },
+          "safetyProducts": {
+            "heading": {
+              "en": "Safety Equipment",
+              "ar": "معدات السلامة"
+            },
+            "subheadings": {
+              "en": [
+                "Personal Protective Equipment",
+                "Fire Safety Equipment",
+                "Fall Protection",
+                "Safety Signs & Labels",
+                "First Aid & Emergency",
+                "Industrial Safety"
+              ],
+              "ar": [
+                "معدات الحماية الشخصية",
+                "معدات السلامة من الحرائق",
+                "حماية من السقوط",
+                "لافتات وملصقات السلامة",
+                "الإسعافات الأولية والطوارئ",
+                "السلامة الصناعية"
+              ]
+            },
+            "descriptions": {
+              "en": [
+                "Safety Helmets",
+                "Safety Gloves",
+                "Safety Glasses",
+                "High Visibility Clothing",
+                "Fire Extinguishers",
+                "Fire Blankets",
+                "Safety Harnesses",
+                "Safety Nets",
+                "Warning Signs",
+                "Directional Signs",
+                "First Aid Kits",
+                "Emergency Showers",
+                "Gas Detectors",
+                "Ear Protection",
+                "Respirators"
+              ],
+              "ar": [
+                "خوذات السلامة",
+                "قفازات السلامة",
+                "نظارات السلامة",
+                "ملابس عالية الوضوح",
+                "طفايات الحريق",
+                "بطانيات الحريق",
+                "أحزمة الأمان",
+                "شبكات الأمان",
+                "لافتات التحذير",
+                "لافتات التوجيه",
+                "صناديق الإسعافات الأولية",
+                "دشات الطوارئ",
+                "كاشفات الغاز",
+                "واقيات الأذن",
+                "أجهزة التنفس"
+              ]
+            }
+          },
+          "navbar": {
+            "en": [
+              "Home",
+              "About Us",
+              "Services",
+              "Products",
+              // "All Products",
+              // "Mechanical",
+              // "Electrical",
+              // "Safety",
+              // "Labels",
+              // "Contact"
+            ],
+            "ar": [
+              "الرئيسية",
+              "من نحن",
+              "الخدمات",
+              "المنتجات",
+              // "جميع المنتجات",
+              // "ميكانيكية",
+              // "كهربائية",
+              // "السلامة",
+              // "الملصقات",
+              // "اتصل بنا"
+            ]
+          },
+          "buttons": {
+            "mechanicalProducts": {
+              "en": "Mechanical Products",
+              "ar": "المنتجات الميكانيكية"
+            },
+            "electricalProducts": {
+              "en": "Electrical Products",
+              "ar": "المنتجات الكهربائية"
+            },
+            "safetyEquipment": {
+              "en": "Safety Equipment",
+              "ar": "معدات السلامة"
+            }
+          },
+          "contact": {
+            "phone": "+966 3 8320222",
+            "email": "mukhtar@powerlink.sa.com",
+            "address": {
+              "en": "KSA, P.O BOX 15099 DAMMAM 31444",
+              "ar": "المملكة العربية السعودية، ص.ب 15099، الدمام 31444"
+            }
+          },
+          "footer": {
+            "quickLinks": {
+              "en": "QUICK LINKS",
+              "ar": "روابط سريعة"
+            },
+            "menuItems": {
+              "en": ["Home", "About", "Services", "Products", "Contact"],
+              "ar": ["الرئيسية", "من نحن", "الخدمات", "المنتجات", "اتصل بنا"]
+            },
+            "copyright": {
+              "en": "&copy; All Rights Reserved By <a href='https://ex-ion.com/'>Ex-ion 2025</a>",
+              "ar": "&copy; جميع الحقوق محفوظة لـ <a href='https://ex-ion.com/'>Ex-ion 2025</a>"
+            }
+          },
+          "languageSwitcher": {
+            "en": "English",
+            "ar": "العربية"
+          }
+        };
+
+        // Set default language from localStorage or default to English
+        let currentLanguage = localStorage.getItem('language') || 'en';
+
+        // Initialize the page with the current language
+        updateLanguage(currentLanguage);
+
+        // Language switcher click handler
+        $('.language-option').click(function (e) {
+          e.preventDefault();
+          const newLang = $(this).data('lang');
+          if (newLang !== currentLanguage) {
+            currentLanguage = newLang;
+            localStorage.setItem('language', currentLanguage);
+            updateLanguage(currentLanguage);
+
+            // Update active tab button text
+            updateTabButtons(currentLanguage);
+          }
+        });
+
+        // Function to update tab buttons
+        function updateTabButtons(lang) {
+          $('.tab-button[data-tab="mechanical"]').text(languageData.buttons.mechanicalProducts[lang]);
+          $('.tab-button[data-tab="electrical"]').text(languageData.buttons.electricalProducts[lang]);
+          $('.tab-button[data-tab="safety"]').text(languageData.buttons.safetyEquipment[lang]);
+        }
+
+        // Function to update all language-specific elements
+        function updateLanguage(lang) {
+          // Update language switcher text
+          $('#currentLanguageText').text(languageData.languageSwitcher[lang]);
+
+          // Update navbar items
+          $('.navbar-nav .nav-item:not(.language-switcher) .nav-link').each(function (index) {
+            if (index < languageData.navbar[lang].length) {
+              $(this).text(languageData.navbar[lang][index]);
+            }
+          });
+
+          // Update dropdown menu items in Products
+          $('.dropdown-menu a.dropdown-item').each(function (index) {
+            if (index < languageData.navbar[lang].length - 4) { // Adjust for the offset
+              $(this).text(languageData.navbar[lang][index + 4]);
+            }
+          });
+
+          // Update product pages if we're on one
+          if ($('body').hasClass('sub_page')) {
+            if (window.location.pathname.includes('electrical.html')) {
+              updateProductPage('electricalProducts', lang);
+            } else if (window.location.pathname.includes('mechanical.html')) {
+              updateProductPage('mechanicalProducts', lang);
+            } else if (window.location.pathname.includes('safety.html')) {
+              updateProductPage('safetyProducts', lang);
+            }
+          }
+
+          // Update tab buttons
+          updateTabButtons(lang);
+
+          // Update footer content
+          $('.info_links h4').text(languageData.footer.quickLinks[lang]);
+          $('.info_links_menu a').each(function (index) {
+            if (index < languageData.footer.menuItems[lang].length) {
+              $(this).text(languageData.footer.menuItems[lang][index]);
+            }
+          });
+
+          // Update contact info
+          $('.contact_nav a:nth-child(1) span').text(languageData.contact.phone);
+          $('.contact_nav a:nth-child(2) span').text(languageData.contact.email);
+          $('.contact_nav a:nth-child(3) span').html(languageData.contact.address[lang]);
+
+          // Update copyright
+          $('.footer_section p').html(languageData.footer.copyright[lang]);
+
+          // Update RTL/LTR direction
+          if (lang === 'ar') {
+            $('html').attr('dir', 'rtl');
+            $('body').addClass('rtl');
+          } else {
+            $('html').attr('dir', 'ltr');
+            $('body').removeClass('rtl');
+          }
+        }
+
+        // Function to update product page content
+        function updateProductPage(pageType, lang) {
+          // Update main heading
+          $('h1').text(languageData[pageType].heading[lang]);
+
+          // Update section headings
+          $('h2').each(function (index) {
+            if (index < languageData[pageType].subheadings[lang].length) {
+              $(this).text(languageData[pageType].subheadings[lang][index]);
+            }
+          });
+
+          // Update product names
+          $('.product-card p').each(function (index) {
+            if (index < languageData[pageType].descriptions[lang].length) {
+              $(this).text(languageData[pageType].descriptions[lang][index]);
+            }
+          });
+        }
+      });</script>
+    <script src="js/lang.js"></script>
+</body>
 
 </html>

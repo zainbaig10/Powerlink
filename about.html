@@ -38,7 +38,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -51,37 +51,24 @@
     <header class="header_section">
       <div class="header_top">
         <div class="container-fluid header_top_container">
-          <!-- <div class="lang_box dropdown">
-            <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true">
-              <img src="images/flag-uk.png" alt="flag" class=" " title="United Kingdom"> <i class="fa fa-angle-down "
-                aria-hidden="true"></i>
-            </a>
-            <div class="dropdown-menu ">
-              <a href="#" class="dropdown-item">
-                <img src="images/flag-france.png" class="" alt="flag">
-              </a>
-            </div>
-            <span>
-              English
-            </span>
-          </div> -->
+
           <div class="contact_nav">
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
-               +966 3 8320222
+                +966 3 8320222
               </span>
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-              mukhtar@powerlink.sa.com              </span>
+                mukhtar@powerlink.sa.com </span>
             </a>
             <a href="">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
-                KSA,  P.O BOX 15099 DAMMAM
-                31444              </span>
+                KSA, P.O BOX 15099 DAMMAM
+                31444 </span>
             </a>
           </div>
           <div class="social_box1">
@@ -91,7 +78,7 @@
             <a href="https://twitter.com/Twitter" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
             </a>
-            
+
             <a href="https://www.linkedin.com/company/linkedin" target="_blank" rel="noopener noreferrer">
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
@@ -106,29 +93,29 @@
               justify-content: center;
               align-items: center;
             }
-        
+
             .social_box1 a {
               width: 30px;
               height: 30px;
               background-color: #f0f0f0;
-              
-              border-radius: 8px; 
+
+              border-radius: 8px;
               display: flex;
               justify-content: center;
               align-items: center;
               text-decoration: none;
               transition: all 0.3s ease;
             }
-        
+
             .social_box1 a i {
               color: #d92827;
               font-size: 15px;
             }
-        
+
             .social_box1 a:hover {
-              background-color:#d92827;
+              background-color: #d92827;
             }
-        
+
             .social_box1 a:hover i {
               color: black;
               transform: scale(1.1);
@@ -160,24 +147,231 @@
                 <li class="nav-item">
                   <a class="nav-link" href="service.html">Services</a>
                 </li>
-              
-                <li class="nav-item">
-                  <a class="nav-link" href="products.html">Products</a>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Products
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                    <a class="dropdown-item" href="products.html">All Products</a>
+                    <a class="dropdown-item" href="mechanical.html">Mechanical</a>
+                    <a class="dropdown-item" href="electrical.html">Electrical</a>
+                    <a class="dropdown-item" href="safety.html">Safety</a>
+                    <a class="dropdown-item" href="products.html#industrial">Labels</a>
+
+
                 </li>
+                <style>
+                  .nav-item.dropdown {
+                    position: relative;
+                    text-transform: uppercase;
+                  }
+
+                  /* Style the dropdown toggle link */
+                  .nav-link.dropdown-toggle {
+                    color: #333;
+                    padding: 10px 15px;
+                    font-weight: 500;
+                    transition: all 0.3s ease;
+                    border-radius: 4px;
+                  }
+
+                  .nav-link.dropdown-toggle:hover {
+                    color: black;
+                    background-color: #f8f9fa;
+                  }
+
+                  /* Style the dropdown menu */
+                  .dropdown-menu {
+                    border: none;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                    border-radius: 4px;
+                    padding: 0;
+                    margin-top: 5px;
+                    min-width: 200px;
+                    transition: all 0.3s ease;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                  }
+
+                  /* Style dropdown items */
+                  .dropdown-item {
+                    padding: 8px 15px;
+                    color: #333;
+                    transition: all 0.2s ease;
+                    font-size: 14px;
+                  }
+
+                  .dropdown-item:hover {
+                    background-color: black;
+                    color: white;
+                  }
+
+                  /* Style the divider */
+                  .dropdown-divider {
+                    margin: 5px 0;
+                    border-top: 1px solid #eee;
+                  }
+
+                  /* Add animation to dropdown */
+                  .dropdown-menu.show {
+                    animation: fadeIn 0.3s ease;
+                  }
+
+                  @keyframes fadeIn {
+                    from {
+                      opacity: 0;
+                      transform: translateY(10px);
+                    }
+
+                    to {
+                      opacity: 1;
+                      transform: translateY(0);
+                    }
+                  }
+
+                  /* Add a small arrow indicator */
+                  .nav-link.dropdown-toggle::after {
+                    display: inline-block;
+                    margin-left: 5px;
+                    vertical-align: middle;
+                    transition: transform 0.3s ease;
+                  }
+
+                  .nav-link.dropdown-toggle.show::after {
+                    transform: rotate(180deg);
+                  }
+
+                  .nav-item.dropdown:hover .dropdown-menu {
+                    display: block;
+                    animation: fadeIn 0.3s ease;
+                  }
+                </style>
 
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact </a>
                 </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="#"> Login</a>
+                <li class="nav-item dropdown language-switcher">
+                  <a class="nav-link dropdown-toggle btn-lang" href="#" id="languageDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="currentLanguageText">English</span>
+                  </a>
+                  <div class="dropdown-menu language-dropdown" aria-labelledby="languageDropdown">
+                    <a class="dropdown-item language-option" href="#" data-lang="en">
+                      <i class="fa fa-globe" aria-hidden="true"></i> English
+                    </a>
+                    <a class="dropdown-item language-option" href="#" data-lang="ar">
+                      <i class="fa fa-globe" aria-hidden="true"></i> العربية
+                    </a>
+                  </div>
                 </li>
-                <form class="form-inline">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form> -->
+
+                <style>
+                  .btn-lang {
+                    background: transparent;
+                    border: 1px solid #d92827;
+                    color: #d92827 !important;
+                    border-radius: 4px;
+                    padding: 5px 15px !important;
+                    margin-left: 10px;
+                    transition: all 0.3s ease;
+                    text-decoration: none !important;
+                  }
+
+                  .btn-lang:hover {
+                    background-color: #d92827;
+                    color: white !important;
+                    text-decoration: none !important;
+                  }
+
+                  /* Language dropdown specific styles */
+                  .language-dropdown {
+                    min-width: 120px;
+                    border: 1px solid #d92827;
+                    border-radius: 4px;
+                    padding: 5px 0;
+                    margin-top: 2px;
+                  }
+
+                  .language-dropdown .dropdown-item {
+                    padding: 8px 15px;
+                    color: #333;
+                    transition: all 0.2s ease;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                  }
+
+                  .language-dropdown .dropdown-item:hover {
+                    background-color: #d92827;
+                    color: white;
+                  }
+
+                  .language-dropdown .dropdown-item.active {
+                    background-color: #d92827;
+                    color: white;
+                  }
+
+                  .language-dropdown .dropdown-item i {
+                    font-size: 12px;
+                    width: 15px;
+                  }
+
+                  /* Add this to your existing CSS */
+                  [dir="rtl"] .about_section .detail-box h2,
+                  [dir="rtl"] .mission-box h2,
+                  [dir="rtl"] .vision-box h2 {
+                    text-align: right;
+                  }
+
+                  [dir="rtl"] .about_section .detail-box h2::after,
+                  [dir="rtl"] .mission-box h2::after,
+                  [dir="rtl"] .vision-box h2::after {
+                    right: 0;
+                    left: auto;
+                    transform: none;
+                  }
+
+                  /* General heading styles */
+                  .section-header {
+                    text-align: left;
+                  }
+
+                  .section-title {
+                    position: relative;
+                    display: inline-block;
+                    font-size: 38px;
+                    font-weight: 700;
+                    color: #2c3e50;
+                    margin-bottom: 20px;
+                  }
+
+                  .section-title::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -8px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 150px;
+                    height: 3px;
+                    background: linear-gradient(90deg, #d92827, #d92827);
+                    display: block;
+                  }
+
+                  /* RTL specific styles */
+                  [dir="rtl"] .section-header {
+                    text-align: right;
+                  }
+
+                  [dir="rtl"] .section-title::after {
+                    left: auto;
+                    right: 50%;
+                    transform: translateX(50%);
+                  }
+                </style>
               </ul>
-            
+
             </div>
           </nav>
         </div>
@@ -201,76 +395,78 @@
     }
 
     .mission_vision_section {
-  background-color: #faf8f8;
-}
+      background-color: #faf8f8;
+    }
 
-.mission_vision_section .row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
+    .mission_vision_section .row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
 
-.mission_vision_section .box {
-  background-color: white;
-  padding: 40px;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
+    .mission_vision_section .box {
+      background-color: white;
+      padding: 40px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
 
-/* Make both boxes the same minimum height */
-.mission_vision_section .mission-box,
-.mission_vision_section .vision-box {
-  min-height: 300px; /* Adjust this value as needed */
-}
+    /* Make both boxes the same minimum height */
+    .mission_vision_section .mission-box,
+    .mission_vision_section .vision-box {
+      min-height: 300px;
+      /* Adjust this value as needed */
+    }
 
-.mission_vision_section .box:hover {
-  transform: translateY(-5px);
-}
+    .mission_vision_section .box:hover {
+      transform: translateY(-5px);
+    }
 
-.mission_vision_section h2 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 20px;
-  position: relative;
-}
+    .mission_vision_section h2 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 20px;
+      position: relative;
+    }
 
-.mission_vision_section h2::after {
-  content: "";
-  width: 160px;
-  height: 4px;
-  background-color: #d92827;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-}
+    .mission_vision_section h2::after {
+      content: "";
+      width: 160px;
+      height: 4px;
+      background-color: #d92827;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+    }
 
-.mission_vision_section p {
-  font-size: 17px;
-  line-height: 1.7;
-  color: #555;
-  flex-grow: 1; /* This allows the paragraph to expand and fill available space */
-}
+    .mission_vision_section p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #555;
+      flex-grow: 1;
+      /* This allows the paragraph to expand and fill available space */
+    }
 
-/* Responsive layout */
-@media (max-width: 767px) {
-  .mission_vision_section .row {
-    flex-direction: column;
-  }
-  
-  .mission_vision_section .box {
-    padding: 25px;
-  }
-  
-  .mission_vision_section h2 {
-    font-size: 24px;
-  }
-}
+    /* Responsive layout */
+    @media (max-width: 767px) {
+      .mission_vision_section .row {
+        flex-direction: column;
+      }
+
+      .mission_vision_section .box {
+        padding: 25px;
+      }
+
+      .mission_vision_section h2 {
+        font-size: 24px;
+      }
+    }
 
     .sets_us_apart_section {
       padding: 80px 0;
@@ -290,24 +486,24 @@
     }
 
     .heading_container h2 {
-  font-size: 38px;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 20px;
-  position: relative;
-  display: inline-block;
-}
+      font-size: 38px;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+    }
 
-.heading_container h2:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 150px;  
-  height: 3px;
-  background: #d92827;
-}
+    .heading_container h2:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 3px;
+      background: #d92827;
+    }
 
     /* Feature List Styling */
     .features_container {
@@ -395,235 +591,250 @@
     }
 
     .layout_padding {
-  padding: 70px 0;
-  background-color: #faf8f8;
-}
+      padding: 70px 0;
+      background-color: #faf8f8;
+    }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
 
-/* Heading Styling */
-.heading_container {
-  margin-bottom: 60px;
-  text-align: center;
-}
+    /* Heading Styling */
+    .heading_container {
+      margin-bottom: 60px;
+      text-align: center;
+    }
 
-.heading_container h2 {
-  font-size: 38px;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 20px;
-  position: relative;
-  display: inline-block;
-}
+    .heading_container h2 {
+      font-size: 38px;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+    }
 
-.heading_container h2:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70px;
-  height: 3px;
-  background: linear-gradient(90deg, #d92827, #d92827);
-}
+    .heading_container h2:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70px;
+      height: 3px;
+      background: linear-gradient(90deg, #d92827, #d92827);
+    }
 
-.owl-carousel {
-  margin-top: 40px;
-  padding: 0 40px;
-}
+    .owl-carousel {
+      margin-top: 40px;
+      padding: 0 40px;
+    }
 
-.client-item {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 10px; /* Reduced from 300px */
-}
-
-
-.client-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.client-logo {
-  height: 150px; /* Increased height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  background-color: white;
-  border-radius: 8px;
-  width: 100%;
-  padding: 10px; /* Added padding for better spacing */
-}
-
-.client-logo img {
-  max-height: 100%; /* Keep image inside box height */
-  max-width: 100%; /* Prevent overflow horizontally */
-  object-fit: contain; /* Keep original aspect ratio */
-  transition: filter 0.3s ease;
-}
+    .client-item {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 10px;
+      /* Reduced from 300px */
+    }
 
 
-.client-testimonial {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.6;
-  margin: 0 0 15px 0;
-  font-style: italic;
-  overflow-y: auto; /* Added scrolling for overflow content */
-  /* max-height: 120px; Limit height to prevent overflow */
-}
+    .client-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
 
-.client-name {
-  /* margin-top: auto;
+    .client-logo {
+      height: 150px;
+      /* Increased height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      background-color: white;
+      border-radius: 8px;
+      width: 100%;
+      padding: 10px;
+      /* Added padding for better spacing */
+    }
+
+    .client-logo img {
+      max-height: 100%;
+      /* Keep image inside box height */
+      max-width: 100%;
+      /* Prevent overflow horizontally */
+      object-fit: contain;
+      /* Keep original aspect ratio */
+      transition: filter 0.3s ease;
+    }
+
+
+    .client-testimonial {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+      margin: 0 0 15px 0;
+      font-style: italic;
+      overflow-y: auto;
+      /* Added scrolling for overflow content */
+      /* max-height: 120px; Limit height to prevent overflow */
+    }
+
+    .client-name {
+      /* margin-top: auto;
   padding-top: 15px; */
-  font-weight: 600;
-  color: #d92827;
-  /* font-size: 18px;
+      font-weight: 600;
+      color: #d92827;
+      /* font-size: 18px;
   width: 100%;
   border-top: 1px solid #f0f0f0;
   position: relative;
   bottom: 0;  */
-}
+    }
 
-/* Custom navigation arrows */
-.owl-nav button {
-  position: absolute;
-  top: 30%;
-  transform: translateY(-50%);
-  background: linear-gradient(135deg, #d92827, #d92827) !important;
-  width: 44px;
-  height: 44px;
-  border-radius: 50% !important;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  color: white !important;
-  font-size: 24px !important;
-  box-shadow: 0 3px 10px rgba(52, 152, 219, 0.3);
-  opacity: 0.8;
-  transition: all 0.3s ease;
-  z-index: 1;
-}
+    /* Custom navigation arrows */
+    .owl-nav button {
+      position: absolute;
+      top: 30%;
+      transform: translateY(-50%);
+      background: linear-gradient(135deg, #d92827, #d92827) !important;
+      width: 44px;
+      height: 44px;
+      border-radius: 50% !important;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      color: white !important;
+      font-size: 24px !important;
+      box-shadow: 0 3px 10px rgba(52, 152, 219, 0.3);
+      opacity: 0.8;
+      transition: all 0.3s ease;
+      z-index: 1;
+    }
 
-.owl-nav button:hover {
-  opacity: 1;
-  background: linear-gradient(135deg, #d92827, #2c3e50) !important;
-}
+    .owl-nav button:hover {
+      opacity: 1;
+      background: linear-gradient(135deg, #d92827, #2c3e50) !important;
+    }
 
-.owl-prev {
-  left: -10px;
-}
+    .owl-prev {
+      left: -10px;
+    }
 
-.owl-next {
-  right: -10px;
-}
+    .owl-next {
+      right: -10px;
+    }
 
-.owl-dots {
-  margin-top: 40px !important;
-}
+    .owl-dots {
+      margin-top: 40px !important;
+    }
 
-.owl-dot span {
-  background: #ccc !important;
-  transition: all 0.3s ease !important;
-}
+    .owl-dot span {
+      background: #ccc !important;
+      transition: all 0.3s ease !important;
+    }
 
-.owl-dot.active span {
-  background: #d92827 !important;
-  width: 25px !important;
-}
+    .owl-dot.active span {
+      background: #d92827 !important;
+      width: 25px !important;
+    }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-  .client-item {
-    min-height: 320px; /* Increased min-height for tablet */
-  }
-  
-  .client-logo {
-    height: 140px;
-  }
-  
-  .client-logo img {
-    max-height: 130px;
-    width: auto; /* Ensure width is auto to maintain aspect ratio */
-  }
-  
-  .client-testimonial {
-    max-height: 100px;
-  }
-}
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .client-item {
+        min-height: 320px;
+        /* Increased min-height for tablet */
+      }
 
-@media (max-width: 768px) {
-  .layout_padding {
-    padding: 60px 0;
-  }
-  
-  .heading_container h2 {
-    font-size: 32px;
-  }
-  
-  .client-item {
-    min-height: 200px; /* Increased min-height for smaller screens */
-    padding: 20px 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .client-logo {
-    height: 120px;
-  }
-  
-  .client-logo img {
-    max-height: 110px;
-  }
-  
-  .client-testimonial {
-    max-height: 150px; /* Allow more room for text */
-    overflow-y: auto;
-  }
-}
+      .client-logo {
+        height: 140px;
+      }
 
-@media (max-width: 576px) {
-  .client-item {
-    min-height: 200px; /* Increased height for mobile */
-    padding: 15px;
-  }
-  
-  .client-logo {
-    height: 100px;
-  }
-  
-  .client-logo img {
-    max-height: 90px;
-  }
-  
-  .owl-nav button {
-    width: 38px;
-    height: 38px;
-  }
-  
-  .client-testimonial {
-    font-size: 14px;
-    max-height: 200px; /* More space for testimonial text */
-  }
-  
-  .client-name {
-    font-size: 16px;
-    padding-top: 10px;
-    margin-top: 10px; /* Ensure spacing before name */
-  }
-}
+      .client-logo img {
+        max-height: 130px;
+        width: auto;
+        /* Ensure width is auto to maintain aspect ratio */
+      }
+
+      .client-testimonial {
+        max-height: 100px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .layout_padding {
+        padding: 60px 0;
+      }
+
+      .heading_container h2 {
+        font-size: 32px;
+      }
+
+      .client-item {
+        min-height: 200px;
+        /* Increased min-height for smaller screens */
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .client-logo {
+        height: 120px;
+      }
+
+      .client-logo img {
+        max-height: 110px;
+      }
+
+      .client-testimonial {
+        max-height: 150px;
+        /* Allow more room for text */
+        overflow-y: auto;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .client-item {
+        min-height: 200px;
+        /* Increased height for mobile */
+        padding: 15px;
+      }
+
+      .client-logo {
+        height: 100px;
+      }
+
+      .client-logo img {
+        max-height: 90px;
+      }
+
+      .owl-nav button {
+        width: 38px;
+        height: 38px;
+      }
+
+      .client-testimonial {
+        font-size: 14px;
+        max-height: 200px;
+        /* More space for testimonial text */
+      }
+
+      .client-name {
+        font-size: 16px;
+        padding-top: 10px;
+        margin-top: 10px;
+        /* Ensure spacing before name */
+      }
+    }
+
     /*core values*/
     .layout_padding {
       padding: 70px 0;
@@ -796,450 +1007,711 @@
     }
   </style>
   <!-- about section -->
-<body>
-  <section class="about_section layout_padding">
-    <div class="container  ">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div >
-              <h2 style="position: relative; display: inline-block;  font-size: 38px;
-              font-weight: 700;
-              color: #2c3e50;" >
-                Who We Are
-                <span style="
-                  content: '';
-                  position: absolute;
-                  bottom: -8px;
-                  left: 50%;
-                  transform: translateX(-50%);
-                  width: 150px;
-                  height: 3px;
-                  background: linear-gradient(90deg, #d92827, #d92827);
-                  display: block;
-                "></span>
-              </h2>
-              
-            </div>
-            <p style="margin-top: 20px; font-size: 17px;  color: #555;
+
+  <body>
+    <section class="about_section layout_padding">
+      <div class="container  ">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="detail-box">
+              <div class="section-header">
+                <h2 class="section-title">Who We Are</h2>
+              </div>
+              <p style="margin-top: 20px; font-size: 17px;  color: #555;
 ">
-             We provide comprehensive solutions in construction, electrical &
-instrumentation, fire & safety systems, and logistics & equipment rental.
-With a client-focused approach and proven industry experience, Powerlink has
-become a reliable partner to leading organizations across the oil & gas,
-infrastructure, and public works sectors.
+                We provide comprehensive solutions in construction, electrical &
+                instrumentation, fire & safety systems, and logistics & equipment rental.
+                With a client-focused approach and proven industry experience, Powerlink has
+                become a reliable partner to leading organizations across the oil & gas,
+                infrastructure, and public works sectors.
 
-            </p>
-            <p style="font-size: 17px;  color: #555;">We also offer a wide range of industrial labeling solutions, including high-quality
-Brady and Zebra labels, tapes, and printers, supporting safety, compliance, and
-asset management needs.
               </p>
-           
-          </div>
-        </div>
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/About_us.jpg" alt="">
-          </div>
-        </div>
+              <p style="font-size: 17px;  color: #555;">We also offer a wide range of industrial labeling solutions,
+                including high-quality
+                Brady and Zebra labels, tapes, and printers, supporting safety, compliance, and
+                asset management needs.
+              </p>
 
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="img-box">
+              <img src="images/About_us.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- Our Mission -->
-  <section class="mission_vision_section py-5">
-    <div class="container">
-      <div class="row">
-        <!-- Mission Box -->
-        <div class="col-lg-6 col-md-6">
-          <div class="box mission-box">
-            <h2 style=" 
+    </section>
+    <!-- Our Mission -->
+    <section class="mission_vision_section py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Mission Box -->
+          <div class="col-lg-6 col-md-6">
+            <div class="box mission-box">
+              <h2 style=" 
             color: #2c3e50;">Our Mission</h2>
-            <p>
-              To drive our clients' long-term success by delivering high-quality products and
-              practical solutions that enhance performance. We aim to add value through expert
-              implementation, seamless change management, and a commitment to reliability
-              and excellence.
-            </p>
+              <p>
+                To drive our clients' long-term success by delivering high-quality products and
+                practical solutions that enhance performance. We aim to add value through expert
+                implementation, seamless change management, and a commitment to reliability
+                and excellence.
+              </p>
+            </div>
           </div>
-        </div>
-        
-        <!-- Vision Box -->
-        <div class="col-lg-6 col-md-6">
-          <div class="box vision-box">
-            <h2 style=" 
+
+          <!-- Vision Box -->
+          <div class="col-lg-6 col-md-6">
+            <div class="box vision-box">
+              <h2 style=" 
             color: #2c3e50;">Our Vision</h2>
-            <p>
-              To be a trusted leader in industrial supply and contracting, known for delivering
-              innovative, reliable, and high-quality solutions that support the growth of Saudi Arabia's
-              vital sectors.
-            </p>
+              <p>
+                To be a trusted leader in industrial supply and contracting, known for delivering
+                innovative, reliable, and high-quality solutions that support the growth of Saudi Arabia's
+                vital sectors.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
- 
+    </section>
 
-  <!-- What Sets Us Apart -->
-  <section class="sets_us_apart_section">
-    <div class="container">
-      <div class="heading_container">
-        <h2 style=" font-size: 38px;
+
+    <!-- What Sets Us Apart -->
+    <section class="sets_us_apart_section">
+      <div class="container">
+        <div class="heading_container">
+          <h2 style=" font-size: 38px;
         font-weight: 700;
         color: #2c3e50;">What Sets Us Apart</h2>
+        </div>
+        <div class="features_container">
+          <div class="feature_item">
+            <div class="icon_wrapper">
+              <i class="fas fa-history"></i>
+            </div>
+            <p class="feature_text" style="color: #555;">Over 15 Years of Industry Experience</p>
+          </div>
+          <div class="feature_item">
+            <div class="icon_wrapper">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <p class="feature_text" style="color: #555;">Trusted by Leading Clients</p>
+          </div>
+          <div class="feature_item">
+            <div class="icon_wrapper">
+              <i class="fas fa-users-cog"></i>
+            </div>
+            <p class="feature_text" style="color: #555;">Skilled Technical Workforce</p>
+          </div>
+          <div class="feature_item">
+            <div class="icon_wrapper">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <p class="feature_text" style="color: #555;">Commitment to Safety & Quality</p>
+          </div>
+          <div class="feature_item">
+            <div class="icon_wrapper">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <p class="feature_text" style="color: #555;">Reliable Project Delivery</p>
+          </div>
+        </div>
       </div>
-      <div class="features_container">
-        <div class="feature_item">
-          <div class="icon_wrapper">
-            <i class="fas fa-history"></i>
-          </div>
-          <p class="feature_text" style="color: #555;">Over 15 Years of Industry Experience</p>
-        </div>
-        <div class="feature_item">
-          <div class="icon_wrapper">
-            <i class="fas fa-handshake"></i>
-          </div>
-          <p class="feature_text" style="color: #555;">Trusted by Leading Clients</p>
-        </div>
-        <div class="feature_item">
-          <div class="icon_wrapper">
-            <i class="fas fa-users-cog"></i>
-          </div>
-          <p class="feature_text" style="color: #555;">Skilled Technical Workforce</p>
-        </div>
-        <div class="feature_item">
-          <div class="icon_wrapper">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <p class="feature_text" style="color: #555;">Commitment to Safety & Quality</p>
-        </div>
-        <div class="feature_item">
-          <div class="icon_wrapper">
-            <i class="fas fa-rocket"></i>
-          </div>
-          <p class="feature_text" style="color: #555;">Reliable Project Delivery</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
-  <!-- Our Clients (Slider) -->
-  <section class="layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2 style=" font-size: 38px;
+    <!-- Our Clients (Slider) -->
+    <section class="layout_padding client-carousel-section">
+      <div class="container">
+        <div class="heading_container">
+          <h2 style=" font-size: 38px;
         font-weight: 700;
         color: #2c3e50;">Our Trusted Clients</h2>
-      </div>
-      <div class="owl-carousel owl-theme client-carousel">
-        <div class="client-item">
-          <div class="client-logo">
-            <img src="images/client1-removebg-preview.png" alt="Client 1">
-          </div>
-          <p class="client-testimonial"></p>
-          <h4 class="client-name"></h4>
         </div>
-        <!-- <div class="client-item">
+        <div class="owl-carousel owl-theme client-carousel">
+          <div class="client-item">
+            <div class="client-logo">
+              <img src="images/client1-removebg-preview.png" alt="Client 1">
+            </div>
+            <p class="client-testimonial"></p>
+            <h4 class="client-name"></h4>
+          </div>
+          <!-- <div class="client-item">
           <div class="client-logo">
             <img src="images/client2-removebg-preview.png" alt="Client 2">
           </div>
           <p class="client-testimonial">.</p>
           <h4 class="client-name"></h4>
         </div> -->
-        <div class="client-item">
-          <div class="client-logo">
-            <img src="images/client3-removebg-preview.png" alt="Client 3">
+          <div class="client-item">
+            <div class="client-logo">
+              <img src="images/client3-removebg-preview.png" alt="Client 3">
+            </div>
+            <p class="client-testimonial"></p>
+            <h4 class="client-name"></h4>
           </div>
-          <p class="client-testimonial"></p>
-          <h4 class="client-name"></h4>
-        </div>
-        <div class="client-item">
-          <div class="client-logo">
-            <img src="images/client4.jpg" alt="Client 4">
+          <div class="client-item">
+            <div class="client-logo">
+              <img src="images/client4.jpg" alt="Client 4">
+            </div>
+            <p class="client-testimonial"></p>
+            <h4 class="client-name"></h4>
           </div>
-          <p class="client-testimonial"></p>
-          <h4 class="client-name"></h4>
-        </div>
-        <div class="client-item">
-          <div class="client-logo">
-            <img src="images/cleint6.jpg" alt="Client 5">
+          <div class="client-item">
+            <div class="client-logo">
+              <img src="images/cleint6.jpg" alt="Client 5">
+            </div>
+            <p class="client-testimonial"></p>
+            <h4 class="client-name"></h4>
           </div>
-          <p class="client-testimonial"></p>
-          <h4 class="client-name"></h4>
-        </div>
-        <div class="client-item">
-          <div class="client-logo">
-            <img src="images/client7.jpg" alt="Client 5">
+          <div class="client-item">
+            <div class="client-logo">
+              <img src="images/client7.jpg" alt="Client 5">
+            </div>
+            <p class="client-testimonial"></p>
+            <h4 class="client-name"></h4>
           </div>
-          <p class="client-testimonial"></p>
-          <h4 class="client-name"></h4>
-        </div> <div class="client-item">
-          <div class="client-logo">
-            <img src="images/client8logo.jpg" alt="Client 5">
+          <div class="client-item">
+            <div class="client-logo">
+              <img src="images/client8logo.jpg" alt="Client 5">
+            </div>
+            <p class="client-testimonial"></p>
+            <h4 class="client-name"></h4>
           </div>
-          <p class="client-testimonial"></p>
-          <h4 class="client-name"></h4>
-        </div>
-         <div class="client-item">
-          <div class="client-logo">
-            <img src="images/cleint10.jpg" alt="Client 5">
+          <div class="client-item">
+            <div class="client-logo">
+              <img src="images/cleint10.jpg" alt="Client 5">
+            </div>
+            <p class="client-testimonial"></p>
+            <h4 class="client-name"></h4>
           </div>
-          <p class="client-testimonial"></p>
-          <h4 class="client-name"></h4>
-        </div>
-        <div class="client-item">
-          <div class="client-logo">
-            <img src="images/client9.jpg" alt="Client 5">
+          <div class="client-item">
+            <div class="client-logo">
+              <img src="images/client9.jpg" alt="Client 5">
+            </div>
+            <p class="client-testimonial"></p>
+            <h4 class="client-name"></h4>
           </div>
-          <p class="client-testimonial"></p>
-          <h4 class="client-name"></h4>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".client-carousel").owlCarousel({
-        loop: true,
-        margin: 20,
-        nav: true,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        navText: [
-          "<i class='fas fa-chevron-left'></i>",
-          "<i class='fas fa-chevron-right'></i>"
-        ],
-        responsive: {
-          0: {
-            items: 1
-          },
-          576: {
-            items: 2
-          },
-          992: {
-            items: 3
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".client-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: true,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true,
+          navText: [
+            "<i class='fas fa-chevron-left'></i>",
+            "<i class='fas fa-chevron-right'></i>"
+          ],
+          responsive: {
+            0: {
+              items: 1
+            },
+            576: {
+              items: 2
+            },
+            992: {
+              items: 3
+            }
           }
-        }
+        });
       });
-    });
-  </script>
+    </script>
 
-  <!-- Our Core Values -->
-  <section class="layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2 style=" font-size: 38px;
+    <!-- Our Core Values -->
+    <section class="layout_padding core-values-section">
+      <div class="container">
+        <div class="heading_container">
+          <h2 style=" font-size: 38px;
         font-weight: 700;
         color: #2c3e50;">Our Core Values</h2>
+        </div>
+        <div class="values-container">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-balance-scale"></i>
+            </div>
+            <h3 class="value-title" style="color: #555;">Integrity</h3>
+            <p class="value-description" style="color: #555; font-size: 17px;">We uphold honesty, ethics, and
+              transparency in everything we do, building trust through accountability.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-id-badge"></i>
+            </div>
+            <h3 class="value-title" style="color: #555;">Professionalism</h3>
+            <p class="value-description" style="color: #555; font-size: 17px;">We maintain high standards of behavior,
+              reliability, and expertise to deliver quality service with consistency.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3 class="value-title" style="color: #555;">Innovation</h3>
+            <p class="value-description" style="color: #555; font-size: 17px;">We embrace creativity and technology to
+              develop forward-thinking solutions that drive progress and efficiency.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-smile"></i>
+            </div>
+            <h3 class="value-title" style="color: #555;">Customer Satisfaction</h3>
+            <p class="value-description" style="color: #555; font-size: 17px;">We prioritize our clients’ needs by
+              delivering value, responsiveness, and excellent service that exceeds expectations.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="value-title" style="color: #555;">Safety First</h3>
+            <p class="value-description" style="color: #555; font-size: 17px;">We are committed to ensuring a safe and
+              secure environment for our employees, partners, and customers at every step.</p>
+          </div>
+        </div>
       </div>
-      <div class="values-container">
-        <div class="value-card">
-          <div class="value-icon">
-            <i class="fas fa-balance-scale"></i>
-          </div>
-          <h3 class="value-title" style="color: #555;">Integrity</h3>
-          <p class="value-description" style="color: #555; font-size: 17px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo in voluptatum odio!</p>
-        </div>
+    </section>
+    <!-- end about section -->
 
-        <div class="value-card">
-          <div class="value-icon">
-            <i class="fas fa-id-badge"></i>
-          </div>
-          <h3 class="value-title" style="color: #555;">Professionalism</h3>
-          <p class="value-description" style="color: #555; font-size: 17px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, corrupti.</p>
-        </div>
+    <!-- info section -->
+    <section class="info_section ">
 
-        <div class="value-card">
-          <div class="value-icon">
-            <i class="fas fa-lightbulb"></i>
-          </div>
-          <h3 class="value-title" style="color: #555;">Innovation</h3>
-          <p class="value-description" style="color: #555; font-size: 17px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et v explicabo.</p>
-        </div>
+      <div class="container">
+        <div class="info_top ">
+          <div class="row info_main_row">
 
-        <div class="value-card">
-          <div class="value-icon">
-            <i class="fas fa-smile"></i>
-          </div>
-          <h3 class="value-title" style="color: #555;">Customer Satisfaction</h3>
-          <p class="value-description" style="color: #555; font-size: 17px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, dolore.</p>
-        </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+              <div class="">
+                <div class="info_logo">
+                  <a href="">
+                    <img src="images/Powerlink_logo.png" alt="" style="width: 135px; margin-left: 20px;">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+              <div class="info_links">
+                <h4>
+                  QUICK LINKS
+                </h4>
+                <div class="info_links_menu">
+                  <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="" href="about.html"> About </a>
 
-        <div class="value-card">
-          <div class="value-icon">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <h3 class="value-title" style="color: #555;">Safety First</h3>
-          <p class="value-description" style="color: #555; font-size: 17px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, dolore.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end about section -->
+                  <a class="" href="service.html">Services</a>
+                  <a class="" href="products.html">Products</a>
+                  <!-- <a class="" href="testimonial.html">Testimonial</a>  -->
+                  <a class="" href="contact.html">Contact </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 ml-auto" style="margin-right: 60px;">
+              <div class="social_box">
+                <a href="https://www.facebook.com/facebook" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/Twitter" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                </a>
 
-  <!-- info section -->
-  <section class="info_section ">
-
-    <div class="container">
-      <div class="info_top ">
-        <div class="row info_main_row">
-         
-          <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
-            <div class="">
-              <div class="info_logo">
-                <a href="">
-                  <img src="images/Powerlink_logo.png" alt="" style="width: 135px; margin-left: 20px;">
+                <a href="https://www.linkedin.com/company/linkedin" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/instagram" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <div class="info_links">
-              <h4>
-                QUICK LINKS
-              </h4>
-              <div class="info_links_menu">
-                <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
-                                <a class="" href="about.html"> About </a>
 
-                <a class="" href="service.html">Services</a>
-                <a class="" href="products.html">Products</a>
-                <!-- <a class="" href="testimonial.html">Testimonial</a>  -->
-                <a class="" href="contact.html">Contact </a>
-              </div>
             </div>
-          </div>
-          <div class="col-md-3 ml-auto" style="margin-right: 60px;">
-            <div class="social_box">
-              <a href="https://www.facebook.com/facebook" target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="https://twitter.com/Twitter" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
-              </a>
-              
-              <a href="https://www.linkedin.com/company/linkedin" target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="https://www.instagram.com/instagram" target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </div>
-            
-          </div>
-          <style>
-            .social_box {
-              display: flex;
-              gap: 10px;
-              justify-content: center;
-              align-items: center;
-            }
-        
-            .social_box a {
-              width: 40px;
-              height: 40px;
-              background-color: #f0f0f0;
-              
-              border-radius: 8px; 
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              text-decoration: none;
-              transition: all 0.3s ease;
-            }
-        
-            .social_box a i {
-              color: #d92827;
-              font-size: 20px;
-            }
-        
-            .social_box a:hover {
-              background-color:#d92827;
-            }
-        
-            .social_box a:hover i {
-              color: black;
-              transform: scale(1.1);
-            }
-          </style>
+            <style>
+              .social_box {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+              }
 
-        
+              .social_box a {
+                width: 40px;
+                height: 40px;
+                background-color: #f0f0f0;
+
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                transition: all 0.3s ease;
+              }
+
+              .social_box a i {
+                color: #d92827;
+                font-size: 20px;
+              }
+
+              .social_box a:hover {
+                background-color: #d92827;
+              }
+
+              .social_box a:hover i {
+                color: black;
+                transform: scale(1.1);
+              }
+            </style>
+
+
+          </div>
         </div>
-      </div>
-      <div class="contact_nav">
-        <a href="">
-          <i class="fa fa-phone" aria-hidden="true"></i>
-          <span>
-            Call : +966 3 8320222
-          </span>
-        </a>
-        <a href="">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-          <span>
-            Email : 
-            mukhtar@powerlink.sa.com
-            info@powerlink.sa.com
-          </span>
-        </a>
-        <a href="">
-          <i class="fa fa-map-marker" aria-hidden="true"></i>
-          <span>
-            Address:  Kingdom of Saudi Arabia<br >  P.O BOX 15099<br > DAMMAM
-            31444
-            
-          </span>
-        </a>
-      </div>
+        <div class="contact_nav">
+          <a href="">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>
+              Call : +966 3 8320222
+            </span>
+          </a>
+          <a href="">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>
+              Email :
+              mukhtar@powerlink.sa.com
+              info@powerlink.sa.com
+            </span>
+          </a>
+          <a href="" class="address-link"> <!-- Added class here -->
+            <i class="fa fa-map-marker"></i>
+            <span class="address-text"> <!-- Added class here -->
+              Address: Kingdom of Saudi Arabia<br>P.O BOX 15099<br>DAMMAM 31444
+            </span>
+          </a>
+        </div>
 
-     
-    
-    </div>
-  </section>
-  <!-- end info_section -->
 
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <!-- <p>
+
+      </div>
+    </section>
+    <!-- end info_section -->
+
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <!-- <p>
         &copy; <span id="displayYear"></span> All Rights Reserved By
         <a href="https://html.design/"> Powerlink Trading Establishment</a>
       </p> -->
-      <p>
-        &copy;  All Rights Reserved By
-        <a href="https://ex-ion.com/"> Ex-ion 2025</a>
-      </p>
-    </div>
-  </footer>
-  <!-- footer section -->
-
-  <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        <p>
+          &copy; All Rights Reserved By
+          <a href="https://ex-ion.com/"> Ex-ion 2025</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer section -->
+    <script src="js/lang.js"></script>
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+      </script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
     </script>
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!--  OwlCarousel 2 - Filter -->
-  <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
-  <!-- custom js -->
-  <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
+    <!--  OwlCarousel 2 - Filter -->
+    <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    </script>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+        // Complete language data including navbar and footer
+        const languageData = {
+          "navbar": {
+            "en": ["Home", "About Us", "Services", "Products", "Contact"],
+            "ar": ["الرئيسية", "من نحن", "الخدمات", "المنتجات", "اتصل بنا"]
+          },
 
-</body>
+          "productsDropdownItems": {
+            "en": ["All Products", "Mechanical", "Electrical", "Safety", "Labels"],
+            "ar": ["كل المنتجات", "ميكانيكية", "كهربائية", "السلامة", "الملصقات"]
+          },
+
+          "header": {
+            "address": {
+              "en": "KSA, P.O BOX 15099 DAMMAM 31444",
+              "ar": "المملكة العربية السعودية، ص.ب 15099 الدمام 31444"
+            }
+          },
+          "aboutUs": {
+            "headings": {
+              "en": ["Who We Are", "Our Mission", "Our Vision", "What Sets Us Apart", "Our Trusted Clients", "Our Core Values"],
+              "ar": ["من نحن", "مهمتنا", "رؤيتنا", "ما يميزنا", "عملاؤنا الموثوقون", "قيمنا الأساسية"]
+            },
+            "subheadings": {
+              "en": ["Over 15 Years of Industry Experience", "Trusted by Leading Clients", "Skilled Technical Workforce", "Commitment to Safety & Quality", "Reliable Project Delivery"],
+              "ar": ["أكثر من 15 عامًا من الخبرة في الصناعة", "موثوق من قبل كبار العملاء", "قوة عاملة فنية ماهرة", "الالتزام بالسلامة والجودة", "تسليم المشاريع بكفاءة"]
+            },
+            "coreValues": {
+              "en": ["Integrity", "Professionalism", "Innovation", "Customer Satisfaction", "Safety First"],
+              "ar": ["النزاهة", "الاحترافية", "الابتكار", "رضا العملاء", "السلامة أولاً"]
+            },
+            "paragraphs": {
+              "en": [
+                "We provide comprehensive solutions in construction, electrical & instrumentation, fire & safety systems, and logistics & equipment rental. With a client-focused approach and proven industry experience, Powerlink has become a reliable partner to leading organizations across the oil & gas, infrastructure, and public works sectors.",
+                "We also offer a wide range of industrial labeling solutions, including high-quality Brady and Zebra labels, tapes, and printers, supporting safety, compliance, and asset management needs.",
+                "To drive our clients' long-term success by delivering high-quality products and practical solutions that enhance performance. We aim to add value through expert implementation, seamless change management, and a commitment to reliability and excellence.",
+                "To be a trusted leader in industrial supply and contracting, known for delivering innovative, reliable, and high-quality solutions that support the growth of Saudi Arabia's vital sectors.",
+                "We uphold honesty, ethics, and transparency in everything we do, building trust through accountability.",
+                "We maintain high standards of behavior, reliability, and expertise to deliver quality service with consistency.",
+                "We embrace creativity and technology to develop forward-thinking solutions that drive progress and efficiency.",
+                "We prioritize our clients' needs by delivering value, responsiveness, and excellent service that exceeds expectations.",
+                "We are committed to ensuring a safe and secure environment for our employees, partners, and customers at every step."
+              ],
+              "ar": [
+                "نقدم حلولاً شاملة في مجالات البناء، الكهرباء والآلات الدقيقة، أنظمة الحريق والسلامة، والخدمات اللوجستية وتأجير المعدات. ومن خلال نهج يركز على العميل وخبرة مثبتة في الصناعة، أصبحت باورلينك شريكاً موثوقاً للعديد من المنظمات الرائدة في قطاعات النفط والغاز، والبنية التحتية، والمشاريع العامة.",
+                "كما نقدم مجموعة واسعة من حلول الملصقات الصناعية، بما في ذلك ملصقات وأشرطة وطابعات Brady وZebra عالية الجودة، لدعم متطلبات السلامة والامتثال وإدارة الأصول.",
+                "نسعى لدعم نجاح عملائنا على المدى الطويل من خلال تقديم منتجات عالية الجودة وحلول عملية تعزز الأداء. نهدف إلى إضافة قيمة من خلال التنفيذ الخبير، والإدارة السلسة للتغيير، والالتزام بالموثوقية والتميز.",
+                "أن نكون روادًا موثوقين في مجال التوريد الصناعي والمقاولات، من خلال تقديم حلول مبتكرة وموثوقة وعالية الجودة تدعم نمو القطاعات الحيوية في المملكة العربية السعودية.",
+                "نلتزم بالصدق والأخلاقيات والشفافية في كل ما نقوم به، لبناء الثقة من خلال المساءلة.",
+                "نحافظ على أعلى معايير السلوك والموثوقية والخبرة لتقديم خدمات ذات جودة باستمرار.",
+                "نحتضن الإبداع والتكنولوجيا لتطوير حلول مستقبلية تعزز التقدم والكفاءة.",
+                "نضع احتياجات عملائنا في المقام الأول من خلال تقديم قيمة واستجابة وخدمة متميزة تتجاوز التوقعات.",
+                "نلتزم بتوفير بيئة آمنة ومأمونة لموظفينا وشركائنا وعملائنا في كل خطوة."
+              ]
+            }
+          },
+          "footer": {
+            "quickLinks": {
+              "en": ["Home", "About", "Services", "Products", "Contact"],
+              "ar": ["الرئيسية", "من نحن", "الخدمات", "المنتجات", "اتصل بنا"]
+            },
+            "copyright": {
+              "en": "© All Rights Reserved By Ex-ion 2025",
+              "ar": "© جميع الحقوق محفوظة لشركة Ex-ion 2025"
+            }
+          },
+          "contact": {
+            "address": {
+              "en": "Address: Kingdom of Saudi Arabia<br>P.O BOX 15099<br>DAMMAM 31444",
+              "ar": "العنوان: المملكة العربية السعودية<br>ص.ب 15099<br>الدمام 31444"
+            }
+          }
+        };
+
+        // Elements to translate
+        const elementsToTranslate = {
+          navbar: [
+            { selector: ".nav-item:nth-child(1) .nav-link", index: 0 },
+            { selector: ".nav-item:nth-child(2) .nav-link", index: 1 },
+            { selector: ".nav-item:nth-child(3) .nav-link", index: 2 },
+            { selector: ".nav-item.dropdown .dropdown-toggle", index: 3 },
+            { selector: ".nav-item a[href='contact.html']", index: 4 }
+          ],
+          productsDropdownItems: [
+            { selector: ".dropdown-menu a:nth-child(1)", index: 0 },
+            { selector: ".dropdown-menu a:nth-child(2)", index: 1 },
+            { selector: ".dropdown-menu a:nth-child(3)", index: 2 },
+            { selector: ".dropdown-menu a:nth-child(4)", index: 3 },
+            { selector: ".dropdown-menu a:nth-child(5)", index: 4 }
+          ],
+
+          headings: [
+            { selector: ".about_section .detail-box h2", index: 0 },
+            { selector: ".mission-box h2", index: 1 },
+            { selector: ".vision-box h2", index: 2 },
+            { selector: ".sets_us_apart_section h2", index: 3 },
+            { selector: ".client-carousel-section .heading_container h2", index: 4 },
+            { selector: ".core-values-section .heading_container h2", index: 5 }
+          ],
+          subheadings: [
+            { selector: ".feature_item:nth-child(1) .feature_text", index: 0 },
+            { selector: ".feature_item:nth-child(2) .feature_text", index: 1 },
+            { selector: ".feature_item:nth-child(3) .feature_text", index: 2 },
+            { selector: ".feature_item:nth-child(4) .feature_text", index: 3 },
+            { selector: ".feature_item:nth-child(5) .feature_text", index: 4 }
+          ],
+          coreValues: [
+            { selector: ".value-card:nth-child(1) .value-title", index: 0 },
+            { selector: ".value-card:nth-child(2) .value-title", index: 1 },
+            { selector: ".value-card:nth-child(3) .value-title", index: 2 },
+            { selector: ".value-card:nth-child(4) .value-title", index: 3 },
+            { selector: ".value-card:nth-child(5) .value-title", index: 4 }
+          ],
+          paragraphs: [
+            { selector: ".about_section .detail-box p:nth-child(2)", index: 0 },
+            { selector: ".about_section .detail-box p:nth-child(3)", index: 1 },
+            { selector: ".mission-box p", index: 2 },
+            { selector: ".vision-box p", index: 3 },
+            { selector: ".value-card:nth-child(1) .value-description", index: 4 },
+            { selector: ".value-card:nth-child(2) .value-description", index: 5 },
+            { selector: ".value-card:nth-child(3) .value-description", index: 6 },
+            { selector: ".value-card:nth-child(4) .value-description", index: 7 },
+            { selector: ".value-card:nth-child(5) .value-description", index: 8 }
+          ],
+          footerLinks: [
+            { selector: ".info_links_menu a:nth-child(1)", index: 0 },
+            { selector: ".info_links_menu a:nth-child(2)", index: 1 },
+            { selector: ".info_links_menu a:nth-child(3)", index: 2 },
+            { selector: ".info_links_menu a:nth-child(4)", index: 3 },
+            { selector: ".info_links_menu a:nth-child(5)", index: 4 }
+          ],
+          footerCopyright: [
+            { selector: ".footer_section p", index: 0 }
+          ],
+          contactAddress: [
+            {
+              selector: ".address-text",
+              index: 0,
+              isHtml: true
+            }
+          ]
+        };
+
+        // Current language (default to English)
+        let currentLanguage = 'en';
+        const currentLanguageText = document.getElementById('currentLanguageText');
+
+        // Initialize carousel with proper RTL support
+        function initCarousel() {
+          const isRTL = document.documentElement.dir === 'rtl';
+
+          $(".client-carousel").owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            rtl: isRTL, // Important for RTL support
+            navText: [
+              "<i class='fas fa-chevron-left'></i>",
+              "<i class='fas fa-chevron-right'></i>"
+            ],
+            responsive: {
+              0: { items: 1 },
+              576: { items: 2 },
+              992: { items: 3 }
+            },
+            onInitialized: function () {
+              // Force image display
+              $('.client-logo img').each(function () {
+                $(this).css({
+                  'display': 'block',
+                  'visibility': 'visible',
+                  'opacity': '1'
+                });
+              });
+            }
+          });
+        }
+
+        // Function to switch language with proper image handling
+        function switchLanguage(lang) {
+          currentLanguage = lang;
+          currentLanguageText.textContent = lang === 'en' ? 'English' : 'العربية';
+
+          // Update HTML direction and font
+          document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+          document.body.style.fontFamily = lang === 'ar' ? "'Tajawal', sans-serif" : "'Roboto', sans-serif";
+
+
+          // Products dropdown toggle
+          const productsDropdown = document.querySelector('#productsDropdown');
+          if (productsDropdown) {
+            productsDropdown.textContent = languageData.navbar[currentLanguage][3]; // "Products"
+          }
+
+
+          // Translate all elements
+          Object.keys(elementsToTranslate).forEach(category => {
+            elementsToTranslate[category].forEach(item => {
+              const element = document.querySelector(item.selector);
+              if (element) {
+                if (category === 'navbar') {
+                  element.textContent = languageData.navbar[lang][item.index];
+                } else if (category === 'productsDropdownItems') {
+                  element.textContent = languageData.productsDropdownItems[lang][item.index];
+                } else if (category === 'headings') {
+                  element.textContent = languageData.aboutUs.headings[lang][item.index];
+                } else if (category === 'subheadings') {
+                  element.textContent = languageData.aboutUs.subheadings[lang][item.index];
+                } else if (category === 'coreValues') {
+                  element.textContent = languageData.aboutUs.coreValues[lang][item.index];
+                } else if (category === 'paragraphs') {
+                  element.textContent = languageData.aboutUs.paragraphs[lang][item.index];
+                } else if (category === 'footerLinks') {
+                  element.textContent = languageData.footer.quickLinks[lang][item.index];
+                } else if (category === 'footerCopyright') {
+                  element.innerHTML = languageData.footer.copyright[lang];
+                } else if (category === 'contactAddress' && item.isHtml) {
+                  element.innerHTML = languageData.contact.address[lang];
+                }
+              }
+            });
+          });
+
+          // Destroy and reinitialize carousel with proper timing
+          const carousel = $('.client-carousel');
+          carousel.trigger('destroy.owl.carousel');
+          carousel.html(carousel.find('.owl-stage-outer').html()); // Reset carousel HTML
+
+          // Force reload images by adding cache-busting parameter
+          $('.client-logo img').each(function () {
+            const src = $(this).attr('src').split('?')[0];
+            $(this).attr('src', src + '?v=' + new Date().getTime());
+          });
+
+          // Wait for images to load before reinitializing
+          setTimeout(() => {
+            initCarousel();
+          }, 300);
+
+          localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // Initialize on page load
+        $(document).ready(function () {
+          initCarousel();
+
+          // Image load error handling
+          $('.client-logo img').on('error', function () {
+            console.error('Failed to load image:', this.src);
+            $(this).css('display', 'none');
+          });
+
+          // Language switcher event listeners
+          $('.language-option').on('click', function (e) {
+            e.preventDefault();
+            const lang = $(this).attr('data-lang');
+            switchLanguage(lang);
+          });
+
+          // Check for saved language preference
+          const savedLanguage = localStorage.getItem('preferredLanguage');
+          if (savedLanguage) {
+            switchLanguage(savedLanguage);
+          }
+        });
+      });</script>
+    <!-- End Google Map -->
+
+  </body>
 
 </html>

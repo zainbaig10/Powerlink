@@ -50,9 +50,7 @@
           <div class="contact_nav">
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                +966 3 8320222
-              </span>
+             <span dir="ltr">+96638320222</span>
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -143,16 +141,178 @@
                   <a class="nav-link" href="service.html">Services</a>
                 </li>
 
-                <li class="nav-item active">
-                  <a class="nav-link" href="products.html">Products</a>
-                </li>
+                <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Products
+  </a>
+  <div class="dropdown-menu" aria-labelledby="productsDropdown">
+    <a class="dropdown-item" href="products.html">All Products</a>
+    <a class="dropdown-item" href="mechanical.html">Mechanical</a>
+    <a class="dropdown-item" href="electrical.html">Electrical</a>
+        <a class="dropdown-item" href="safety.html">Safety</a>
+<a class="dropdown-item" href="products.html#industrial">Labels</a>
+
+
+    <!-- <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="featured-products.html">Featured Products</a>
+  </div> -->
+</li>
+<style>
+.nav-item.dropdown {
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* Style the dropdown toggle link */
+.nav-link.dropdown-toggle {
+  color: #333;
+  padding: 10px 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-link.dropdown-toggle:hover {
+  color: black;
+  background-color: #f8f9fa;
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0;
+  margin-top: 5px;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Style dropdown items */
+.dropdown-item {
+  padding: 8px 15px;
+  color: #333;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Style the divider */
+.dropdown-divider {
+  margin: 5px 0;
+  border-top: 1px solid #eee;
+}
+
+/* Add animation to dropdown */
+.dropdown-menu.show {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add a small arrow indicator */
+.nav-link.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.nav-link.dropdown-toggle.show::after {
+  transform: rotate(180deg);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+</style>
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="testimonial.html">Testimonial</a>
                 </li> -->
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
+  <li class="nav-item dropdown language-switcher">
+  <a class="nav-link dropdown-toggle btn-lang" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span id="currentLanguageText">English</span>
+  </a>
+  <div class="dropdown-menu language-dropdown" aria-labelledby="languageDropdown">
+    <a class="dropdown-item language-option" href="#" data-lang="en">
+      <i class="fa fa-globe" aria-hidden="true"></i> English
+    </a>
+    <a class="dropdown-item language-option" href="#" data-lang="ar">
+      <i class="fa fa-globe" aria-hidden="true"></i> العربية
+    </a>
+  </div>
+</li>
 
+<style>
+  .btn-lang {
+    background: transparent;
+    border: 1px solid #d92827;
+    color: #d92827 !important;
+    border-radius: 4px;
+    padding: 5px 15px !important;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+  }
+  
+  .btn-lang:hover {
+    background-color: #d92827;
+    color: white !important;
+    text-decoration: none !important;
+  }
+
+  /* Language dropdown specific styles */
+  .language-dropdown {
+    min-width: 120px;
+    border: 1px solid #d92827;
+    border-radius: 4px;
+    padding: 5px 0;
+    margin-top: 2px;
+  }
+
+  .language-dropdown .dropdown-item {
+    padding: 8px 15px;
+    color: #333;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .language-dropdown .dropdown-item:hover {
+    background-color: #d92827;
+    color: white;
+  }
+
+  .language-dropdown .dropdown-item.active {
+    background-color: #d92827;
+    color: white;
+  }
+
+  .language-dropdown .dropdown-item i {
+    font-size: 12px;
+    width: 15px;
+  }
+  </style>
               </ul>
 
             </div>
@@ -613,45 +773,48 @@
     
     </div>
   </section>
-  <section>
-    <div class="section-header">
-      <h2 class="section-title " style=" font-size: 38px;
-    font-weight: 700;
-    color: #2c3e50;">Industrial Labeling Solutions</h2>
-      <p class="section-subtitle" style="color:#555; font-size: 17px;">High-quality tapes, labels, and printers for
-        industrial safety, compliance, and
-        asset management.</p>
+ <section class="labeling-section">
+    <div class="section-header" id="industrial">
+      <h2 class="section-title" style="font-size: 38px; font-weight: 700; color: #2c3e50;">Industrial Labeling Solutions</h2>
+      <p class="section-subtitle" style="color:#555; font-size: 17px;">High-quality tapes, labels, and printers for industrial safety, compliance, and asset management.</p>
     </div>
 
     <div class="intro-paragraph">
-      <p style="color:#555; font-size: 17px;">We offer high-quality labeling solutions from Zebra and Brady, including
-        tapes,
-        printers, and customizable labels designed for industrial safety, asset
-        management, and regulatory compliance. Built for durability and performance.</p>
+      <p style="color:#555; font-size: 17px;">We offer high-quality labeling solutions from Zebra and Brady, including tapes, printers, and customizable labels designed for industrial safety, asset management, and regulatory compliance. Built for durability and performance.</p>
     </div>
 
+    <!-- Brady Label Printers Section -->
+    <section class="product-category-section">
+      <h2 class="category-title">Brady  Printers</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/printer3.jpg" alt="Brady Printer Model A">
+          <!-- <p class="product-name">Brady Printer </p> -->
+        </div>
+        <div class="product-card">
+          <img src="images/printer-2.jpg" alt="Brady Printer Model B">
+          <!-- <p class="product-name">Brady Printer </p> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Durable Tapes & Labels Section -->
+    <section class="product-category-section">
+      <h2 class="category-title">Brady Labels</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/Tape_Rolls.JPG" alt="Industrial Tapes">
+          <!-- <p class="product-name">Industrial Tapes</p> -->
+        </div>
+        <div class="product-card">
+          <img src="images/label-2.jpg" alt="Durable Labels">
+          <!-- <p class="product-name">Durable Labels</p> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Original Grid Items (unchanged) -->
     <div class="image-grid">
-      <div class="grid-item">
-        <div class="image-container">
-          <img src="images/printer3.jpg" alt="Brady Label Printers">
-        </div>
-        <div class="item-content">
-          <h3 class="item-title">Brady Label Printers</h3>
-          <p class="item-description" style="color:#555">Reliable, high-speed printing for industrial environments</p>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <div class="image-container">
-          <img src="images/Tape_Rolls.JPG" alt="Durable Tapes & Labels">
-        </div>
-        <div class="item-content">
-          <h3 class="item-title">Durable Tapes & Labels</h3>
-          <p class="item-description" style="color:#555">Built for harsh conditions, chemical resistance, and long
-            life</p>
-        </div>
-      </div>
-
       <div class="grid-item">
         <div class="image-container">
           <img src="images/Size_customization.JPG" alt="Custom Sizes">
@@ -661,39 +824,30 @@
           <p class="item-description" style="color:#555">Tailored to fit your equipment and compliance standards</p>
         </div>
       </div>
-    </div>
 
-
-
-
-
-
-
-
-    <div class="image-grid">
       <div class="grid-item">
         <div class="image-container">
-          <img src="images/label- image1.jpg" alt="Brady Label Printers">
+          <img src="images/label- image1.jpg" alt="Specialty Paper Labels">
         </div>
         <div class="item-content">
-          <h3 class="item-title"> Specialty Paper Labels with Unique Adhesives</h3>
-          <p class="item-description" style="color:#555">Ideal for curved, rough, or removable label applications.
-          </p>
+          <h3 class="item-title">Specialty Paper Labels with Unique Adhesives</h3>
+          <p class="item-description" style="color:#555">Ideal for curved, rough, or removable label applications.</p>
         </div>
       </div>
 
       <div class="grid-item">
         <div class="image-container">
-          <img src="images/label-iamge2.jpg" alt="Durable Tapes & Labels">
+          <img src="images/label-iamge2.jpg" alt="Zebra Industrial Printers">
         </div>
         <div class="item-content">
           <h3 class="item-title">Zebra Industrial Printers</h3>
-          <p class="item-description" style="color:#555">Durable, high-performance printers for on-demand barcode
-            labeling.</p>
+          <p class="item-description" style="color:#555">Durable, high-performance printers for on-demand barcode labeling.</p>
         </div>
       </div>
+    </div>
+        <div class="image-grid">
 
-      <div class="grid-item">
+ <div class="grid-item">
         <div class="image-container">
           <img src="images/label-iamge3.jpg" alt="Custom Sizes">
         </div>
@@ -703,24 +857,14 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="grid-item">
-      <div class="image-container">
-        <img src="images/per.jpg" alt="Precision Finishes">
-        <div class="image-overlay">View Details</div>
-      </div>
-      <div class="item-content">
-        <h3 class="item-title">Precision Finishes</h3>
-        <p class="item-description">Choose from perforations, slits, holes, and unique shapes</p>
-      </div>
-    </div> -->
+        </div>
 
     <div class="cta-section">
       <a href="contact.html" class="cta-button">Request a Quote</a>
     </div>
+</section>
 
-  </section>
-  <style>
+<style>
     /* Base styles */
     * {
       margin: 0;
@@ -732,61 +876,45 @@
       background-color: #f8f9fa;
       color: #333;
       line-height: 1.6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    /* Fix the layout container */
     .labeling-section {
-      max-width: 900px;
-      /* Further reduced for better card sizing */
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 40px 20px;
-      box-sizing: border-box;
-      /* Ensure padding doesn't add to width */
+      padding: 50px 20px;
     }
 
     .section-header {
       text-align: center;
-      margin-bottom: 30px;
-      /* Reduced from 40px */
+      margin-bottom: 40px;
     }
 
     .section-title {
-      font-size: 32px;
-      /* Reduced from 36px */
-      color: #2c3e50;
-      margin-bottom: 8px;
-      /* Reduced from 10px */
+      font-size: 38px;
       font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 15px;
     }
 
-    .section-subtitle {
-      font-size: 16px;
-      /* Reduced from 18px */
-      color: #666;
+    .section-subtitle, .intro-paragraph p {
+      font-size: 17px;
+      color: #555;
       max-width: 800px;
       margin: 0 auto;
     }
 
     .intro-paragraph {
       text-align: center;
-      margin-bottom: 30px;
-      /* Reduced from 50px */
-      font-size: 15px;
-      /* Reduced from 16px */
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.7;
-      color: #444;
+      margin-bottom: 50px;
     }
 
-    /* Image Grid - properly constrained width */
+    /* Original Image Grid Styles (unchanged) */
     .image-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      /* Fixed 3 columns with equal width */
-      gap: 25px;
-      margin-bottom: 40px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-bottom: 50px;
       width: 100%;
       max-width: 1150px;
       margin-left: auto;
@@ -803,21 +931,16 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-      max-width: 100%;
-      /* Ensure it doesn't exceed its container */
     }
 
     .grid-item:hover {
       transform: translateY(-6px);
-      /* Reduced from -10px */
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     }
 
-    /* Reduced height image container */
     .image-container {
       width: 100%;
       height: 330px;
-      /* Reduced from 300px */
       position: relative;
       overflow: hidden;
     }
@@ -833,31 +956,8 @@
       transform: scale(1.05);
     }
 
-    .image-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(13, 76, 128, 0.1);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      font-size: 16px;
-      /* Reduced from 18px */
-      font-weight: 600;
-    }
-
-    .grid-item:hover .image-overlay {
-      opacity: 1;
-    }
-
     .item-content {
       padding: 16px;
-      /* Reduced from 20px */
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -865,186 +965,167 @@
 
     .item-title {
       font-size: 16px;
-      /* Reduced from 18px */
       font-weight: 700;
       margin-bottom: 4px;
-      /* Reduced from 5px */
       color: #d92827;
     }
 
     .item-description {
       font-size: 14px;
-      /* Reduced from 15px */
       color: #666;
       flex: 1;
     }
 
+    /* New Product Category Sections */
+    .product-category-section {
+      margin-bottom: 50px;
+      max-width: 1150px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .category-title {
+      font-size: 1.6rem;
+      color: #2c3e50;
+      font-weight: 600;
+      margin: 40px 0 20px;
+      padding: 12px 20px;
+      background-color: #f1f5f9;
+      border-radius: 8px;
+      border-left: 3px solid #d92827;
+      box-shadow: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .category-title:hover {
+      background-color: #e2e8f0;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: flex-start;
+    }
+
+    .product-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      flex: 1 1 calc(50% - 25px);
+      max-width: calc(50% - 25px);
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .product-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1f2937;
+    }
+
+    /* CTA Section */
     .cta-section {
       text-align: center;
-      margin-top: 25px;
-      /* Reduced from 30px */
+      margin-top: 40px;
     }
 
     .cta-button {
       display: inline-block;
       background-color: #d92827;
-      color: #fff;
-      padding: 8px 18px;
-      /* Reduced from 10px 20px */
-      font-size: 16px;
-      /* Reduced from 18px */
+      color: white;
+      padding: 12px 30px;
+      font-size: 18px;
       font-weight: 600;
       text-decoration: none;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-      border: none;
-      margin-bottom: 30px;
-      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease;
     }
 
     .cta-button:hover {
-      background-color: black;
-      color: white;
+      background-color: #b51e1e;
     }
 
-    /* Enhanced Responsive Design */
-    /* Large screens (default above) */
-
-    /* Medium screens */
+    /* Responsive Design */
     @media (max-width: 1100px) {
       .image-grid {
         grid-template-columns: repeat(3, 1fr);
-        /* Force 3 columns */
-        gap: 20px;
       }
-
+      
       .image-container {
         height: 260px;
       }
+    }
 
-      .labeling-section {
-        padding: 35px 15px;
-        max-width: 900px;
+    @media (max-width: 900px) {
+      .product-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+      
+      .product-card img {
+        height: 240px;
       }
     }
 
-    /* Small tablets */
     @media (max-width: 800px) {
-      .section-title {
-        font-size: 28px;
-      }
-
-      .section-subtitle {
-        font-size: 15px;
-      }
-
       .image-grid {
         grid-template-columns: repeat(2, 1fr);
-        /* 2 columns */
-        max-width: 600px;
       }
+      
+      .section-title {
+        font-size: 32px;
+      }
+    }
 
+    @media (max-width: 600px) {
+      .product-card img {
+        height: 200px;
+      }
+      
       .image-container {
         height: 250px;
       }
-
-      .intro-paragraph {
-        font-size: 14px;
-      }
-
-      .labeling-section {
-        max-width: 650px;
-      }
     }
 
-    /* Mobile landscape */
-    @media (max-width: 700px) {
+    @media (max-width: 480px) {
       .image-grid {
         grid-template-columns: 1fr;
-        /* Single column for mobile */
-        gap: 18px;
-        max-width: 320px;
-        /* Narrower width for single column */
       }
-
-      .image-container {
-        height: 220px;
-      }
-
+      
       .labeling-section {
-        padding: 30px 12px;
-        max-width: 350px;
+        padding: 30px 15px;
       }
-
-      .grid-item {
-        max-width: 320px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-      }
-    }
-
-    /* Mobile portrait */
-    @media (max-width: 480px) {
+      
       .section-title {
-        font-size: 24px;
+        font-size: 28px;
       }
-
-      .section-subtitle {
-        font-size: 14px;
+      
+      .category-title {
+        font-size: 1.4rem;
+        padding: 10px 15px;
       }
-
-      .image-container {
-        height: 300px;
-        /* Further reduced height */
-      }
-
-      .item-title {
-        font-size: 15px;
-      }
-
-      .item-description {
-        font-size: 13px;
-      }
-
-      .cta-button {
-        font-size: 15px;
-        padding: 7px 15px;
-      }
-
-      .labeling-section {
-        padding: 25px 10px;
+      
+      .product-name {
+        font-size: 1rem;
       }
     }
-
-    /* Very small devices */
-    @media (max-width: 320px) {
-      .image-grid {
-        max-width: 260px;
-      }
-
-      .grid-item {
-        max-width: 260px;
-      }
-
-      .image-container {
-        height: 240px;
-        /* Smallest height */
-      }
-
-      .section-title {
-        font-size: 22px;
-      }
-
-      .item-content {
-        padding: 12px;
-      }
-
-      .labeling-section {
-        max-width: 280px;
-      }
-    }
-  </style>
+</style>
 
   <script>
     // Tab switching functionality
@@ -1083,7 +1164,7 @@
 
           // Change button text based on state
           if (card.classList.contains('card-expanded')) {
-            this.textContent = 'Show Less';
+            // this.textContent = 'Show Less';
           } else {
             this.textContent = 'Show Products';
           }
@@ -1186,9 +1267,7 @@
       <div class="contact_nav">
         <a href="">
           <i class="fa fa-phone" aria-hidden="true"></i>
-          <span>
-            Call : +966 3 8320222
-          </span>
+        <span dir="ltr">+96638320222</span>
         </a>
         <a href="">
           <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -1244,7 +1323,511 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
+<!-- <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Language data
+    const translations = {
+        "products": {
+            "headings": {
+                "en": ["Our Products", "Industrial Labelling Solutions"],
+                "ar": ["منتجاتنا", "حلول وضع العلامات الصناعية"]
+            },
+            "subheadings": {
+                "en": [
+                    "Mechanical Products",
+                    "Electrical Products",
+                    "Safety Equipment",
+                    "Brady Label Printers",
+                    "Durable Tapes & Labels",
+                    "Custom Sizes",
+                    "Specialty Paper Labels with Unique Adhesives",
+                    "Zebra Industrial Printers",
+                    "IQ Color Barcode Labels"
+                ],
+                "ar": [
+                    "المنتجات الميكانيكية",
+                    "المنتجات الكهربائية",
+                    "معدات السلامة",
+                    "طابعات العلامات من برادي",
+                    "أشرطة وملصقات متينة",
+                    "أحجام مخصصة",
+                    "ملصقات ورقية خاصة بمواد لاصقة فريدة",
+                    "طابعات صناعية من زيبرا",
+                    "ملصقات الباركود الملونة من IQ"
+                ]
+            },
+            "paragraphs": {
+                "en": [
+                    "At Powerlink Trading Establishment, we supply a comprehensive range of high-quality industrial products tailored to meet the demands of the oil & gas, construction, and infrastructure sectors. From mechanical fittings to electrical components and personal safety equipment, we are your trusted source for durable and compliant materials.",
+                    "Robust fittings, pipes, valves, and fasteners designed for industrial systems and mechanical installations.",
+                    "Reliable power and control components of engineered to support electrical distribution and automation.",
+                    "Certified safety gear and emergency response tools for workplace protection and compliance.",
+                    "High-quality tapes, labels, and printers for industrial safety, compliance, and asset management.",
+                    "We offer high-quality labeling solutions from Zebra and Brady, including tapes, printers, and customizable labels designed for industrial safety, asset management, and regulatory compliance. Built for durability and performance.",
+                    "Reliable, high-speed printing for industrial environments.",
+                    "Built for harsh conditions, chemical resistance, and long life.",
+                    "Tailored to fit your equipment and compliance standards.",
+                    "Ideal for curved, rough, or removable label applications.",
+                    "Durable, high-performance printers for on-demand barcode labeling.",
+                    "Print color on demand using any Zebra thermal printer."
+                ],
+                "ar": [
+                    "في مؤسسة باورلينك للتجارة، نوفر مجموعة شاملة من المنتجات الصناعية عالية الجودة المصممة لتلبية متطلبات قطاعات النفط والغاز والبناء والبنية التحتية. من التركيبات الميكانيكية إلى المكونات الكهربائية ومعدات السلامة الشخصية، نحن مصدر موثوق للمواد المتينة والمتوافقة.",
+                    "تركيبات وأنابيب وصمامات ومثبتات قوية مصممة للأنظمة الصناعية والتركيبات الميكانيكية.",
+                    "مكونات طاقة وتحكم موثوقة مصممة لدعم توزيع الطاقة والأتمتة.",
+                    "معدات سلامة معتمدة وأدوات الاستجابة للطوارئ لحماية مكان العمل والامتثال.",
+                    "أشرطة وملصقات وطابعات عالية الجودة للسلامة الصناعية والامتثال وإدارة الأصول.",
+                    "نقدم حلول وضع العلامات عالية الجودة من زيبرا وبرادي، بما في ذلك الأشرطة والطابعات والملصقات القابلة للتخصيص المصممة للسلامة الصناعية وإدارة الأصول والامتثال التنظيمي. مصممة للمتانة والأداء.",
+                    "طباعة موثوقة وعالية السرعة للبيئات الصناعية.",
+                    "مصممة لتحمل الظروف القاسية ومقاومة المواد الكيميائية وطول العمر.",
+                    "مصممة لتتناسب مع معداتك ومعايير الامتثال الخاصة بك.",
+                    "مثالية للأسطح المنحنية أو الخشنة أو الملصقات القابلة للإزالة.",
+                    "طابعات متينة وعالية الأداء لطباعة الباركود حسب الطلب.",
+                    "اطبع بالألوان حسب الطلب باستخدام أي طابعة حرارية من زيبرا."
+                ]
+            },
+            "buttons": {
+                "showProducts": {
+                    "en": "Show Products",
+                    "ar": "عرض المنتجات"
+                },
+                "requestQuote": {
+                    "en": "Request a Quote",
+                    "ar": "طلب عرض سعر"
+                }
+            }
+        },
+        "navbar": {
+            "en": [
+                "Home",
+                "About us",
+                "Services",
+                "Products",
+                "Mechanical products",
+                "Electrical products",
+                "Safety equipment",
+                "Labels",
+                "Contact"
+            ],
+            "ar": [
+                "الرئيسية",
+                "من نحن",
+                "الخدمات",
+                "المنتجات",
+                "المنتجات الميكانيكية",
+                "المنتجات الكهربائية",
+                "معدات السلامة",
+                "الملصقات",
+                "اتصل بنا"
+            ]
+        },
+        "contact": {
+            "phone": "+96638320222",
+            "address": {
+                "en": "KSA, P.O BOX 15099 DAMMAM 31444",
+                "ar": "المملكة العربية السعودية، ص.ب 15099، الدمام 31444"
+            }
+        },
+        "footer": {
+            "quickLinks": {
+                "en": ["Home", "About", "Services", "Products", "Contact"],
+                "ar": ["الرئيسية", "من نحن", "الخدمات", "المنتجات", "اتصل بنا"]
+            },
+            "copyright": {
+                "en": "© All Rights Reserved By Ex-ion 2025",
+                "ar": "© جميع الحقوق محفوظة لشركة Ex-ion 2025"
+            }
+        }
+    };
 
+    // Set default language (you can use localStorage to remember user preference)
+    let currentLanguage = 'en';
+    
+    // Function to update the language
+    function updateLanguage(lang) {
+        currentLanguage = lang;
+        document.getElementById('currentLanguageText').textContent = lang === 'en' ? 'English' : 'العربية';
+        
+        // Update navbar
+        const navItems = document.querySelectorAll('.nav-link:not(.dropdown-toggle):not(.btn-lang)');
+        navItems.forEach((item, index) => {
+            if (translations.navbar[lang][index]) {
+                item.textContent = translations.navbar[lang][index];
+            }
+        });
+        
+        // Update dropdown items
+        const dropdownItems = document.querySelectorAll('.dropdown-item');
+        dropdownItems.forEach((item, index) => {
+            if (translations.navbar[lang][index + 4]) { // +4 because first 4 are main nav items
+                item.textContent = translations.navbar[lang][index + 4];
+            }
+        });
+        
+        // Update products section
+        document.querySelector('.section-title').textContent = translations.products.headings[lang][1];
+        document.querySelector('.section-subtitle').textContent = translations.products.paragraphs[lang][4];
+        document.querySelector('.intro-paragraph p').textContent = translations.products.paragraphs[lang][5];
+        
+        // Update product cards
+        const cardTitles = document.querySelectorAll('.card-title');
+        cardTitles.forEach((title, index) => {
+            title.textContent = translations.products.subheadings[lang][index];
+        });
+        
+        const cardDescriptions = document.querySelectorAll('.card-description');
+        cardDescriptions.forEach((desc, index) => {
+            desc.textContent = translations.products.paragraphs[lang][index + 1];
+        });
+        
+        const showProductBtns = document.querySelectorAll('.read-more-btn');
+        showProductBtns.forEach(btn => {
+            btn.textContent = translations.products.buttons.showProducts[lang];
+        });
+        
+        // Update grid items
+        const itemTitles = document.querySelectorAll('.item-title');
+        itemTitles.forEach((title, index) => {
+            title.textContent = translations.products.subheadings[lang][index + 5];
+        });
+        
+        const itemDescriptions = document.querySelectorAll('.item-description');
+        itemDescriptions.forEach((desc, index) => {
+            desc.textContent = translations.products.paragraphs[lang][index + 8];
+        });
+        
+        // Update CTA button
+        document.querySelector('.cta-button').textContent = translations.products.buttons.requestQuote[lang];
+        
+        // Update footer
+        const footerLinks = document.querySelectorAll('.info_links_menu a');
+        translations.footer.quickLinks[lang].forEach((text, index) => {
+            if (footerLinks[index]) {
+                footerLinks[index].textContent = text;
+            }
+        });
+        
+        // Update copyright
+        document.querySelector('.footer_section p').innerHTML = translations.footer.copyright[lang];
+        
+        // Update RTL if Arabic
+        if (lang === 'ar') {
+            document.body.setAttribute('dir', 'rtl');
+            document.body.style.textAlign = 'right';
+        } else {
+            document.body.removeAttribute('dir');
+            document.body.style.textAlign = 'left';
+        }
+        
+        // Save language preference
+        localStorage.setItem('preferredLanguage', lang);
+    }
+    
+    // Check for saved language preference
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    if (savedLanguage) {
+        updateLanguage(savedLanguage);
+    }
+    
+    // Language switcher event listeners
+    const languageOptions = document.querySelectorAll('.language-option');
+    languageOptions.forEach(option => {
+        option.addEventListener('click', function(e) {
+            e.preventDefault();
+            const lang = this.getAttribute('data-lang');
+            updateLanguage(lang);
+        });
+    });
+});</script> -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Language data
+    const translations = {
+        "products": {
+            "headings": {
+                "en": ["Our Products", "Industrial Labeling Solutions"],
+                "ar": ["منتجاتنا", "حلول وضع العلامات الصناعية"]
+            },
+            "subheadings": {
+                "en": [
+                    "Mechanical Products",
+                    "Electrical Products", 
+                    "Safety Equipment",
+                    "Brady Printers",
+                    "Brady Labels",
+                    "Custom Sizes",
+                    "Specialty Paper Labels with Unique Adhesives",
+                    "Zebra Industrial Printers",
+                    "IQ Color Barcode Labels"
+                ],
+                "ar": [
+                    "المنتجات الميكانيكية",
+                    "المنتجات الكهربائية",
+                    "معدات السلامة",
+                    "طابعات برادي",
+                    "ملصقات برادي", 
+                    "أحجام مخصصة",
+                    "ملصقات ورقية خاصة بمواد لاصقة فريدة",
+                    "طابعات صناعية من زيبرا",
+                    "ملصقات الباركود الملونة من IQ"
+                ]
+            },
+            "paragraphs": {
+                "en": [
+                    "At Powerlink Trading Establishment, we supply a comprehensive range of high-quality industrial products tailored to meet the demands of the oil & gas, construction, and infrastructure sectors. From mechanical fittings to electrical components and personal safety equipment, we are your trusted source for durable and compliant materials.",
+                    "Robust fittings, pipes, valves, and fasteners designed for industrial systems and mechanical installations.",
+                    "Reliable power and control components of engineered to support electrical distribution and automation.",
+                    "Certified safety gear and emergency response tools for workplace protection and compliance.",
+                    "High-quality tapes, labels, and printers for industrial safety, compliance, and asset management.",
+                    "We offer high-quality labeling solutions from Zebra and Brady, including tapes, printers, and customizable labels designed for industrial safety, asset management, and regulatory compliance. Built for durability and performance.",
+                    "Tailored to fit your equipment and compliance standards",
+                    "Ideal for curved, rough, or removable label applications.",
+                    "Durable, high-performance printers for on-demand barcode labeling.",
+                    "Print color on demand using any Zebra thermal printer."
+                ],
+                "ar": [
+                    "في مؤسسة باورلينك للتجارة، نوفر مجموعة شاملة من المنتجات الصناعية عالية الجودة المصممة لتلبية متطلبات قطاعات النفط والغاز والبناء والبنية التحتية. من التركيبات الميكانيكية إلى المكونات الكهربائية ومعدات السلامة الشخصية، نحن مصدرك الموثوق للمواد المتينة والمتوافقة.",
+                    "تركيبات وأنابيب وصمامات ومثبتات قوية مصممة للأنظمة الصناعية والتركيبات الميكانيكية.",
+                    "مكونات طاقة وتحكم موثوقة مصممة لدعم توزيع الطاقة والأتمتة.",
+                    "معدات سلامة معتمدة وأدوات الاستجابة للطوارئ لحماية مكان العمل والامتثال.",
+                    "أشرطة وملصقات وطابعات عالية الجودة للسلامة الصناعية والامتثال وإدارة الأصول.",
+                    "نقدم حلول وضع العلامات عالية الجودة من زيبرا وبرادي، بما في ذلك الأشرطة والطابعات والملصقات القابلة للتخصيص المصممة للسلامة الصناعية وإدارة الأصول والامتثال التنظيمي. مصممة للمتانة والأداء.",
+                    "مصممة لتتناسب مع معداتك ومعايير الامتثال الخاصة بك",
+                    "مثالية للأسطح المنحنية أو الخشنة أو الملصقات القابلة للإزالة.",
+                    "طابعات متينة وعالية الأداء لطباعة الباركود حسب الطلب.",
+                    "اطبع بالألوان حسب الطلب باستخدام أي طابعة حرارية من زيبرا."
+                ]
+            },
+            "buttons": {
+                "showProducts": {
+                    "en": "Show Products",
+                    "ar": "عرض المنتجات"
+                },
+                "requestQuote": {
+                    "en": "Request a Quote",
+                    "ar": "طلب عرض سعر"
+                }
+            }
+        },
+        "navbar": {
+            "main": {
+                "en": ["Home", "About Us", "Services", "Products", "Contact Us"],
+                "ar": ["الرئيسية", "من نحن", "الخدمات", "المنتجات", "اتصل بنا"]
+            },
+            "dropdown": {
+                "en": ["All Products", "Mechanical", "Electrical", "Safety", "Labels"],
+                "ar": ["جميع المنتجات", "الميكانيكية", "الكهربائية", "السلامة", "الملصقات"]
+            }
+        },
+        "contact": {
+            "address": {
+                "en": "KSA, P.O BOX 15099 DAMMAM 31444",
+                "ar": "المملكة العربية السعودية، ص.ب 15099، الدمام 31444"
+            },
+            "footerAddress": {
+                "en": "Address: Kingdom of Saudi Arabia<br> P.O BOX 15099<br> DAMMAM 31444",
+                "ar": "العنوان: المملكة العربية السعودية<br> ص.ب 15099<br> الدمام 31444"
+            }
+        },
+        "footer": {
+            "quickLinks": {
+                "title": {
+                    "en": "QUICK LINKS", 
+                    "ar": "روابط سريعة"
+                },
+                "links": {
+                    "en": ["Home", "About", "Services", "Products", "Contact"],
+                    "ar": ["الرئيسية", "من نحن", "الخدمات", "المنتجات", "اتصل بنا"]
+                }
+            },
+            "copyright": {
+                "en": "&copy; All Rights Reserved By <a href=\"https://ex-ion.com/\"> Ex-ion 2025</a>",
+                "ar": "&copy; جميع الحقوق محفوظة لشركة <a href=\"https://ex-ion.com/\"> Ex-ion 2025</a>"
+            }
+        }
+    };
+
+    // Set default language
+    let currentLanguage = 'en';
+    
+    // Function to update the language
+    function updateLanguage(lang) {
+        currentLanguage = lang;
+        document.getElementById('currentLanguageText').textContent = lang === 'en' ? 'English' : 'العربية';
+        
+        // Update main navbar items (including dropdown toggle)
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link:not(.language-option):not(.btn-lang)');
+        let mainNavIndex = 0;
+        navLinks.forEach((link) => {
+            // Skip dropdown items, only update main nav items
+            if (!link.classList.contains('dropdown-toggle') && !link.closest('.dropdown-menu')) {
+                if (translations.navbar.main[lang][mainNavIndex]) {
+                    link.textContent = translations.navbar.main[lang][mainNavIndex];
+                    mainNavIndex++;
+                }
+            } else if (link.classList.contains('dropdown-toggle')) {
+                // Handle Products dropdown toggle specifically
+                if (translations.navbar.main[lang][mainNavIndex]) {
+                    link.textContent = translations.navbar.main[lang][mainNavIndex];
+                    mainNavIndex++;
+                }
+            }
+        });
+        
+        // Update dropdown items  
+        const dropdownItems = document.querySelectorAll('.dropdown-item');
+        translations.navbar.dropdown[lang].forEach((text, index) => {
+            if (dropdownItems[index]) {
+                dropdownItems[index].textContent = text;
+            }
+        });
+        
+        // Update "Our Products" heading
+        const ourProductsHeading = document.querySelector('.header h2');
+        if (ourProductsHeading) {
+            ourProductsHeading.textContent = translations.products.headings[lang][0];
+        }
+        
+        // Update main description paragraph
+        const mainDescription = document.querySelector('.header p');
+        if (mainDescription) {
+            mainDescription.textContent = translations.products.paragraphs[lang][0];
+        }
+        
+        // Update "Industrial Labeling Solutions" heading
+        const labelingHeading = document.querySelector('.section-title');
+        if (labelingHeading) {
+            labelingHeading.textContent = translations.products.headings[lang][1];
+        }
+        
+        // Update labeling section subtitle
+        const labelingSubtitle = document.querySelector('.section-subtitle');
+        if (labelingSubtitle) {
+            labelingSubtitle.textContent = translations.products.paragraphs[lang][4];
+        }
+        
+        // Update intro paragraph
+        const introP = document.querySelector('.intro-paragraph p');
+        if (introP) {
+            introP.textContent = translations.products.paragraphs[lang][5];
+        }
+        
+        // Update product card titles
+        const cardTitles = document.querySelectorAll('.card-title');
+        cardTitles.forEach((title, index) => {
+            if (translations.products.subheadings[lang][index]) {
+                title.textContent = translations.products.subheadings[lang][index];
+            }
+        });
+        
+        // Update product card descriptions
+        const cardDescriptions = document.querySelectorAll('.card-description');
+        cardDescriptions.forEach((desc, index) => {
+            if (translations.products.paragraphs[lang][index + 1]) {
+                desc.textContent = translations.products.paragraphs[lang][index + 1];
+            }
+        });
+        
+        // Update "Brady Printers" and "Brady Labels" category titles
+        const categoryTitles = document.querySelectorAll('.category-title');
+        categoryTitles.forEach((title, index) => {
+            if (translations.products.subheadings[lang][index + 3]) {
+                title.textContent = translations.products.subheadings[lang][index + 3];
+            }
+        });
+        
+        // Update grid item titles
+        const itemTitles = document.querySelectorAll('.item-title');
+        itemTitles.forEach((title, index) => {
+            if (translations.products.subheadings[lang][index + 5]) {
+                title.textContent = translations.products.subheadings[lang][index + 5];
+            }
+        });
+        
+        // Update grid item descriptions
+        const itemDescriptions = document.querySelectorAll('.item-description');
+        itemDescriptions.forEach((desc, index) => {
+            if (translations.products.paragraphs[lang][index + 6]) {
+                desc.textContent = translations.products.paragraphs[lang][index + 6];
+            }
+        });
+        
+        // Update "Show Products" buttons
+        const showProductBtns = document.querySelectorAll('.read-more-btn');
+        showProductBtns.forEach(btn => {
+            btn.textContent = translations.products.buttons.showProducts[lang];
+        });
+        
+        // Update "Request a Quote" button
+        const ctaButton = document.querySelector('.cta-button');
+        if (ctaButton) {
+            ctaButton.textContent = translations.products.buttons.requestQuote[lang];
+        }
+        
+        // Update header address
+        const headerAddress = document.querySelector('.contact_nav .address-text');
+        if (headerAddress) {
+            headerAddress.textContent = translations.contact.address[lang];
+        }
+        
+        // Update footer quick links title
+        const quickLinksTitle = document.querySelector('.info_links h4');
+        if (quickLinksTitle) {
+            quickLinksTitle.textContent = translations.footer.quickLinks.title[lang];
+        }
+        
+        // Update footer links
+        const footerLinks = document.querySelectorAll('.info_links_menu a');
+        translations.footer.quickLinks.links[lang].forEach((text, index) => {
+            if (footerLinks[index]) {
+                footerLinks[index].textContent = text;
+            }
+        });
+        
+        // Update footer address
+        const footerAddress = document.querySelector('.info_section .contact_nav a:last-child span');
+        if (footerAddress) {
+            footerAddress.innerHTML = translations.contact.footerAddress[lang];
+        }
+        
+        // Update copyright
+        const copyright = document.querySelector('.footer_section p');
+        if (copyright) {
+            copyright.innerHTML = translations.footer.copyright[lang];
+        }
+        
+        // Update RTL if Arabic
+        if (lang === 'ar') {
+            document.body.setAttribute('dir', 'rtl');
+            document.body.style.textAlign = 'right';
+        } else {
+            document.body.removeAttribute('dir');
+            document.body.style.textAlign = 'left';
+        }
+        
+        // Save language preference
+        localStorage.setItem('preferredLanguage', lang);
+    }
+    
+    // Check for saved language preference
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    if (savedLanguage) {
+        updateLanguage(savedLanguage);
+    }
+    
+    // Language switcher event listeners
+    const languageOptions = document.querySelectorAll('.language-option');
+    languageOptions.forEach(option => {
+        option.addEventListener('click', function(e) {
+            e.preventDefault();
+            const lang = this.getAttribute('data-lang');
+            updateLanguage(lang);
+        });
+    });
+});
+</script>
+<script src="js/lang.js"></script>
 </body>
 
 </html>

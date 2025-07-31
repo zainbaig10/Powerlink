@@ -24,7 +24,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
   <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
   <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
@@ -47,24 +48,24 @@
     <header class="header_section">
       <div class="header_top">
         <div class="container-fluid header_top_container">
-       
+
           <div class="contact_nav">
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
-               +966 3 8320222
+                +966 3 8320222
               </span>
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-              mukhtar@powerlink.sa.com              </span>
+                mukhtar@powerlink.sa.com </span>
             </a>
             <a href="">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
                 KSA, P.O BOX 15099 DAMMAM
-                31444              </span>
+                31444 </span>
             </a>
           </div>
           <div class="social_box1">
@@ -74,7 +75,7 @@
             <a href="https://twitter.com/Twitter" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
             </a>
-            
+
             <a href="https://www.linkedin.com/company/linkedin" target="_blank" rel="noopener noreferrer">
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
@@ -89,29 +90,29 @@
               justify-content: center;
               align-items: center;
             }
-        
+
             .social_box1 a {
               width: 30px;
               height: 30px;
               background-color: #f0f0f0;
-              
-              border-radius: 8px; 
+
+              border-radius: 8px;
               display: flex;
               justify-content: center;
               align-items: center;
               text-decoration: none;
               transition: all 0.3s ease;
             }
-        
+
             .social_box1 a i {
               color: #d92827;
               font-size: 15px;
             }
-        
+
             .social_box1 a:hover {
-              background-color:#d92827;
+              background-color: #d92827;
             }
-        
+
             .social_box1 a:hover i {
               color: black;
               transform: scale(1.1);
@@ -127,7 +128,8 @@
             </a>
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class=""> </span>
             </button>
 
@@ -142,17 +144,182 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="service.html">Services</a>
                 </li>
-              
-                <li class="nav-item">
-                  <a class="nav-link" href="products.html">Products</a>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Products
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                    <a class="dropdown-item" href="products.html">All Products</a>
+                    <a class="dropdown-item" href="mechanical.html">Mechanical</a>
+                    <a class="dropdown-item" href="electrical.html">Electrical</a>
+                    <a class="dropdown-item" href="safety.html">Safety</a>
+                    <a class="dropdown-item" href="products.html#industrial">Labels</a>
+
+
+                    <!-- <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="featured-products.html">Featured Products</a>
+  </div> -->
                 </li>
-              
+                <style>
+                  .nav-item.dropdown {
+                    position: relative;
+                    text-transform: uppercase;
+                  }
+
+                  /* Style the dropdown toggle link */
+                  .nav-link.dropdown-toggle {
+                    color: #333;
+                    padding: 10px 15px;
+                    font-weight: 500;
+                    transition: all 0.3s ease;
+                    border-radius: 4px;
+                  }
+
+                  .nav-link.dropdown-toggle:hover {
+                    color: black;
+                    background-color: #f8f9fa;
+                  }
+
+                  /* Style the dropdown menu */
+                  .dropdown-menu {
+                    border: none;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                    border-radius: 4px;
+                    padding: 0;
+                    margin-top: 5px;
+                    min-width: 200px;
+                    transition: all 0.3s ease;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                  }
+
+                  /* Style dropdown items */
+                  .dropdown-item {
+                    padding: 8px 15px;
+                    color: #333;
+                    transition: all 0.2s ease;
+                    font-size: 14px;
+                  }
+
+                  .dropdown-item:hover {
+                    background-color: black;
+                    color: white;
+                  }
+
+                  /* Style the divider */
+                  .dropdown-divider {
+                    margin: 5px 0;
+                    border-top: 1px solid #eee;
+                  }
+
+                  /* Add animation to dropdown */
+                  .dropdown-menu.show {
+                    animation: fadeIn 0.3s ease;
+                  }
+
+                  @keyframes fadeIn {
+                    from {
+                      opacity: 0;
+                      transform: translateY(10px);
+                    }
+
+                    to {
+                      opacity: 1;
+                      transform: translateY(0);
+                    }
+                  }
+
+                  /* Add a small arrow indicator */
+                  .nav-link.dropdown-toggle::after {
+                    display: inline-block;
+                    margin-left: 5px;
+                    vertical-align: middle;
+                    transition: transform 0.3s ease;
+                  }
+
+                  .nav-link.dropdown-toggle.show::after {
+                    transform: rotate(180deg);
+                  }
+
+                  .nav-item.dropdown:hover .dropdown-menu {
+                    display: block;
+                    animation: fadeIn 0.3s ease;
+                  }
+                </style>
+
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact </a>
                 </li>
-               
+                <li class="nav-item dropdown language-switcher">
+                  <a class="nav-link dropdown-toggle btn-lang" href="#" id="languageDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="currentLanguageText">English</span>
+                  </a>
+                  <div class="dropdown-menu language-dropdown" aria-labelledby="languageDropdown">
+                    <a class="dropdown-item language-option" href="#" data-lang="en">
+                      <i class="fa fa-globe" aria-hidden="true"></i> English
+                    </a>
+                    <a class="dropdown-item language-option" href="#" data-lang="ar">
+                      <i class="fa fa-globe" aria-hidden="true"></i> العربية
+                    </a>
+                  </div>
+                </li>
+
+                <style>
+                  .btn-lang {
+                    background: transparent;
+                    border: 1px solid #d92827;
+                    color: #d92827 !important;
+                    border-radius: 4px;
+                    padding: 5px 15px !important;
+                    margin-left: 10px;
+                    transition: all 0.3s ease;
+                    text-decoration: none !important;
+                  }
+
+                  .btn-lang:hover {
+                    background-color: #d92827;
+                    color: white !important;
+                    text-decoration: none !important;
+                  }
+
+                  /* Language dropdown specific styles */
+                  .language-dropdown {
+                    min-width: 120px;
+                    border: 1px solid #d92827;
+                    border-radius: 4px;
+                    padding: 5px 0;
+                    margin-top: 2px;
+                  }
+
+                  .language-dropdown .dropdown-item {
+                    padding: 8px 15px;
+                    color: #333;
+                    transition: all 0.2s ease;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                  }
+
+                  .language-dropdown .dropdown-item:hover {
+                    background-color: #d92827;
+                    color: white;
+                  }
+
+                  .language-dropdown .dropdown-item.active {
+                    background-color: #d92827;
+                    color: white;
+                  }
+
+                  .language-dropdown .dropdown-item i {
+                    font-size: 12px;
+                    width: 15px;
+                  }
+                </style>
               </ul>
-            
+
             </div>
           </nav>
         </div>
@@ -170,23 +337,23 @@
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     body {
       background-color: #faf8f8;
     }
-    
+
     .service_section {
       padding: 60px 20px;
       max-width: 1300px;
       margin: 0 auto;
     }
-    
+
     .section_title {
       text-align: center;
       margin-bottom: 50px;
       position: relative;
     }
-    
+
     .section_title h2 {
       font-size: 38px;
       font-weight: 700;
@@ -196,7 +363,7 @@
       display: inline-block;
       padding-bottom: 10px;
     }
-    
+
     .section_title h2:after {
       content: '';
       position: absolute;
@@ -207,26 +374,26 @@
       height: 3px;
       background-color: #d92827;
     }
-    
+
     .section_title p {
       color: #7f8c8d;
       max-width: 800px;
       margin: 15px auto 0;
       font-size: 17px;
     }
-    
+
     .section_title:after {
       content: '';
       display: none;
     }
-   
-    
+
+
     .services_container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 25px;
     }
-    
+
     .service_card {
       background-color: white;
       border-radius: 12px;
@@ -237,36 +404,36 @@
       display: flex;
       flex-direction: column;
     }
-    
+
     .service_card:hover {
       transform: translateY(-8px);
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
     }
-    
+
     .service_image {
       height: 250px;
       overflow: hidden;
       position: relative;
     }
-    
+
     .service_image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform 0.5s ease;
     }
-    
+
     .service_card:hover .service_image img {
       transform: scale(1.1);
     }
-    
+
     .service_content {
       padding: 20px;
       flex-grow: 1;
       display: flex;
       flex-direction: column;
     }
-    
+
     .service_title {
       font-size: 20px;
       font-weight: 600;
@@ -275,7 +442,7 @@
       position: relative;
       padding-bottom: 12px;
     }
-    
+
     .service_title:after {
       content: '';
       position: absolute;
@@ -285,7 +452,7 @@
       height: 3px;
       background-color: #d92827;
     }
-    
+
     .service_description {
       margin-bottom: 15px;
       color: #7f8c8d;
@@ -293,7 +460,7 @@
       font-size: 15px;
       flex-grow: 1;
     }
-    
+
     .card_footer {
       display: flex;
       justify-content: space-between;
@@ -302,7 +469,7 @@
       border-top: 1px solid #f0f0f0;
       padding-top: 15px;
     }
-    
+
     .read_more_btn {
       display: inline-block;
       padding: 8px 18px;
@@ -316,28 +483,28 @@
       cursor: pointer;
       font-size: 14px;
     }
-    
+
     .read_more_btn:hover {
       background-color: black;
     }
-    
+
     .service_highlights {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.5s ease;
       margin-top: 0;
     }
-    
+
     .service_highlights.active {
       max-height: 300px;
       margin-top: 15px;
     }
-    
+
     .service_highlights ul {
       list-style: none;
       padding: 0;
     }
-    
+
     .service_highlights li {
       margin-bottom: 10px;
       display: flex;
@@ -345,7 +512,7 @@
       color: #555;
       font-size: 14px;
     }
-    
+
     .service_highlights li:before {
       content: '\f00c';
       font-family: 'Font Awesome 5 Free';
@@ -353,336 +520,632 @@
       color: #d92827;
       margin-right: 8px;
     }
-    
+
     @media (max-width: 1200px) {
       .services_container {
         grid-template-columns: repeat(2, 1fr);
       }
     }
-    
+
     @media (max-width: 768px) {
       .services_container {
         grid-template-columns: 1fr;
       }
-      
+
       .section_title h2 {
         font-size: 28px;
       }
-      
+
       .service_section {
         padding: 40px 15px;
       }
-      
+
       .service_card {
         max-width: 500px;
         margin: 0 auto;
       }
     }
   </style>
-</head>
+  </head>
 
-<body>
-  <section class="service_section">
-    <div class="section_title">
-      <h2>Our Services</h2>
-      <p style="font-size: 17px; color:#555">Powerlink Trading Establishment offers a wide range of industrial services designed to
-meet the complex needs of sectors like oil & gas, infrastructure, and construction across
-Saudi Arabia. With over 15 years of experience, we ensure quality, compliance, and
-timely execution in every project we undertake.
-</p>
-    </div>
-    
-    <div class="services_container">
-      <!-- Contracting & Construction Card -->
-      <div class="service_card">
-        <div class="service_image">
-          <img src="images/construction.jpg" alt="Contracting & Construction">
-        </div>
-        <div class="service_content">
-          <h3 class="service_title">Contracting & Construction</h3>
-          <p class="service_description" style=" color:#555">
-            We deliver comprehensive civil, mechanical, and infrastructure services, including the
-            construction of substations, buildings, and roads, as well as maintenance support. Our
-            experienced team ensures every project meets industry standards and client
-            expectations.
-                      </p>
-          <div class="card_footer">
-            <button class="read_more_btn" onclick="toggleService('cc-highlights')">Read More</button>
-          </div>
-          <div id="cc-highlights" class="service_highlights">
-            <ul>
-              <li>Civil & Mechanical Construction</li>
-              <li>Infrastructure Development</li>
-              <li>Industrial Maintenance Services</li>
-            </ul>
-          </div>
-        </div>
+  <body>
+    <section class="service_section">
+      <div class="section_title">
+        <h2>Our Services</h2>
+        <p style="font-size: 17px; color:#555">Powerlink Trading Establishment offers a wide range of industrial
+          services designed to
+          meet the complex needs of sectors like oil & gas, infrastructure, and construction across
+          Saudi Arabia. With over 15 years of experience, we ensure quality, compliance, and
+          timely execution in every project we undertake.
+        </p>
       </div>
-      
-      <!-- Electrical & Instrumentation Card -->
-      <div class="service_card">
-        <div class="service_image">
-          <img src="images/electrical.jpg" alt="Electrical & Instrumentation">
-        </div>
-        <div class="service_content">
-          <h3 class="service_title">Electrical & Instrumentation</h3>
-          <p class="service_description" style=" color:#555">
-            Powerlink specializes in the installation, integration, and maintenance of electrical and
-            instrumentation systems. We support automation and energy distribution needs for
-            commercial and industrial facilities.          </p>
-          <div class="card_footer">
-            <button class="read_more_btn" onclick="toggleService('ei-highlights')">Read More</button>
-          </div>
-          <div id="ei-highlights" class="service_highlights">
-            <ul>
-              <li>Electrical System Installations</li>
-              <li>Instrumentation for Process Control</li>
-              <li>Automation and Control Panels</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Energy Solutions Card -->
-      <div class="service_card">
-        <div class="service_image">
-          <img src="images/fire.jpg" alt="Energy Solutions">
-        </div>
-        <div class="service_content">
-          <h3 class="service_title" > Fire & Safety Solutions</h3>
-          <p class="service_description" style=" color:#555">
-            We provide advanced fire protection and safety system installation to protect lives and
-            assets. From fire alarms to access control systems like turnstiles and barriers, we ensure
-            full compliance with safety regulations.          </p>
-          <div class="card_footer">
-            <button class="read_more_btn" onclick="toggleService('es-highlights')">Read More</button>
-          </div>
-          <div id="es-highlights" class="service_highlights">
-            <ul>
-              <li>Fire Detection & Suppression Systems
-              </li>
-              <li>Access Control: Turnstiles, Gates, Barriers
-              </li>
-              <li> Safety Compliance & Emergency Systems
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Project Management Card -->
-      <div class="service_card">
-        <div class="service_image">
-          <img src="images/logistics1.jpg" alt="Project Management">
-        </div>
-        <div class="service_content">
-          <h3 class="service_title" >Logistics & Equipment Rentals</h3>
-          <p class="service_description" style="color:#555">
-            Our logistics division supports projects with reliable transport, equipment rental, and
-            supply chain management. Whether it's heavy equipment or materials delivery, we
-            ensure safe and timely operations.          </p>
-          <div class="card_footer">
-            <button class="read_more_btn" onclick="toggleService('pm-highlights')">Read More</button>
-          </div>
-          <div id="pm-highlights" class="service_highlights">
-            <ul>
-              <li> Industrial Equipment Rentals
-              </li>
-              <li>On-Time Material Delivery</li>
-              <li>Logistic Support for Project Sites</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+
+      <div class="services_container">
+        <!-- Contracting & Construction Card -->
         <div class="service_card">
-        <div class="service_image">
-          <img src="images/tent_installation.jpg" alt="Project Management">
-        </div>
-        <div class="service_content">
-          <h3 class="service_title" > Tent Installations</h3>
-          <p class="service_description" style="color:#555">
-           We provide reliable tent installation services for industrial, commercial, and event
-needs offering durable, weather-resistant structures with safe, timely setup and
-customized solutions to suit your space requirements.
-         </p>
-          <div class="card_footer">
-            <button class="read_more_btn" onclick="toggleService('ti-highlights')">Read More</button>
+          <div class="service_image">
+            <img src="images/construction.jpg" alt="Contracting & Construction">
           </div>
-          <div id="ti-highlights" class="service_highlights">
-            <ul>
-              <li>  Customized tent solutions
-              </li>
-              <li> Professional on-site installation</li>
-              <li> Durable for all conditions</li>
-            </ul>
+          <div class="service_content">
+            <h3 class="service_title">Contracting & Construction</h3>
+            <p class="service_description" style=" color:#555">
+              We deliver comprehensive civil, mechanical, and infrastructure services, including the
+              construction of substations, buildings, and roads, as well as maintenance support. Our
+              experienced team ensures every project meets industry standards and client
+              expectations.
+            </p>
+            <div class="card_footer">
+              <button class="read_more_btn" onclick="toggleService('cc-highlights')">Read More</button>
+            </div>
+            <div id="cc-highlights" class="service_highlights">
+              <ul>
+                <li>Civil & Mechanical Construction</li>
+                <li>Infrastructure Development</li>
+                <li>Industrial Maintenance Services</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Electrical & Instrumentation Card -->
+        <div class="service_card">
+          <div class="service_image">
+            <img src="images/electrical.jpg" alt="Electrical & Instrumentation">
+          </div>
+          <div class="service_content">
+            <h3 class="service_title">Electrical & Instrumentation</h3>
+            <p class="service_description" style=" color:#555">
+              Powerlink specializes in the installation, integration, and maintenance of electrical and
+              instrumentation systems. We support automation and energy distribution needs for
+              commercial and industrial facilities. </p>
+            <div class="card_footer">
+              <button class="read_more_btn" onclick="toggleService('ei-highlights')">Read More</button>
+            </div>
+            <div id="ei-highlights" class="service_highlights">
+              <ul>
+                <li>Electrical System Installations</li>
+                <li>Instrumentation for Process Control</li>
+                <li>Automation and Control Panels</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Energy Solutions Card -->
+        <div class="service_card">
+          <div class="service_image">
+            <img src="images/fire.jpg" alt="Energy Solutions">
+          </div>
+          <div class="service_content">
+            <h3 class="service_title"> Fire & Safety Solutions</h3>
+            <p class="service_description" style=" color:#555">
+              We provide advanced fire protection and safety system installation to protect lives and
+              assets. From fire alarms to access control systems like turnstiles and barriers, we ensure
+              full compliance with safety regulations. </p>
+            <div class="card_footer">
+              <button class="read_more_btn" onclick="toggleService('es-highlights')">Read More</button>
+            </div>
+            <div id="es-highlights" class="service_highlights">
+              <ul>
+                <li>Fire Detection & Suppression Systems
+                </li>
+                <li>Access Control: Turnstiles, Gates, Barriers
+                </li>
+                <li> Safety Compliance & Emergency Systems
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Management Card -->
+        <div class="service_card">
+          <div class="service_image">
+            <img src="images/logistics1.jpg" alt="Project Management">
+          </div>
+          <div class="service_content">
+            <h3 class="service_title">Logistics & Equipment Rentals</h3>
+            <p class="service_description" style="color:#555">
+              Our logistics division supports projects with reliable transport, equipment rental, and
+              supply chain management. Whether it's heavy equipment or materials delivery, we
+              ensure safe and timely operations. </p>
+            <div class="card_footer">
+              <button class="read_more_btn" onclick="toggleService('pm-highlights')">Read More</button>
+            </div>
+            <div id="pm-highlights" class="service_highlights">
+              <ul>
+                <li> Industrial Equipment Rentals
+                </li>
+                <li>On-Time Material Delivery</li>
+                <li>Logistic Support for Project Sites</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="service_card">
+          <div class="service_image">
+            <img src="images/tent_installation.jpg" alt="Project Management">
+          </div>
+          <div class="service_content">
+            <h3 class="service_title"> Tent Supply and Installations</h3>
+            <p class="service_description" style="color:#555">
+              We provide reliable tent installation services for industrial, commercial, and event
+              needs offering durable, weather-resistant structures with safe, timely setup and
+              customized solutions to suit your space requirements.
+            </p>
+            <div class="card_footer">
+              <button class="read_more_btn" onclick="toggleService('ti-highlights')">Read More</button>
+            </div>
+            <div id="ti-highlights" class="service_highlights">
+              <ul>
+                <li> Customized tent solutions
+                </li>
+                <li> Professional on-site installation</li>
+                <li> Durable for all conditions</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script>
-    function toggleService(id) {
-      const element = document.getElementById(id);
-      if (element.classList.contains('active')) {
-        element.classList.remove('active');
-      } else {
-        element.classList.add('active');
+    <script>
+      function toggleService(id) {
+        const element = document.getElementById(id);
+        if (element.classList.contains('active')) {
+          element.classList.remove('active');
+        } else {
+          element.classList.add('active');
+        }
       }
-    }
-  </script>  <!-- end service section -->
+    </script> <!-- end service section -->
 
 
-  <!-- info section -->
-  <section class="info_section ">
+    <!-- info section -->
+    <section class="info_section ">
 
-    <div class="container">
-      <div class="info_top ">
-        <div class="row info_main_row">
-         
-          <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
-            <div class="">
-              <div class="info_logo">
-                <a href="">
-                  <img src="images/Powerlink_logo.png" alt="" style="width: 135px; margin-left: 20px;">
+      <div class="container">
+        <div class="info_top ">
+          <div class="row info_main_row">
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+              <div class="">
+                <div class="info_logo">
+                  <a href="">
+                    <img src="images/Powerlink_logo.png" alt="" style="width: 135px; margin-left: 20px;">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+              <div class="info_links">
+                <h4>
+                  QUICK LINKS
+                </h4>
+                <div class="info_links_menu">
+                  <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="" href="about.html"> About </a>
+
+                  <a class="" href="service.html">Services</a>
+                  <a class="" href="products.html">Products</a>
+                  <!-- <a class="" href="testimonial.html">Testimonial</a>  -->
+                  <a class="" href="contact.html">Contact </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 ml-auto" style="margin-right: 60px;">
+              <div class="social_box">
+                <a href="https://www.facebook.com/facebook" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/Twitter" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/company/linkedin" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/instagram" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <div class="info_links">
-              <h4>
-                QUICK LINKS
-              </h4>
-              <div class="info_links_menu">
-                <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
-                                <a class="" href="about.html"> About </a>
 
-                <a class="" href="service.html">Services</a>
-                <a class="" href="products.html">Products</a>
-                <!-- <a class="" href="testimonial.html">Testimonial</a>  -->
-                <a class="" href="contact.html">Contact </a>
-              </div>
             </div>
-          </div>
-          <div class="col-md-3 ml-auto" style="margin-right: 60px;">
-            <div class="social_box">
-              <a href="https://www.facebook.com/facebook" target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="https://twitter.com/Twitter" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
-              </a>
-              
-              <a href="https://www.linkedin.com/company/linkedin" target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="https://www.instagram.com/instagram" target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </div>
-            
-          </div>
-          <style>
-            .social_box {
-              display: flex;
-              gap: 10px;
-              justify-content: center;
-              align-items: center;
-            }
-        
-            .social_box a {
-              width: 40px;
-              height: 40px;
-              background-color: #f0f0f0;
-              
-              border-radius: 8px; 
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              text-decoration: none;
-              transition: all 0.3s ease;
-            }
-        
-            .social_box a i {
-              color: #d92827;
-              font-size: 20px;
-            }
-        
-            .social_box a:hover {
-              background-color:#d92827;
-            }
-        
-            .social_box a:hover i {
-              color: black;
-              transform: scale(1.1);
-            }
-          </style>
+            <style>
+              .social_box {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+              }
 
-        
+              .social_box a {
+                width: 40px;
+                height: 40px;
+                background-color: #f0f0f0;
+
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                transition: all 0.3s ease;
+              }
+
+              .social_box a i {
+                color: #d92827;
+                font-size: 20px;
+              }
+
+              .social_box a:hover {
+                background-color: #d92827;
+              }
+
+              .social_box a:hover i {
+                color: black;
+                transform: scale(1.1);
+              }
+            </style>
+
+
+          </div>
         </div>
+        <div class="contact_nav">
+          <a href="">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>
+              Call : +966 3 8320222
+            </span>
+          </a>
+          <a href="">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>
+              Email :
+              mukhtar@powerlink.sa.com
+              info@powerlink.sa.com
+            </span>
+          </a>
+          <a href="" class="address-link">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span class="address-text">
+              Address: Kingdom of Saudi Arabia<br>P.O BOX 15099<br>DAMMAM 31444
+            </span>
+          </a>
+        </div>
+
+
+
       </div>
-      <div class="contact_nav">
-        <a href="">
-          <i class="fa fa-phone" aria-hidden="true"></i>
-          <span>
-            Call : +966 3 8320222
-          </span>
-        </a>
-        <a href="">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-          <span>
-            Email : 
-            mukhtar@powerlink.sa.com
-            info@powerlink.sa.com
-          </span>
-        </a>
-        <a href="">
-          <i class="fa fa-map-marker" aria-hidden="true"></i>
-          <span>
-            Address:  Kingdom of Saudi Arabia<br >  P.O BOX 15099<br > DAMMAM
-            31444
-            
-          </span>
-        </a>
+    </section>
+    <!-- end info_section -->
+
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+          &copy; All Rights Reserved By
+          <a href="https://ex-ion.com/"> Ex-ion 2025</a>
+        </p>
       </div>
+    </footer>
+    <!-- footer section -->
 
-     
-    
-    </div>
-  </section>
-  <!-- end info_section -->
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+      </script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <!--  OwlCarousel 2 - Filter -->
+    <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    </script>
 
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <p>
-        &copy;  All Rights Reserved By
-        <a href="https://ex-ion.com/"> Ex-ion 2025</a>
-      </p>
-    </div>
-  </footer>
-  <!-- footer section -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Complete language data with your exact paragraphs
+        const languageData = {
+          "services": {
+            "headings": {
+              "en": ["Our Services"],
+              "ar": ["خدماتنا"]
+            },
+            "subheadings": {
+              "en": [
+                "Contracting & Construction",
+                "Electrical & Instrumentation",
+                "Fire & Safety Solutions",
+                "Logistics & Equipment Rentals",
+                "Tent Installations"
+              ],
+              "ar": [
+                "المقاولات والإنشاءات",
+                "الكهرباء والأجهزة الدقيقة",
+                "حلول الحريق والسلامة",
+                "الخدمات اللوجستية وتأجير المعدات",
+                "تركيب الخيام"
+              ]
+            },
+            "paragraphs": {
+              "en": [
+                "Powerlink Trading Establishment offers a wide range of industrial services designed to meet the complex needs of sectors like oil & gas, infrastructure, and construction across Saudi Arabia. With over 15 years of experience, we ensure quality, compliance, and timely execution in every project we undertake.",
+                "We deliver comprehensive civil, mechanical, and infrastructure services, including the construction of substations, buildings, and roads, as well as maintenance support. Our experienced team ensures every project meets industry standards and client expectations.",
+                "Powerlink specializes in the installation, integration, and maintenance of electrical and instrumentation systems. We support automation and energy distribution needs for commercial and industrial facilities.",
+                "We provide advanced fire protection and safety system installation to protect lives and assets. From fire alarms to access control systems like turnstiles and barriers, we ensure full compliance with safety regulations.",
+                "Our logistics division supports projects with reliable transport, equipment rental, and supply chain management. Whether it's heavy equipment or materials delivery, we ensure safe and timely operations.",
+                "We provide reliable tent installation services for industrial, commercial, and event needs offering durable, weather-resistant structures with safe, timely setup and customized solutions to suit your space requirements."
+              ],
+              "ar": [
+                "تقدم مؤسسة باورلينك للتجارة مجموعة واسعة من الخدمات الصناعية المصممة لتلبية احتياجات قطاعات مثل النفط والغاز والبنية التحتية والإنشاءات في جميع أنحاء المملكة العربية السعودية. مع أكثر من 15 عامًا من الخبرة، نضمن الجودة والامتثال والتنفيذ في الوقت المناسب في كل مشروع نقوم به.",
+                "نقدم خدمات شاملة في مجالات الإنشاءات المدنية والميكانيكية والبنية التحتية، بما في ذلك إنشاء المحطات الفرعية والمباني والطرق، بالإضافة إلى دعم الصيانة. يضمن فريقنا ذو الخبرة أن كل مشروع يفي بمعايير الصناعة وتوقعات العملاء.",
+                "تتخصص باورلينك في تركيب ودمج وصيانة أنظمة الكهرباء والأجهزة الدقيقة. نحن ندعم احتياجات الأتمتة وتوزيع الطاقة للمرافق التجارية والصناعية.",
+                "نقدم أنظمة متقدمة للحماية من الحرائق وتركيب أنظمة السلامة لحماية الأرواح والممتلكات. من أجهزة إنذار الحريق إلى أنظمة التحكم في الدخول مثل البوابات والحواجز، نضمن الامتثال الكامل للوائح السلامة.",
+                "يدعم قسم الخدمات اللوجستية لدينا المشاريع من خلال النقل الموثوق وتأجير المعدات وإدارة سلسلة التوريد. سواء كانت معدات ثقيلة أو تسليم مواد، فإننا نضمن عمليات آمنة وفي الوقت المناسب.",
+                "نقدم خدمات تركيب خيام موثوقة للاستخدامات الصناعية والتجارية والمناسبات، مع هياكل متينة مقاومة للعوامل الجوية وتركيب آمن وسريع وحلول مخصصة تناسب متطلبات المساحة الخاصة بك."
+              ]
+            },
+            "readMore": {
+              "en": [
+                "Civil & Mechanical Construction",
+                "Infrastructure Development",
+                "Industrial Maintenance Services",
+                "Electrical System Installations",
+                "Instrumentation for Process Control",
+                "Automation and Control Panels",
+                "Fire Detection & Suppression Systems",
+                "Access Control: Turnstiles, Gates, Barriers",
+                "Safety Compliance & Emergency Systems",
+                "Industrial Equipment Rentals",
+                "On-Time Material Delivery",
+                "Logistic Support for Project Sites",
+                "Customized tent solutions",
+                "Professional on-site installation",
+                "Durable for all conditions"
+              ],
+              "ar": [
+                "الإنشاءات المدنية والميكانيكية",
+                "تطوير البنية التحتية",
+                "خدمات الصيانة الصناعية",
+                "تركيبات أنظمة الكهرباء",
+                "أجهزة القياس للتحكم في العمليات",
+                "أنظمة الأتمتة ولوحات التحكم",
+                "أنظمة كشف وإخماد الحرائق",
+                "التحكم في الدخول: البوابات، الحواجز، الممرات الدوارة",
+                "الامتثال للسلامة وأنظمة الطوارئ",
+                "تأجير المعدات الصناعية",
+                "تسليم المواد في الوقت المحدد",
+                "الدعم اللوجستي لمواقع المشاريع",
+                "حلول خيام مخصصة",
+                "تركيب احترافي في الموقع",
+                "متانة لجميع الظروف"
+              ]
+            },
+            "buttons": {
+              "readMore": {
+                "en": "Read More",
+                "ar": "اقرأ المزيد"
+              }
+            }
+          },
+          "navbar": {
+            "en": ["Home", "About Us", "Services", "Products", "Contact"],
+            "ar": ["الرئيسية", "من نحن", "الخدمات", "المنتجات", "اتصل بنا"]
+          },
+          "productsDropdownItems": {
+            "en": ["All Products", "Mechanical", "Electrical", "Safety", "Labels"],
+            "ar": ["كل المنتجات", "ميكانيكية", "كهربائية", "السلامة", "الملصقات"]
+          },
 
-  <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!--  OwlCarousel 2 - Filter -->
-  <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
-  <!-- custom js -->
-  <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
+          "footer": {
+            "quickLinks": {
+              "en": ["Home", "About", "Services", "Products", "Contact"],
+              "ar": ["الرئيسية", "من نحن", "الخدمات", "المنتجات", "اتصل بنا"]
+            },
+            "copyright": {
+              "en": "© All Rights Reserved By Ex-ion 2025",
+              "ar": "© جميع الحقوق محفوظة لشركة Ex-ion 2025"
+            }
+          },
+          "contact": {
+            "phone": "+96638320222",
+            "address": {
+              "en": "Address: Kingdom of Saudi Arabia<br>P.O BOX 15099<br>DAMMAM 31444",
+              "ar": "العنوان: المملكة العربية السعودية<br>صندوق بريد 15099<br>الدمام 31444"
+            }
+          }
 
-</body>
+        };
+
+        // Elements to translate with correct selectors
+        const elementsToTranslate = {
+          navbar: [
+            { selector: ".nav-item:nth-child(1) .nav-link", index: 0 },
+            { selector: ".nav-item:nth-child(2) .nav-link", index: 1 },
+            { selector: ".nav-item:nth-child(3) .nav-link", index: 2 },
+            { selector: ".nav-item.dropdown .dropdown-toggle", index: 3 },
+            { selector: ".nav-item a[href='contact.html']", index: 4 }
+          ],
+          productsDropdownItems: [
+            { selector: ".dropdown-menu a:nth-child(1)", index: 0 },
+            { selector: ".dropdown-menu a:nth-child(2)", index: 1 },
+            { selector: ".dropdown-menu a:nth-child(3)", index: 2 },
+            { selector: ".dropdown-menu a:nth-child(4)", index: 3 },
+            { selector: ".dropdown-menu a:nth-child(5)", index: 4 }
+          ],
+
+          services: {
+            headings: [
+              { selector: ".section_title h2", index: 0 }
+            ],
+            subheadings: [
+              { selector: ".service_card:nth-child(1) .service_title", index: 0 },
+              { selector: ".service_card:nth-child(2) .service_title", index: 1 },
+              { selector: ".service_card:nth-child(3) .service_title", index: 2 },
+              { selector: ".service_card:nth-child(4) .service_title", index: 3 },
+              { selector: ".service_card:nth-child(5) .service_title", index: 4 }
+            ],
+            paragraphs: [
+              { selector: ".section_title p", index: 0 },
+              { selector: ".service_card:nth-child(1) .service_description", index: 1 },
+              { selector: ".service_card:nth-child(2) .service_description", index: 2 },
+              { selector: ".service_card:nth-child(3) .service_description", index: 3 },
+              { selector: ".service_card:nth-child(4) .service_description", index: 4 },
+              { selector: ".service_card:nth-child(5) .service_description", index: 5 }
+            ],
+            readMore: [
+              { selector: "#cc-highlights li:nth-child(1)", index: 0 },
+              { selector: "#cc-highlights li:nth-child(2)", index: 1 },
+              { selector: "#cc-highlights li:nth-child(3)", index: 2 },
+              { selector: "#ei-highlights li:nth-child(1)", index: 3 },
+              { selector: "#ei-highlights li:nth-child(2)", index: 4 },
+              { selector: "#ei-highlights li:nth-child(3)", index: 5 },
+              { selector: "#es-highlights li:nth-child(1)", index: 6 },
+              { selector: "#es-highlights li:nth-child(2)", index: 7 },
+              { selector: "#es-highlights li:nth-child(3)", index: 8 },
+              { selector: "#pm-highlights li:nth-child(1)", index: 9 },
+              { selector: "#pm-highlights li:nth-child(2)", index: 10 },
+              { selector: "#pm-highlights li:nth-child(3)", index: 11 },
+              { selector: "#ti-highlights li:nth-child(1)", index: 12 },
+              { selector: "#ti-highlights li:nth-child(2)", index: 13 },
+              { selector: "#ti-highlights li:nth-child(3)", index: 14 }
+            ],
+            buttons: [
+              { selector: ".read_more_btn", index: 0 }
+            ]
+          },
+          footerLinks: [
+            { selector: ".info_links_menu a:nth-child(1)", index: 0 },
+            { selector: ".info_links_menu a:nth-child(2)", index: 1 },
+            { selector: ".info_links_menu a:nth-child(3)", index: 2 },
+            { selector: ".info_links_menu a:nth-child(4)", index: 3 },
+            { selector: ".info_links_menu a:nth-child(5)", index: 4 }
+          ],
+          footerCopyright: [
+            { selector: ".footer_section p", index: 0 }
+          ],
+          contactAddress: [
+            { selector: ".address-text", index: 0 }
+          ]
+        };
+
+        // Current language state
+        let currentLanguage = 'en';
+        const currentLanguageText = document.getElementById('currentLanguageText');
+
+        // Function to switch languages
+        function switchLanguage(lang) {
+          currentLanguage = lang;
+          currentLanguageText.textContent = lang === 'en' ? 'English' : 'العربية';
+
+          // Update HTML direction and font
+          document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+          document.body.style.fontFamily = lang === 'ar' ? "'Tajawal', sans-serif" : "'Roboto', sans-serif";
+
+          // Translate all elements
+          translateElements(lang);
+
+          // Save language preference
+          localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // Helper function to translate all elements
+        function translateElements(lang) {
+          // Translate navbar
+          elementsToTranslate.navbar.forEach(item => {
+            const element = document.querySelector(item.selector);
+            if (element) element.textContent = languageData.navbar[lang][item.index];
+          });
+
+          // Translate product dropdown items
+          elementsToTranslate.productsDropdownItems.forEach(item => {
+            const element = document.querySelector(item.selector);
+            if (element) element.textContent = languageData.productsDropdownItems[lang][item.index];
+          });
+
+          // Translate services
+          // Headings
+          elementsToTranslate.services.headings.forEach(item => {
+            const element = document.querySelector(item.selector);
+            if (element) element.textContent = languageData.services.headings[lang][item.index];
+          });
+
+          // Subheadings (service titles)
+          elementsToTranslate.services.subheadings.forEach(item => {
+            const element = document.querySelector(item.selector);
+            if (element) element.textContent = languageData.services.subheadings[lang][item.index];
+          });
+
+          // Paragraphs
+          elementsToTranslate.services.paragraphs.forEach(item => {
+            const element = document.querySelector(item.selector);
+            if (element) element.textContent = languageData.services.paragraphs[lang][item.index];
+          });
+
+          // Read more items
+          elementsToTranslate.services.readMore.forEach(item => {
+            const element = document.querySelector(item.selector);
+            if (element) element.textContent = languageData.services.readMore[lang][item.index];
+          });
+
+          // Buttons
+          document.querySelectorAll('.read_more_btn').forEach(btn => {
+            btn.textContent = languageData.services.buttons.readMore[lang];
+          });
+
+          // Footer links
+          elementsToTranslate.footerLinks.forEach(item => {
+            const element = document.querySelector(item.selector);
+            if (element) element.textContent = languageData.footer.quickLinks[lang][item.index];
+          });
+
+          // Footer copyright
+          const copyrightElement = document.querySelector('.footer_section p');
+          if (copyrightElement) {
+            copyrightElement.innerHTML = languageData.footer.copyright[lang];
+          }
+
+          // Contact address
+          // Contact address
+          const addressElement = document.querySelector('.address-text');
+          if (addressElement) {
+            addressElement.innerHTML = languageData.contact.address[lang];
+          }
+        }
+
+        // Initialize language switcher
+        document.querySelectorAll('.language-option').forEach(option => {
+          option.addEventListener('click', function (e) {
+            e.preventDefault();
+            const lang = this.getAttribute('data-lang');
+            switchLanguage(lang);
+          });
+        });
+
+        // Check for saved language preference
+        const savedLanguage = localStorage.getItem('preferredLanguage');
+        if (savedLanguage) {
+          switchLanguage(savedLanguage);
+        }
+
+        // Toggle service highlights
+        function toggleService(id) {
+          const element = document.getElementById(id);
+          element.classList.toggle('active');
+        }
+
+        // Make toggleService available globally
+        window.toggleService = toggleService;
+      });
+    </script> <!-- End Google Map -->
+
+  </body>
 
 </html>

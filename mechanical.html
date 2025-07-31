@@ -66,9 +66,7 @@
           <div class="contact_nav">
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                +966 3 8320222
-              </span>
+              <span dir="ltr">+96638320222</span>
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -159,13 +157,256 @@
                 <li class="nav-item">
                   <a class="nav-link" href="service.html">Services</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="products.html">Products</a>
-                </li>
+                <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Products
+  </a>
+  <div class="dropdown-menu" aria-labelledby="productsDropdown">
+    <a class="dropdown-item" href="products.html">All Products</a>
+    <a class="dropdown-item" href="mechanical.html">Mechanical</a>
+    <a class="dropdown-item" href="electrical.html">Electrical</a>
+        <a class="dropdown-item" href="safety.html">Safety</a>
+<a class="dropdown-item" href="products.html#industrial">Labels</a>
+
+
+    <!-- <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="featured-products.html">Featured Products</a>
+  </div> -->
+</li>
+<style>
+.nav-item.dropdown {
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* Style the dropdown toggle link */
+.nav-link.dropdown-toggle {
+  color: #333;
+  padding: 10px 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-link.dropdown-toggle:hover {
+  color: black;
+  background-color: #f8f9fa;
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0;
+  margin-top: 5px;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Style dropdown items */
+.dropdown-item {
+  padding: 8px 15px;
+  color: #333;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Style the divider */
+.dropdown-divider {
+  margin: 5px 0;
+  border-top: 1px solid #eee;
+}
+
+/* Add animation to dropdown */
+.dropdown-menu.show {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add a small arrow indicator */
+.nav-link.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.nav-link.dropdown-toggle.show::after {
+  transform: rotate(180deg);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+</style>
 
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact </a>
                 </li>
+                  <li class="nav-item dropdown language-switcher">
+  <a class="nav-link dropdown-toggle btn-lang" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span id="currentLanguageText">English</span>
+  </a>
+  <div class="dropdown-menu language-dropdown" aria-labelledby="languageDropdown">
+    <a class="dropdown-item language-option" href="#" data-lang="en">
+      <i class="fa fa-globe" aria-hidden="true"></i> English
+    </a>
+    <a class="dropdown-item language-option" href="#" data-lang="ar">
+      <i class="fa fa-globe" aria-hidden="true"></i> العربية
+    </a>
+  </div>
+</li>
+
+<style>
+  .btn-lang {
+    background: transparent;
+    border: 1px solid #d92827;
+    color: #d92827 !important;
+    border-radius: 4px;
+    padding: 5px 15px !important;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+  }
+  
+  .btn-lang:hover {
+    background-color: #d92827;
+    color: white !important;
+    text-decoration: none !important;
+  }
+
+  /* Language dropdown specific styles */
+  .language-dropdown {
+    min-width: 120px;
+    border: 1px solid #d92827;
+    border-radius: 4px;
+    padding: 5px 0;
+    margin-top: 2px;
+  }
+
+  .language-dropdown .dropdown-item {
+    padding: 8px 15px;
+    color: #333;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .language-dropdown .dropdown-item:hover {
+    background-color: #d92827;
+    color: white;
+  }
+
+  .language-dropdown .dropdown-item.active {
+    background-color: #d92827;
+    color: white;
+  }
+
+  .language-dropdown .dropdown-item i {
+    font-size: 12px;
+    width: 15px;
+  }
+  /* RTL Specific Styles */
+[dir="rtl"] {
+  /* General text alignment */
+  text-align: right;
+  
+  /* Header adjustments */
+  .header_top_container {
+    flex-direction: row-reverse;
+  }
+  
+  .contact_nav a {
+    flex-direction: row-reverse;
+  }
+  
+  /* Navbar adjustments */
+  .navbar-nav {
+    padding-right: 0;
+    justify-content: start;
+  }
+  
+  /* Product grid */
+  .product-grid {
+    justify-content: start;
+  }
+  
+  /* Dropdown menus */
+  .dropdown-menu {
+    right: auto !important;
+    left: 0 !important;
+    text-align: right;
+  }
+  
+  /* Underline positioning */
+  h1::after {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  
+  /* Social icons */
+  .social_box, .social_box1 {
+    flex-direction: row-reverse;
+  }
+}
+[dir="rtl"] .header_section {
+  direction: rtl;
+}
+
+[dir="rtl"] .header_top_container {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+[dir="rtl"] .info_section {
+  direction: rtl;
+}
+
+[dir="rtl"] .info_main_row {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .info_logo {
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+[dir="rtl"] .info_links {
+  text-align: right;
+}
+
+[dir="rtl"] .info_links_menu {
+  padding-right: 0;
+}
+
+[dir="rtl"] .ml-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+[dir="rtl"] .contact_nav span {
+  text-align: right;
+}
+  </style>
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="#"> Login</a>
                 </li> -->
@@ -404,7 +645,35 @@
 </div>
 
         <h1>Mechanical Products</h1>
+<style>/* Replace your current h1 styles with: */
+h1 {
+  font-size: clamp(24px, 5vw, 38px);
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 50px 0 30px;
+  position: relative;
+  text-align: start; /* Changed from 'left' to 'start' */
+}
 
+h1::after {
+  content: '';
+  display: block;
+  width: 180px;
+  height: 4px;
+  background-color: #d92827;
+  margin-top: 12px;
+  border-radius: 4px;
+}
+
+/* RTL specific adjustments */
+[dir="rtl"] h1 {
+  text-align: right;
+}
+
+[dir="rtl"] h1::after {
+  margin-right: 0;
+  margin-left: auto; /* Pushes underline to the right */
+}</style>
         <!-- Pipe & Fittings -->
         <section>
           <h2> Pipe & Fittings</h2>
@@ -556,9 +825,7 @@
           <div class="contact_nav">
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call : +966 3 8320222
-              </span>
+             <span dir="ltr">+96638320222</span>
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -615,7 +882,263 @@
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
       </script>
       <!-- End Google Map -->
+<script>document.addEventListener('DOMContentLoaded', function() {
+    // Translation data
+    const translations = {
+        navbar: {
+            items: {
+                en: ["Home", "About Us", "Services", "Products", "Contact"],
+                ar: ["الرئيسية", "من نحن", "الخدمات", "المنتجات", "اتصل بنا"]
+            },
+            productsDropdown: {
+                en: ["All Products", "Mechanical", "Electrical", "Safety", "Labels"],
+                ar: ["كل المنتجات", "الميكانيكية", "الكهربائية", "السلامة", "الملصقات"]
+            }
+        },
+        mechanicalProducts: {
+            heading: {
+                en: "Mechanical Products",
+                ar: "المنتجات الميكانيكية"
+            },
+            subheadings: {
+                en: [
+                    "Pipe & Fittings",
+                    "Valves & Flow Control", 
+                    "Fasteners & Hardware",
+                    "Structural Support"
+                ],
+                ar: [
+                    "الأنابيب والتجهيزات",
+                    "الصمامات والتحكم في التدفق",
+                    "المثبتات والمعدات",
+                    "الدعم الهيكلي"
+                ]
+            },
+            descriptions: {
+                en: [
+                    "Pipes",
+                    "Fittings",
+                    "Valves",
+                    "Flanges",
+                    "Nuts, Bolts, Washers",
+                    "Threaded Rods",
+                    "C Channels"
+                ],
+                ar: [
+                    "أنابيب",
+                    "تجهيزات",
+                    "صمامات",
+                    "شُفاه",
+                    "صواميل، براغي، وغسالات",
+                    "قضبان ملولبة",
+                    "قنوات على شكل حرف C"
+                ]
+            },
+            buttons: {
+                mechanicalProducts: {
+                    en: "Mechanical Products",
+                    ar: "المنتجات الميكانيكية"
+                },
+                electricalProducts: {
+                    en: "Electrical Products",
+                    ar: "المنتجات الكهربائية"
+                },
+                safetyEquipment: {
+                    en: "Safety Equipment",
+                    ar: "معدات السلامة"
+                }
+            }
+        },
+        footer: {
+            quickLinks: {
+                en: "QUICK LINKS",
+                ar: "روابط سريعة"
+            },
+            copyright: {
+                en: "© All Rights Reserved By Ex-ion 2025",
+                ar: "© جميع الحقوق محفوظة لشركة Ex-ion 2025"
+            },
+            contactLabels: {
+                en: ["Call :", "Email :", "Address:"],
+                ar: ["اتصل :", "البريد الإلكتروني :", "العنوان:"]
+            }
+        }
+    };
 
+    // Current language
+    let currentLanguage = 'en';
+    
+    // Update all translations on page
+    function updateTranslations() {
+        // Navbar items - more specific targeting
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-item:not(.dropdown):not(.language-switcher) .nav-link');
+        const navTexts = ['Home', 'About Us', 'Services', 'Contact']; // Skip Products as it's handled separately
+        
+        navLinks.forEach((link, index) => {
+            const originalText = link.textContent.trim().replace(' (current)', '');
+            if (translations.navbar.items[currentLanguage][index] && 
+                (originalText === 'Home' || originalText === 'الرئيسية')) {
+                link.innerHTML = translations.navbar.items[currentLanguage][0] + 
+                    (link.innerHTML.includes('(current)') ? ' <span class="sr-only">(current)</span>' : '');
+            } else if (originalText === 'About Us' || originalText === 'من نحن') {
+                link.textContent = translations.navbar.items[currentLanguage][1];
+            } else if (originalText === 'Services' || originalText === 'الخدمات') {
+                link.textContent = translations.navbar.items[currentLanguage][2];
+            } else if (originalText === 'Contact' || originalText === 'اتصل بنا') {
+                link.textContent = translations.navbar.items[currentLanguage][4];
+            }
+        });
+        
+        // Products dropdown toggle
+        const productsDropdownToggle = document.querySelector('#productsDropdown');
+        if (productsDropdownToggle) {
+            productsDropdownToggle.textContent = translations.navbar.items[currentLanguage][3];
+        }
+        
+        // Products dropdown items
+        const dropdownItems = document.querySelectorAll('#productsDropdown + .dropdown-menu .dropdown-item');
+        dropdownItems.forEach((item, index) => {
+            if (translations.navbar.productsDropdown[currentLanguage][index]) {
+                item.textContent = translations.navbar.productsDropdown[currentLanguage][index];
+            }
+        });
+        
+        // Main heading
+        const mainHeading = document.querySelector('h1');
+        if (mainHeading) {
+            mainHeading.textContent = translations.mechanicalProducts.heading[currentLanguage];
+        }
+        
+        // Section headings (h2 elements)
+        const sectionHeadings = document.querySelectorAll('section h2');
+        sectionHeadings.forEach((heading, index) => {
+            if (translations.mechanicalProducts.subheadings[currentLanguage][index]) {
+                heading.textContent = translations.mechanicalProducts.subheadings[currentLanguage][index];
+            }
+        });
+        
+        // Product descriptions
+        const productDescriptions = document.querySelectorAll('.product-card p');
+        productDescriptions.forEach((desc, index) => {
+            if (translations.mechanicalProducts.descriptions[currentLanguage][index]) {
+                desc.textContent = translations.mechanicalProducts.descriptions[currentLanguage][index];
+            }
+        });
+        
+        // Tab buttons - more specific targeting
+        const mechanicalBtn = document.querySelector('.tab-button[data-tab="mechanical"]');
+        const electricalBtn = document.querySelector('.tab-button[data-tab="electrical"]');
+        const safetyBtn = document.querySelector('.tab-button[data-tab="safety"]');
+        
+        if (mechanicalBtn) {
+            mechanicalBtn.textContent = translations.mechanicalProducts.buttons.mechanicalProducts[currentLanguage];
+        }
+        if (electricalBtn) {
+            electricalBtn.textContent = translations.mechanicalProducts.buttons.electricalProducts[currentLanguage];
+        }
+        if (safetyBtn) {
+            safetyBtn.textContent = translations.mechanicalProducts.buttons.safetyEquipment[currentLanguage];
+        }
+        
+        // Footer quick links heading
+        const quickLinksHeading = document.querySelector('.info_links h4');
+        if (quickLinksHeading) {
+            quickLinksHeading.textContent = translations.footer.quickLinks[currentLanguage];
+        }
+        
+        // Footer navigation links
+        const footerNavLinks = document.querySelectorAll('.info_links_menu a');
+        footerNavLinks.forEach((link, index) => {
+            if (translations.navbar.items[currentLanguage][index]) {
+                const currentText = link.textContent.trim().replace(' (current)', '');
+                if (index === 0 && (currentText === 'Home' || currentText === 'الرئيسية')) {
+                    link.innerHTML = translations.navbar.items[currentLanguage][index] + 
+                        (link.innerHTML.includes('(current)') ? ' <span class="sr-only">(current)</span>' : '');
+                } else {
+                    link.textContent = translations.navbar.items[currentLanguage][index];
+                }
+            }
+        });
+        
+        // Footer contact labels
+        const contactSpans = document.querySelectorAll('.contact_nav span');
+        contactSpans.forEach((span, index) => {
+            const spanText = span.textContent.trim();
+            if (spanText.startsWith('Call :') || spanText.startsWith('اتصل :')) {
+                span.innerHTML = translations.footer.contactLabels[currentLanguage][0] + ' +966 3 8320222';
+            } else if (spanText.includes('Email :') || spanText.includes('البريد الإلكتروني :')) {
+                span.innerHTML = translations.footer.contactLabels[currentLanguage][1] + 
+                    '<br>mukhtar@powerlink.sa.com<br>info@powerlink.sa.com';
+            } else if (spanText.includes('Address:') || spanText.includes('العنوان:')) {
+                span.innerHTML = translations.footer.contactLabels[currentLanguage][2] + 
+                    ' Kingdom of Saudi Arabia<br> P.O BOX 15099<br> DAMMAM 31444';
+            }
+        });
+        
+        // Footer copyright
+        const copyrightElement = document.querySelector('.footer_section p');
+        if (copyrightElement) {
+            copyrightElement.innerHTML = '&copy; All Rights Reserved By <a href="https://ex-ion.com/"> Ex-ion 2025</a>';
+            if (currentLanguage === 'ar') {
+                copyrightElement.innerHTML = '&copy; جميع الحقوق محفوظة لشركة <a href="https://ex-ion.com/"> Ex-ion 2025</a>';
+            }
+        }
+        
+        // RTL support for Arabic
+        if (currentLanguage === 'ar') {
+            document.body.setAttribute('dir', 'rtl');
+            document.documentElement.setAttribute('lang', 'ar');
+            // Add RTL specific styles
+            document.body.style.fontFamily = 'Arial, sans-serif';
+        } else {
+            document.body.removeAttribute('dir');
+            document.documentElement.setAttribute('lang', 'en');
+            document.body.style.fontFamily = '';
+        }
+        
+        // Update language dropdown text
+        const currentLanguageText = document.getElementById('currentLanguageText');
+        if (currentLanguageText) {
+            currentLanguageText.textContent = currentLanguage === 'en' ? 'English' : 'العربية';
+        }
+        
+        // Update active state for language options
+        document.querySelectorAll('.language-option').forEach(option => {
+            option.classList.remove('active');
+            if (option.getAttribute('data-lang') === currentLanguage) {
+                option.classList.add('active');
+            }
+        });
+    }
+    
+    // Language switcher event listeners
+    document.querySelectorAll('.language-option').forEach(option => {
+        option.addEventListener('click', function(e) {
+            e.preventDefault();
+            const newLanguage = this.getAttribute('data-lang');
+            if (newLanguage !== currentLanguage) {
+                currentLanguage = newLanguage;
+                updateTranslations();
+                // Note: localStorage is not supported in this environment, 
+                // but you can uncomment the line below for use in regular websites
+                // localStorage.setItem('preferredLanguage', currentLanguage);
+            }
+        });
+    });
+    
+    // Initialize with default language
+    // Note: localStorage check is commented out as it's not supported in this environment
+    // const savedLanguage = localStorage.getItem('preferredLanguage');
+    // if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'ar')) {
+    //     currentLanguage = savedLanguage;
+    // }
+    
+    // Initial translation update
+    updateTranslations();
+});
+</script>
+
+<script src="js/lang.js"></script>
     </body>
 
 </html>
